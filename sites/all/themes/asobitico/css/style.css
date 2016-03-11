@@ -18,7 +18,8 @@ body {
 .header .grid,
 .main-content,
 .footer,
-.pre-footer {
+.pre-footer,
+.above-content .inner {
   max-width: 70em;
   margin: 0 auto;
   overflow: hidden;

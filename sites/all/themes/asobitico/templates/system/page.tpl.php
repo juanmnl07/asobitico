@@ -56,9 +56,17 @@
 </div>
 </header>
 
+<?php if ($page['banner']): ?>
+  <section class="banner">
+      <?php print render($page['banner']); ?>
+    </section>
+<?php endif; // end Above Content ?>
+
 <?php if ($page['above_content']): ?>
   <section class="above-content">
-    <?php print render($page['above_content']); ?>
+    <div class="inner">
+      <?php print render($page['above_content']); ?>
+    </div>
   </section>
 <?php endif; // end Above Content ?>
 

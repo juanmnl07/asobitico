@@ -125,6 +125,9 @@ function asobitico_preprocess_node(&$vars) {
 
 function asobitico_preprocess_block(&$vars, $hook) {
   // Add a striping class.
-  dpm($vars);
+  //dpm($vars);
+  if($vars['block_html_id'] == 'block-webform-client-block-1'){
+    $vars['classes_array'][] = 'gu-1-3';
+  }
   $vars['classes_array'][] = 'block-' . $vars['zebra'];
 }

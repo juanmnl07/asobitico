@@ -28,6 +28,8 @@ regions[header]             = Header
 regions[help]               = Help
 regions[highlighted]        = Highlighted
 
+regions[banner]		        = Banner
+
 regions[above_content]      = Above Content
 regions[content]            = Content
 regions[sidebar_first]      = Sidebar First

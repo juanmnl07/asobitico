@@ -63,6 +63,8 @@
 
 <body class="<?php print $classes; ?>" <?php print $attributes;?>>
 
+<?php global $base_url; ?>
+
   <!--[if lt IE 8]>
       <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
   <![endif]-->
@@ -74,6 +76,14 @@
   <?php print $page_top; ?>
   <?php print $page; ?>
   <?php print $page_bottom; ?>
+
+<div class="bloque-lateral" id="redes-sociales-lateral">
+  <ul>
+    <li><a href="#"><img src="<?php echo $base_url?>/sites/default/theme/asobitico/images/facebook.png" /> </a></li>
+    <li><a href="#"><img src="<?php echo $base_url?>/sites/default/theme/asobitico/images/twitter.png" /> </a></li>
+  </ul>
+  <p class="texto-vertical">Siga a ASOBITICO</p>
+</div>
 
 </body>
 </html>
