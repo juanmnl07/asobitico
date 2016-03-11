@@ -79,8 +79,8 @@
 
 <div class="bloque-lateral" id="redes-sociales-lateral">
   <ul>
-    <li><a href="#"><img src="<?php echo $base_url?>/sites/default/theme/asobitico/images/facebook.png" /> </a></li>
-    <li><a href="#"><img src="<?php echo $base_url?>/sites/default/theme/asobitico/images/twitter.png" /> </a></li>
+    <li><a href="https://www.facebook.com/asobitico" target="_blank"><img src="<?php echo $base_url?>/sites/all/themes/asobitico/images/fb2.png" /> </a></li>
+    <li><a href="https://twitter.com/asobitico" target="_blank"><img src="<?php echo $base_url?>/sites/all/themes/asobitico/images/tw2.png" /> </a></li>
   </ul>
   <p class="texto-vertical">Siga a ASOBITICO</p>
 </div>

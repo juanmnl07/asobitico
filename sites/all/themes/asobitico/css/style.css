@@ -181,37 +181,39 @@ body {
 #redes-sociales-lateral{
   position: fixed;
   left: 0px;
-  top: 45%;
-  width: 75px;
+  top: 40%;
+  width: 70px;
   height: 315px;
 
-  -webkit-border-bottom-right-radius: 35px;
-  -webkit-border-top-right-radius: 35px;
-  -moz-border-radius-bottomright: 35px;
-  -moz-border-radius-topright: 35px;
-  border-bottom-right-radius: 35px;
-  border-top-right-radius: 35px;
-  padding: 3px 25px 7px 25px;
+  -webkit-border-bottom-right-radius: 20px;
+  -webkit-border-top-right-radius: 20px;
+  -moz-border-radius-bottomright: 20px;
+  -moz-border-radius-topright: 20px;
+  border-bottom-right-radius: 20px;
+  border-top-right-radius: 20px;
 
   background-image: url('../images/bg_rojo.png');
   background-repeat: repeat;
 
 }
-.a{
-/* Safari */
--webkit-transform: rotate(-90deg);
-
-/* Firefox */
--moz-transform: rotate(-90deg);
-
-/* IE */
--ms-transform: rotate(-90deg);
-
-/* Opera */
--o-transform: rotate(-90deg);
-
-/* Internet Explorer */
-filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+#redes-sociales-lateral ul{
+  width: 45px;
+  margin: 0 auto; margin-top: 15px;
+}
+#redes-sociales-lateral p.texto-vertical{
+  position: absolute;
+  width: 180px;
+  left: -56px;
+  top: 193px;
+  font-size: 21px;
+  color: #FFF;
+  padding: 0px;
+  margin: 0px;
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
 }
 
 
