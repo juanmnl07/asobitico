@@ -95,7 +95,7 @@ h2 + p{
 }
 p{
   font-size: 15px;
-  line-height:  18px;
+  line-height: 19px;
   color: #404041;
 }
 
@@ -218,7 +218,7 @@ p{
   margin-bottom: 15px;
 }
 .caja-icono p{
-  /*line-height: 15px;*/
+  line-height: 15px;
   margin: 0px;
 }
 .caja-icono > div{
