@@ -123,12 +123,14 @@
 
 <?php if ($page['pre_footer']): ?>
   <section class="pre-footer">
-    <?php print render($page['pre_footer']); ?>
+    <div class="inner">
+      <?php print render($page['pre_footer']); ?>
+    </div>
   </section>
 <?php endif; // end Pre Footer ?>
 
 <footer class="footer" role="contentinfo">
-  <div class="">
+  <div class="inner">
     <?php print render($page['footer']); ?>
   </div>
 </footer>

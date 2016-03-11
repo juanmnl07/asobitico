@@ -39,8 +39,8 @@ body {
   =LAYOUT
 --------------------------------------------- */
 .header .grid,
-.footer,
-.pre-footer,
+.footer .inner,
+.pre-footer .inner,
 .above-content .inner,
 .panel.grid,
 .layour .grid {
