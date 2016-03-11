@@ -1,3 +1,25 @@
+@font-face {
+  font-family: 'ProximaNova';
+  src: url('../fonts/proximanova-regular.eot');
+  src: url('../fonts/proximanova-regular.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/proximanova-regular.woff') format('woff'), 
+  url('../fonts/proximanova-regular.ttf') format('truetype'),
+  url('../fonts/proximanova-regular.svg#ProximaNova') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Aleo';
+  src: url('../fonts/Aleo-Regular.eot');/* Para Internet Explorer */
+  src: url('../fonts/Aleo-Regular.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/Aleo-Regular.woff') format('woff'), 
+  url('../fonts/Aleo-Regular.ttf') format('truetype'),
+  url('../fonts/Aleo-Regular.svg#AleoRegular') format('svg');
+  font-weight: normal;
+  font-style: italic;
+}
+
+
 /*
   =BASE
 --------------------------------------------- */
@@ -7,10 +29,11 @@
 }
 
 html {
-  border-top: 6px solid #000;
+
 }
 body {
   padding: 0;
+  font-family: "ProximaNova", sans-serif;
 }
 /*
   =LAYOUT
@@ -51,10 +74,129 @@ body {
 */
 
 
+/* ## HEADER ## */
+
+.header{
+  min-height: 157px;
+  border-bottom: 5px solid #0080C6;
+}
+
+.utility-bar{
+  float: right;
+}
+
+.utility-bar ul{
+  background-color: #EFEFF0;
+  -webkit-border-bottom-right-radius: 35px;
+  -webkit-border-bottom-left-radius: 35px;
+  -moz-border-radius-bottomright: 35px;
+  -moz-border-radius-bottomleft: 35px;
+  border-bottom-right-radius: 35px;
+  border-bottom-left-radius: 35px;
+  padding: 3px 25px 7px 25px;
+}
+
+.utility-bar ul li{
+  display: inline-block;
+  border-right: 1px solid #58595B;
+  line-height: 15px;
+  padding-left: 7px; padding-right: 12px;
+}
+
+.utility-bar ul li a{
+  font-size: 14px;
+  font-weight: normal;
+  color: #58595B;
+  text-decoration: none;
+}
+#logo{
+  float: left;
+  margin-top: 18px;
+}
 
 
+/* ## FOOTER ## */
 
+.pre-footer{
+  border-top: 7px solid #A63131;
+  background-color: #353535;
+  min-height: 110px;
+}
 
+.footer{
+  background-color: #404041;
+}
+
+#logo-footer{
+  display: block;
+  width: 125px;
+  height: 90px;
+  background-image: url('../images/logo_pie.png');
+}
+
+#direccion-footer{
+  background-image: url('../images/i_mapa.png');
+  background-position: left top;
+  background-repeat: no-repeat;
+  padding-left: 40px;
+  margin-top: 20px;
+}
+#direccion-footer p,
+.i_tel,
+.i_mail{
+  font-size: 13px;
+  color: #FFF;
+  line-height: 18px;
+}
+.i_tel{
+  background-image: url('../images/i_tel.png');
+  background-position: left top;
+  background-repeat: no-repeat;
+  padding-left: 40px;
+  line-height: 30px;
+  margin-bottom: 10px;
+  margin-top: 15px;
+}
+.i_mail{
+  background-image: url('../images/i_mail.png');
+  background-position: left top;
+  background-repeat: no-repeat;
+  padding-left: 40px;
+  line-height: 25px;
+}
+.i_mail a{
+  color: #FFF;
+}
+#redes-sociales-prefooter{
+  padding-top: 20px;
+}
+#redes-sociales-prefooter ul{
+  float: right;
+}
+#redes-sociales-prefooter ul li{
+  display: inline-block;
+  margin-left: 15px;
+}
+
+#redes-sociales-lateral{
+  position: fixed;
+  left: 0px;
+  top: 45%;
+  width: 75px;
+  height: 315px;
+
+  -webkit-border-bottom-right-radius: 35px;
+  -webkit-border-top-right-radius: 35px;
+  -moz-border-radius-bottomright: 35px;
+  -moz-border-radius-topright: 35px;
+  border-bottom-right-radius: 35px;
+  border-top-right-radius: 35px;
+  padding: 3px 25px 7px 25px;
+
+  background-image: url('../images/bg_rojo.png');
+  background-repeat: repeat;
+
+}
 
 /**************************************************/
 /**************************************************/

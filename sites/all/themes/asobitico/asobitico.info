@@ -49,9 +49,9 @@ stylesheets[all][] = css/modules.css
 stylesheets[all][] = css/layout.css
 stylesheets[all][] = css/theme.css
 stylesheets[all][] = css/style.css
-stylesheets[all][] = css/mobile.css
-stylesheets[all][] = css/tablet.css
 stylesheets[all][] = css/desktop.css
+stylesheets[all][] = css/tablet.css
+stylesheets[all][] = css/mobile.css
 
 ;-------------- JS -------------
 scripts[] = js/script.js

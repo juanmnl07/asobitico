@@ -9,10 +9,10 @@
           box-sizing: border-box;
 }
 body {
-  background: #fff;
+  /*background: #fff;
   color: #333;
   font: 1em/1.75em 'Helvetica Neue', Arial, sans-serif;
-  padding: 1em;
+  padding: 1em;*/
 }
 
 /*
@@ -20,16 +20,16 @@ body {
 --------------------------------------------- */
 a:link,
 a:visited {
-  border-bottom: 1px solid rgb(200,200,200);
+  /*border-bottom: 1px solid rgb(200,200,200);*/
   text-decoration: none;
-  color: rgb(80,80,80);
+  /*color: rgb(80,80,80);*/
   outline: none;
 }
 
 a:hover {
-  border-bottom: 1px solid rgb(0,0,0);
-  background: rgba(0,0,0,.05);
-  color: rgb(0,0,0);
+  /*border-bottom: 1px solid rgb(0,0,0);
+  background: rgba(0,0,0,.05);*/
+  color: #0080C6;
 }
 
 a:active {
@@ -123,9 +123,10 @@ ol,
 dl,
 blockquote {
   margin-bottom: 1.5em;
+  list-style: none;
 }
 ul {
-  list-style: disc outside;
+  /*list-style: disc outside;*/
 }
 strong, b {
   font-weight: bold;
