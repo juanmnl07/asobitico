@@ -74,6 +74,31 @@ body {
 */
 
 
+.front h2{
+  font-family: "Aleo", sans-serif;
+  text-align: center;
+  font-size: 33px;
+  line-height: 36px;
+  font-weight: normal;
+}
+h2 + p{
+  text-align: center;
+}
+.rojo{
+  color: #A63131;
+}
+.azul{
+  color: #0080C6;
+}
+.naranja{
+  color: #CF722A;
+}
+p{
+  font-size: 15px;
+  line-height:  18px;
+  color: #404041;
+}
+
 /* ## HEADER ## */
 
 .header{
@@ -115,6 +140,13 @@ body {
 }
 
 
+
+
+
+
+
+
+
 /* ## FOOTER ## */
 
 .pre-footer{
@@ -125,12 +157,14 @@ body {
 
 .footer{
   background-color: #404041;
+  min-height: 305px;
 }
 
 #logo-footer{
   display: block;
   width: 125px;
   height: 90px;
+  margin-top: 7px;
   background-image: url('../images/logo_pie.png');
 }
 
@@ -216,6 +250,34 @@ body {
   filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
 }
 
+#block-webform-client-block-1{
+  border-top: 1px solid #FFF;
+}
+#block-webform-client-block-1 label{
+  font-size: 15px;
+  font-weight: bold;
+  color: #FFF;
+  margin-bottom: 10px;
+}
+#block-webform-client-block-1 #edit-submitted-correo{
+  width: 100%;
+  border: none;
+  background-color: #58595B;
+  height: 40px;
+}
+#block-webform-client-block-1 .form-submit{
+  float: right;
+  border: none;
+  background-color: #0080C6;
+  border-radius: 30px;
+  font-size: 15px;
+  font-weight: bold;
+  color: #FFF;
+  text-transform: uppercase;
+  padding-left: 20px; padding-right: 20px;
+  text-align: center;
+  line-height:  40px;
+}
 
 /**************************************************/
 /**************************************************/
