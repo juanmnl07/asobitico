@@ -16,13 +16,15 @@ body {
   =LAYOUT
 --------------------------------------------- */
 .header .grid,
-.main-content,
 .footer,
 .pre-footer,
-.above-content .inner {
+.above-content .inner,
+.panel.grid,
+.layour .grid {
   max-width: 70em;
   margin: 0 auto;
   overflow: hidden;
+  float: none;
 }
 
 .one-sidebar .main {
