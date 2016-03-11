@@ -99,6 +99,44 @@ p{
   color: #404041;
 }
 
+.btn{
+  display: block;
+  border: 3px solid #CCC;
+  padding: 0px 15px;
+  text-align: center;
+  line-height: 45px;
+  font-size: 18px;
+  border-radius: 30px;
+}
+.btn.b-azul{
+  border-color: #0080C6;
+  color: #0080C6;
+}
+.btn.b-rojo{
+  border-color: #A63131;
+  color: #A63131;
+}
+.btn.l2{
+  line-height: 20px;
+}
+.a-center{
+  text-align: center;
+  overflow: hidden;
+  clear: both;
+  margin: 20px 0px;
+}
+.a-center a.btn{
+  display: inline-block;
+}
+
+.bg-gris{
+  background-color: #EFEFF0;
+}
+.bg-img-gris{
+  background-image: url('../images/bg_gris.png');
+  background-repeat: repeat;
+}
+
 /* ## HEADER ## */
 
 .header{
@@ -140,10 +178,97 @@ p{
 }
 
 
+/* ## INICIO ## */
 
+.panels-flexible-row{
+  padding: 50px 0px !important;
+}
 
+.primer-fila-interna{
+  margin-top: 40px;
+}
+.primer-fila-interna,
+.segunda-fila-interna{
+  clear: both;
+  overflow: hidden;
+  margin-bottom: 50px;
+}
+.caja-icono{
+  width: 200px;
+  min-height: 240px;
+  margin: 0 auto;
+  border-bottom: 3px solid #A63131;
+  background-color: #EFEFF0;
 
+  -webkit-border-top-left-radius: 20px;
+  -webkit-border-top-right-radius: 20px;
+  -moz-border-radius-topleft: 20px;
+  -moz-border-radius-topright: 20px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
 
+  text-align: center;
+  padding: 10px 15px;
+}
+
+.caja-icono strong{
+  display: block;
+  font-size: 20px;
+  color: #0080C6;
+  margin-bottom: 15px;
+}
+.caja-icono p{
+  /*line-height: 15px;*/
+  margin: 0px;
+}
+.caja-icono > div{
+  width: 60px; height: 60px;
+  margin: 0 auto;
+  margin-bottom: 15px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.caja-icono .icono-1{
+  background-image: url('../images/i_aporte_1.png');
+}
+.caja-icono .icono-2{
+  background-image: url('../images/i_aporte_2.png');
+}
+.caja-icono .icono-3{
+  background-image: url('../images/i_aporte_3.png');
+}
+.caja-icono .icono-4{
+  background-image: url('../images/i_aporte_4.png');
+}
+.caja-icono .icono-5{
+  background-image: url('../images/i_aporte_5.png');
+}
+.caja-icono .icono-6{
+  background-image: url('../images/i_aporte_6.png');
+}
+.caja-icono .icono-7{
+  background-image: url('../images/i_aporte_7.png');
+}
+.caja-icono .icono-8{
+  background-image: url('../images/i_aporte_8.png');
+}
+
+.pie-apoyenos{
+  text-align: center;
+}
+.pie-apoyenos p{
+  font-family: "Aleo", sans-serif;
+  font-size: 23px;
+  color: #58595B;
+  display: inline-block;
+}
+.pie-apoyenos a{
+  margin-left: 30px;
+}
+#queremos{
+  overflow: hidden;
+  clear: both;
+}
 
 
 
