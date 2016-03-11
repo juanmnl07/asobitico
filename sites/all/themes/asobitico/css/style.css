@@ -270,6 +270,29 @@ p{
   clear: both;
 }
 
+.alcance{
+
+}
+.alcance h3{
+  line-height: 20px;
+  font-weight: 500;
+}
+.alcance h3 a{
+  color: #CF722A;
+  font-size: 18px;
+}
+.alcance p{
+  font-size: 14px;
+  font-weight: normal;
+  color: #404041;
+  margin: 0px;
+}
+.alcance a{
+  display: block;
+  margin-top: 20px;
+  font-size: 13px;
+  color: #7D7E80;
+}
 
 
 /* ## FOOTER ## */
