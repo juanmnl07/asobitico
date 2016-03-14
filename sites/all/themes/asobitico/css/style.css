@@ -181,6 +181,104 @@ p{
 
 /* ## INICIO ## */
 
+.banner{
+  border-bottom: 5px solid #0080C6;
+}
+.front .flexslider{
+  border: 0px;
+  margin: 0px;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+.front .flexslider .flex-caption{
+  position: absolute;
+  top: 0px;
+  left: 7%;
+
+  height: 100%;
+  width: 565px;
+  padding: 30px 50px;
+
+  background: rgba(255, 255, 255, 0.7);
+}
+
+.front .flexslider .flex-caption .refran-nelson{
+  color: #404041;
+  font-size: 33px;
+  text-align: center;
+  line-height: 35px;
+  margin-bottom: 70px;
+}
+.front .flexslider .flex-caption .refran-nelson:before,
+.front .flexslider .flex-caption .refran-nelson:after{
+  display: block;
+  content: " ";
+  width: 50px; height: 50px;
+  position: relative;
+}
+.front .flexslider .flex-caption .refran-nelson:before{
+  top: 20px;
+  left: -20px;
+  border-top: 1px solid #404041;
+  border-left: 1px solid #404041;
+}
+.front .flexslider .flex-caption .refran-nelson:after{
+  float: right;
+  bottom: 57px;
+  right: -20px;
+  border-right: 1px solid #404041;
+  border-bottom: 1px solid #404041;
+}
+
+.front .flexslider .flex-caption .refran-nelson span{
+  font-size: 17px;
+  display: block;
+  clear: both;
+  overflow: hidden;
+  margin-top: 20px;
+}
+.front .flexslider .flex-caption p{
+  font-size: 20px;
+  text-align: center;
+  color: #000000;
+  line-height: 23px;
+}
+
+.enlaces-caption{
+  clear: both;
+  overflow: hidden;
+  margin-top: 70px;
+  text-align: center;
+}
+
+.btn.colorbox-load{
+  display: inline-block;
+  margin-right: 20px;
+  border-color: #0080C6;
+  color: #0080C6;
+  background-image: url('../images/play_btn.png');
+  background-repeat: no-repeat;
+  background-position: 93% 50%;
+  width: 193px;
+  line-height: 22px;
+  padding-right: 50px;
+}
+.btn.enlace-video{
+  display: inline-block;
+  border-color: #A63131;
+  background-color: #A63131;
+  color: #FFF;
+  width: 193px;
+  line-height: 22px;
+}
+
+
+
+
+
+
+
+
 .panels-flexible-row{
   padding: 50px 0px !important;
 }
@@ -521,7 +619,7 @@ p{
   top: 40%;
   width: 70px;
   height: 315px;
-
+  z-index: 99;
   -webkit-border-bottom-right-radius: 20px;
   -webkit-border-top-right-radius: 20px;
   -moz-border-radius-bottomright: 20px;
