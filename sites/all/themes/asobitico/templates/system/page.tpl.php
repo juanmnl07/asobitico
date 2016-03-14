@@ -56,18 +56,18 @@
 </div>
 </header>
 
-<?php if ($page['banner']): ?>
-  <section class="banner">
-      <?php print render($page['banner']); ?>
-    </section>
-<?php endif; // end Above Content ?>
-
 <?php if ($page['above_content']): ?>
   <section class="above-content">
     <div class="inner">
       <?php print render($page['above_content']); ?>
     </div>
   </section>
+<?php endif; // end Above Content ?>
+
+<?php if ($page['banner']): ?>
+  <section class="banner">
+      <?php print render($page['banner']); ?>
+    </section>
 <?php endif; // end Above Content ?>
 
 <div class="main-content">
@@ -82,7 +82,7 @@
     <a id="main-content"></a>
     <div class="main" role="main">
       <?php print render($title_prefix); ?>
-      <?php if ($title): ?><h1 class="title" id="page-title"><?php print $title; ?></h1><?php endif; ?>
+      <?php if ($title): ?><!--<h1 class="title" id="page-title"><?php print $title; ?></h1>--><?php endif; ?>
       <?php print render($title_suffix); ?>
 
       <?php if ($tabs): ?>
