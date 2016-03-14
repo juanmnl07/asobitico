@@ -101,7 +101,7 @@ p{
 
 .btn{
   display: block;
-  border: 3px solid #CCC;
+  border: 3px solid #FFF; color: #FFF;
   padding: 0px 15px;
   text-align: center;
   line-height: 45px;
@@ -112,6 +112,12 @@ p{
   border-color: #0080C6;
   color: #0080C6;
 }
+.btn.a-right{
+  float: right;
+}
+.btn.a-left{
+  float: left;
+}
 .btn.b-rojo{
   border-color: #A63131;
   color: #A63131;
@@ -120,6 +126,7 @@ p{
   line-height: 18px;
   padding: 5px 15px;
 }
+
 .a-center{
   text-align: center;
   overflow: hidden;
@@ -137,6 +144,15 @@ p{
   background-image: url('../images/bg_gris.png');
   background-repeat: repeat;
 }
+.bg-img-azul{
+  background-image: url('../images/bg_azul.png');
+  background-repeat: repeat;
+}
+.bg-img-rojo{
+  background-image: url('../images/bg_rojo.png');
+  background-repeat: repeat;
+}
+
 
 /* ## HEADER ## */
 
@@ -271,12 +287,6 @@ p{
   width: 193px;
   line-height: 22px;
 }
-
-
-
-
-
-
 
 
 .panels-flexible-row{
@@ -547,6 +557,108 @@ p{
 #cboxClose:hover{
   background-position: center;
 }
+
+
+/* QUIENES SOMOS*/
+
+.above-content{
+  min-height: 118px;
+  background: rgba(255, 255, 255, 0.7);
+  z-index: 99;
+  position: relative;
+}
+
+#block-easy-breadcrumb-easy-breadcrumb{
+  /*float: left;*/
+  padding-top: 20px;
+}
+#block-easy-breadcrumb-easy-breadcrumb span,
+#block-easy-breadcrumb-easy-breadcrumb a{
+ color: #404041;
+ font-size: 14px;
+}
+
+
+#block-block-4 h1{
+  font-family: "Aleo", sans-serif;
+  font-size: 34px;
+  font-weight: normal;
+  color: #404041;
+  margin-top: 10px;
+}
+#block-block-4 .gu{
+  padding: 0px;
+}
+.st_sharethis_large{
+  float: right;
+  width: 52px; height: 52px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.4);
+  text-align: center;
+  padding-top: 10px;
+}
+.st_sharethis_large .stButton .stLarge{
+  background-image: url('../images/i_compartir.png') !important;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+  width: 32px !important; height: 32px !important;
+}
+.st_sharethis_large .stButton .stLarge:hover{
+  background-position: center !important;
+}
+
+
+.not-front .banner .group-enlace-imagen{
+  max-width: 1280px;
+  margin: 0 auto;
+  position: relative;
+ 
+  top: -118px;
+  margin-bottom: -121px;
+}
+.banner .group-enlace-imagen{
+  margin: 0px; padding: 0px; border: 0px;
+}
+.banner .group-enlace-imagen .fieldset-wrapper{
+  position: relative;
+}
+.banner .group-enlace-imagen .field-name-field-enlace-video{
+  position: absolute;
+}
+
+.panels-flexible-dos_filas .pane-content h2{
+  font-size: 33px;
+  font-family: "Aleo", sans-serif;
+}
+
+
+#menu-lateral{
+
+}
+#menu-lateral ul{
+
+}
+#menu-lateral ul li{
+  
+}
+#menu-lateral ul li a{
+  display: block;
+  width: 100%;
+  height: 55px;
+  background-color: #EFEFF0;
+}
+
+.llamado-accion p{
+  font-size: 23px;
+  line-height: 30px;
+  font-family: "Aleo", sans-serif;
+  color: #FFF;
+  margin-bottom: 0px;
+}
+.llamado-accion a{
+  margin-top: 25px;
+}
+
 
 /* ## FOOTER ## */
 
