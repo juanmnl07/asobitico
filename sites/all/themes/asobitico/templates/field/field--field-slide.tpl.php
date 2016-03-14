@@ -1,68 +1,51 @@
 <?php
-					//exit(var_export('expression'));
-if ($items){
+$slides = '';
+	$style_name = 'slider_1280x800_';
+	foreach ($items as $item) {
+		$field_collection_item = $item['entity']['field_collection_item'];
+		foreach ($field_collection_item as $field_item) {
+			$url = "";
+			$field_caption = '';
+			$field_enlace1 = '';
+			$field_enlace2 = '';
+			$enlace1_title = '';
+			$enlace2_title = '';
 
-$slides ="";
+			if (isset($field_item['field_imagen']['#items'][0]['uri'])){
+				$url = '/sites/default/files/sliders/'.str_replace("public://slider/","",$field_item['field_imagen']['#items'][0]['uri']);
+			}
+
+			$url = image_style_url($style_name, $field_item['field_imagen']['#items'][0]['uri']);
+			image_style_create_derivative($style_name, $field_item['field_imagen']['#items'][0]['uri'], $url);
+
+			/*if (isset($field_item['field_enlace_1']['#items'][0]['#element']['url'])){
+				$field_enlace1 = $field_item['field_enlace_1']['#items'][0]['#element']['url'];
+			}
+
+			if (isset($field_item['field_enlace_1']['#items'][0]['#element']['title'])){
+				$enlace1_title = $field_item['field_enlace_1']['#items'][0]['#element']['title'];
+			}
+
+
+			if (isset($field_item['field_enlace_2']['#items'][0]['#element']['url'])){
+				$field_enlace2 = $field_item['field_enlace_2']['#items'][0]['#element']['url'];
+			}
+
+			if (isset($field_item['field_enlace_2']['#items'][0]['#element']['title'])){
+				$enlace2_title = $field_item['field_enlace_2']['#items'][0]['#element']['title'];
+			}*/
+
+			if (isset($field_item['field_caption']['#items'][0]['value'])){
+				$field_caption = '<p class="flex-caption">'.$field_item['field_caption']['#items'][0]['value'].'</p>';
+			}
+
+			$slides .= '<li><img src="'.$url.'" alt="" title=""/>'. $field_caption .'</li>';
+		}
+	}
 ?>
-<!-- Place somewhere in the <body> of your page -->
-<?php $conFormulario = 0; ?>
-<?php for ($i=0; $i < count($items); $i++) {
-	
-	$url = "";
-	$link="";
-	$link_title="";
-	$titulo_slide="";
-	$enlace = "";
-
-		if (isset($items[$i]['field_image']['#items'][0]['uri'])){
-			$url = '/sites/default/files/sliders/'.str_replace("public://sliders/","",$items[$i]['field_image']['#items'][0]['uri']);
-		}
-
-		if (isset($items[$i]['field_detalle']['#items'][0]['value'])){
-			$titulo_slide = $items[$i]['field_detalle']['#items'][0]['value'];
-		}
-
-		if (isset($items[$i]['field_formulario_busqueda']['#items'][0]['value'])){
-			$conFormulario = (int)$items[$i]['field_formulario_busqueda']['#items'][0]['value'];
-		}
-
-			if (isset($items[$i]['field_enlace']['#items'][0]['url'])){
-				$link_title = $items[$i]['field_enlace']['#items'][0]['title'];
-				$link = $items[$i]['field_enlace']['#items'][0]['url'];
-			}
-			if ($link == "" && $link_title == ""){
-				//generar bloque para el formulario web de la busqueda en el primer slide
-				if((drupal_is_front_page() || (arg(0) == "catalogo-de-viajes-en-oferta")) && ($conFormulario == 1)){
-					$formulario_busqueda = module_invoke('webform', 'block_view', 'client-block-63');
-					$slides .= "<li class='primero'><img src='".$url."' /><div class='flex-caption'>".$titulo_slide.render($formulario_busqueda['content'])."</div></li>";	
-				} else {
-					$slides .= "<li><img src='".$url."' /><div class='flex-caption'>".$titulo_slide."</div></li>";	
-				}
-			} else {
-				$enlace = "<div class='enlace-wrapper'><div class='enlace'><a href='".$link."' target='_blank'>".$link_title."</a></div></div>";
-				$slides .= "<li><img src='".$url."' /><div class='flex-caption'>".$titulo_slide.$enlace."</div></li>";
-			}
-		
-
-} ?>
+<?php flexslider_add();  ?>
 <div class="flexslider">
   	<ul class="slides">
 		<?php print $slides ?>
 	</ul>
-    <div class="sombra">&nbsp;</div>
 </div>
-<?php 	flexslider_add(); } ?>
-<script type="text/javascript">
-(function( $ ){
-	$(document).ready(function(){
-		$('.flexslider').flexslider({
-		    animation: "fade",
-		    animationLoop: true,
-		    pauseOnHover: true,
-		    controlsContainer: ".container-nav",
-		    directionNav: true,
-			controlNav: false
-	  	});
-	});
-})(jQuery);
-</script>
