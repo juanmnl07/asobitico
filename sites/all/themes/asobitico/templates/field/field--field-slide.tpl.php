@@ -1,6 +1,6 @@
 <?php
 $slides = '';
-	$style_name = 'slider_1280x800_';
+	$style_name = 'slider_1280x590_';
 	foreach ($items as $item) {
 		$field_collection_item = $item['entity']['field_collection_item'];
 		foreach ($field_collection_item as $field_item) {
@@ -36,7 +36,7 @@ $slides = '';
 			}*/
 
 			if (isset($field_item['field_caption']['#items'][0]['value'])){
-				$field_caption = '<p class="flex-caption">'.$field_item['field_caption']['#items'][0]['value'].'</p>';
+				$field_caption = '<div class="flex-caption">'.$field_item['field_caption']['#items'][0]['value'].'</div>';
 			}
 
 			$slides .= '<li><img src="'.$url.'" alt="" title=""/>'. $field_caption .'</li>';
