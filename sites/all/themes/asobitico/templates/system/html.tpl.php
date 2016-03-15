@@ -85,5 +85,16 @@
   <p class="texto-vertical">Siga a ASOBITICO</p>
 </div>
 
+<?php if(current_path() == 'forme-parte-de-asobitico'){ ?>
+  <div class="menu-anclas" id="menu-anclas-forme-parte-de-asobitico">
+    <ul>
+      <li><a href="#ancla-como-ayudo">¿Cómo ayudo?</a></li>
+      <li><a href="#ancla-beneficios">Beneficios</a></li>
+      <li><a href="#ancla-asesoria">Asesoría</a></li>
+      <li><a href="#ancla-costo-afiliacion">Afiliación</a></li>
+    </ul>
+  </div>
+<?php } ?>
+
 </body>
 </html>
