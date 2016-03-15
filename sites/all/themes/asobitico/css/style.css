@@ -957,6 +957,6 @@ p{
   float: left;
 }
 
-.view-nuestro-equipo .views-row-even .ne {
+.view-nuestro-equipo .views-row-even.ne {
   float: right;
 }
