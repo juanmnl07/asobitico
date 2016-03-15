@@ -74,14 +74,14 @@ body {
 */
 
 
-.front h2{
+/*.front */h2{
   font-family: "Aleo", sans-serif;
   text-align: center;
   font-size: 33px;
   line-height: 36px;
   font-weight: normal;
 }
-.front h2 + p{
+/*.front */h2 + p{
   text-align: center;
 }
 .rojo{
@@ -107,6 +107,7 @@ p{
   line-height: 45px;
   font-size: 18px;
   border-radius: 20px;
+  min-width: 200px;
 }
 .btn:hover{
   color: #FFF;
@@ -124,6 +125,10 @@ p{
 .btn.b-rojo{
   border-color: #A63131;
   color: #A63131;
+}
+.btn.b-naranja{
+  border-color: #CF722A;
+  color: #CF722A;
 }
 .btn.l2{
   line-height: 18px;
@@ -662,6 +667,7 @@ p{
   line-height: 33px;
   font-family: "Aleo", sans-serif;
   color: #0080C6;
+  text-align: left;
 }
 .panels-flexible-dos_filas .pane-content h3{
   font-size: 22px;
@@ -897,8 +903,52 @@ p{
   font-size: 13px;
 }
 
-/*    */
+/*  FORME PARTE  */
 
+.page-forme-parte-de-asobitico .panel-flexible h2{
+  line-height: 47px;
+  margin-bottom: 40px;
+}
+
+.panels-flexible-row-cuatro_filas-1 .checkul ul{
+
+}
+.panels-flexible-row-cuatro_filas-1 .checkul ul li:before{
+  display: block;
+  content: "";
+}
+.panels-flexible-row-cuatro_filas-1 .checkul ul li{
+  background-image: url('../images/li.png');
+  background-repeat: no-repeat;
+  background-position: 0% 10%;
+  padding-left: 40px;
+  text-indent: 40px;
+  margin-bottom: 30px;
+  line-height: 27px;
+}
+
+
+#panels-ipe-regionid-tercero h2{
+  margin-bottom: 60px;
+}
+#panels-ipe-regionid-tercero .btn{
+  margin: 40px 0px;
+}
+#panels-ipe-regionid-tercero p{
+  line-height: 25px;
+}
+#panels-ipe-regionid-tercero p a{
+  color: #404041;
+}
+.llamado-accion .info_llamado_p{
+  margin-top: 20px;
+}
+.llamado-accion .info_llamado_p p{
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: normal;
+  font-family: "ProximaNova", sans-serif;
+}
 
 
 /* ## FOOTER ## */
