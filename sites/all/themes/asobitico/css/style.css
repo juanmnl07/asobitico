@@ -102,11 +102,14 @@ p{
 .btn{
   display: block;
   border: 3px solid #FFF; color: #FFF;
-  padding: 0px 15px;
+  padding: 0px 25px;
   text-align: center;
   line-height: 45px;
   font-size: 18px;
   border-radius: 20px;
+}
+.btn:hover{
+  color: #FFF;
 }
 .btn.b-azul{
   border-color: #0080C6;
@@ -275,7 +278,7 @@ p{
   background-image: url('../images/play_btn.png');
   background-repeat: no-repeat;
   background-position: 93% 50%;
-  width: 193px;
+  width: 195px;
   line-height: 22px;
   padding-right: 50px;
 }
@@ -426,14 +429,14 @@ p{
   left: -20px;
 }
 
-#views-slideshow-bxslider-1{
+#bxslider_views_slideshow_main_nodequeue_1-block #views-slideshow-bxslider-1{
   margin: 30px 0px;
 }
 
-#views-slideshow-bxslider-1 .bx-wrapper .bx-viewport{
+#bxslider_views_slideshow_main_nodequeue_1-block #views-slideshow-bxslider-1 .bx-wrapper .bx-viewport{
 
 }
-#views-slideshow-bxslider-1 .bx-wrapper .bx-viewport li{
+#bxslider_views_slideshow_main_nodequeue_1-block #views-slideshow-bxslider-1 .bx-wrapper .bx-viewport li{
   height: 97px;
   background-color: #FFF;
   line-height: normal;
@@ -647,10 +650,23 @@ p{
   padding: 10px 20px;
 }
 
+.panels-flexible-dos_filas .panels-flexible-region{
+  padding: 0 10px;
+}
+.panels-flexible-dos_filas .panels-flexible-region.gu-3-4{
+  padding: 0 25px 0px 10px;
+}
+
 .panels-flexible-dos_filas .pane-content h2{
   font-size: 33px;
   line-height: 33px;
   font-family: "Aleo", sans-serif;
+  color: #0080C6;
+}
+.panels-flexible-dos_filas .pane-content h3{
+  font-size: 22px;
+  font-family: "Aleo", sans-serif;
+  color: #0080C6;
 }
 
 #menu-lateral ul{
@@ -744,7 +760,63 @@ p{
   clear: both;
   margin: 15px 0px;
 }
+.ms{
+  min-height: 445px;
+  border-bottom: 3px solid #EFEFF0;
+}
 
+.botones-historia{
+  float: right;
+  clear: both;
+  margin: 50px 0px;
+}
+.botones-historia a{
+  float: left;
+  margin-left: 20px;
+}
+
+.view-nuestro-equipo .views-row{
+  /*width: 100%;*/
+  border-bottom: 3px solid #EFEFF0;
+  padding-bottom: 15px; margin-bottom: 20px;
+}
+.view-nuestro-equipo .views-row h4{
+  font-size: 19px;
+  color: #0080C6;
+  font-weight: normal;
+  line-height: 19px;
+  margin-bottom: 10px;
+}
+.view-nuestro-equipo .views-row .field-type-text{
+  font-size: 15px;
+  font-weight: normal;
+}
+.view-nuestro-equipo .views-row .field-name-field-texto-enlace{
+  margin-bottom: 10px;
+}
+.view-nuestro-equipo .views-row .field-name-field-cargo{
+  font-weight: bold;
+}
+
+
+
+
+#bxslider_views_slideshow_main_nodequeue_1-block_queue_equipo_trabajo .bx-viewport ul li{
+  height: 185px;
+  position: relative;
+}
+
+#bxslider_views_slideshow_main_nodequeue_1-block_queue_equipo_trabajo .bx-viewport ul li .group-nombre-cargo{
+  border: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+#bxslider_views_slideshow_main_nodequeue_1-block_queue_equipo_trabajo .bx-viewport ul li .field-name-popup-colaborador a{
+  display: block;
+  position: absolute;
+  top: 0px;
+}
 
 
 /* ## FOOTER ## */
