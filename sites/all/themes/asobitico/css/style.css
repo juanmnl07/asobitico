@@ -881,3 +881,10 @@ p{
 
 /**************************************************/
 /**************************************************/
+.view-nuestro-equipo .views-row {
+  float: left;
+}
+
+.view-nuestro-equipo .views-row-even .ne {
+  float: right;
+}
