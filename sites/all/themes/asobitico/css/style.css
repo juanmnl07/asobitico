@@ -201,7 +201,34 @@ p{
   float: left;
   margin-top: 18px;
 }
-
+#block-menu-block-1{
+  float: left;
+  margin: 65px 0px 0px 40px;
+}
+#block-menu-block-1 .menu{
+  list-style: none;
+}
+#block-menu-block-1 .menu li:first-child{
+  margin-left: 0px;
+}
+#block-menu-block-1 .menu li{
+  display: inline-block;
+  margin: 0px; padding: 0px;
+  margin-right: 35px;
+}
+#block-menu-block-1 .menu li a{
+  font-size: 14px;
+  color: #0080C6;
+  font-weight: normal;
+  display: table-cell;
+  height: 30px;
+  max-width: 100px;
+  line-height: 18px;
+  vertical-align: top;
+}
+#block-menu-block-1 .menu li a.active{
+  font-weight: bold;
+}
 
 /* ## INICIO ## */
 
@@ -452,7 +479,7 @@ p{
 
 .view-blog .views-row > div{
   width: 325px;
-  min-height: 395px;
+  min-height: 415px;
   background-color: #EFEFF0;
 }
 .view-blog .views-row > div .field-name-field-imagen img{
@@ -989,6 +1016,174 @@ p{
 }
 
 
+/* COMUNIDAD BI */
+
+#quicktabs-mapa .item-list{
+  text-align: right;
+  width: 50%;
+  height: 40px;
+  margin: 30px auto;
+  position: relative;
+}
+#quicktabs-mapa .item-list .quicktabs-tabs{
+  position: absolute;
+  right: 0px;
+  z-index: 99;
+}
+#quicktabs-mapa .quicktabs-tabs li{
+  display: inline-block;
+  margin: 0px; padding: 0px;
+}
+#quicktabs-mapa .quicktabs-tabs li a{
+  display: block;
+  width: 45px;
+  height: 43px;
+  border-radius: 10px;
+  overflow: hidden;
+  text-indent: 50px; 
+  background-repeat: no-repeat;
+  background-image: url('../images/icons_map.png');
+}
+
+
+#quicktabs-mapa .quicktabs-tabs li a#quicktabs-tab-mapa-0{
+  background-position: 0px 0px;
+}
+#quicktabs-mapa .quicktabs-tabs li a#quicktabs-tab-mapa-1{
+  background-position: -48px 0px;
+}
+
+#quicktabs-mapa .view-filters .views-exposed-form .views-exposed-widgets,
+#quicktabs-mapa .view-filters .views-exposed-form .views-exposed-widget{
+  padding: 0px; margin: 0px;
+}
+#quicktabs-mapa .view-filters{
+  width: 50%;
+  left: 0px;
+  right: 0px;
+  margin: 0 auto;
+  position: absolute;
+  top: -84px;
+}
+#quicktabs-mapa .views-widget-filter-field_colegio_tid select{
+  width: 80%;
+  height: 40px;
+  border: 1px solid #808082;
+  font-size: 18px;
+  font-family: "ProximaNova", sans-serif;
+  color: #909295;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  background-image: url('../images/select.png');
+  background-repeat: no-repeat;
+  background-position: 97% 50%;
+  padding: 7px 12px;
+  border-radius: 10px;
+  outline: none;
+}
+
+#quicktabs-container-mapa .quicktabs-tabpage .view-colegios .view-content{
+  clear: both;
+  /*overflow: hidden;*/
+  margin-top: 45px;
+}
+#quicktabs-tabpage-mapa-0 .view-content{
+  display: block;
+  clear: both;
+  position: relative;
+  width: 730px;
+  height: 700px;
+  margin: 0 auto;
+  background-image: url('../images/mapa_cr.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#quicktabs-tabpage-mapa-0 .view-content .contextual-links-region{
+  position: static;
+}
+#quicktabs-tabpage-mapa-0 .view-content .pin{
+  position: absolute;
+  width: 19px;
+  height: 23px;
+  background-image: url('../images/icons_map.png');
+  cursor: pointer;
+}
+#quicktabs-tabpage-mapa-0 .view-content .pin.pin-azul{
+  background-position: -96px -85px;
+}
+#quicktabs-tabpage-mapa-0 .view-content .pin.pin-rojo{
+  background-position: -94px -1px;
+}
+
+
+#quicktabs-tabpage-mapa-0 .view-content .pin .popup{
+  position: absolute;
+  width: 320px;
+  bottom: 46px;
+  left: -70px;
+  /*display: none;*/
+  padding: 20px 35px;
+  border-radius: 15px;
+  text-align: center;
+}
+#quicktabs-tabpage-mapa-0 .view-content .pin .popup strong{
+  font-size: 19px;
+  font-family: "Aleo", sans-serif;
+  font-weight: normal;
+  display: block;
+  clear: both;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #FFFFFF;
+  color: #FFF;
+}
+#quicktabs-tabpage-mapa-0 .view-content .pin .popup a{
+  font-size: 16px;
+  color: #FFF;
+  display: block;
+}
+#quicktabs-tabpage-mapa-0 .view-content .pin .popup .coordinador{
+  font-size: 16px;
+  color: #FFF;
+  margin-top: 8px;
+}
+
+#quicktabs-tabpage-mapa-0 .view-content .pin.pin-azul .popup{
+  background: rgba(0, 128, 198, 0.9);
+  /*background-color: #0080C6;*/
+}
+#quicktabs-tabpage-mapa-0 .view-content .pin.pin-rojo .popup{
+  background: rgba(166, 49, 49, 0.9);
+  /*background-color: #A63131;*/
+}
+#quicktabs-tabpage-mapa-0 .view-content .pin .popup:after {
+  top: 100%;
+  left: 25%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  /*border-color: rgba(213, 60, 60, 0);
+  border-top-color: #d53c3c;*/
+  border-width: 20px;
+  margin-left: -20px;
+}
+#quicktabs-tabpage-mapa-0 .view-content .pin.pin-azul .popup:after{
+  border-top-color: rgba(0, 128, 198, 0.9);
+  /*border-top-color: #0080C6;*/
+}
+#quicktabs-tabpage-mapa-0 .view-content .pin.pin-rojo .popup:after{
+  border-top-color: rgba(166, 49, 49, 0.9);
+  /*border-top-color: #A63131;*/
+}
+
+#quicktabs-tabpage-mapa-0 .view-content .pin:hover .popup{
+  display: block;
+}
 
 
 /* ## FOOTER ## */
