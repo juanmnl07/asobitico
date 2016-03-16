@@ -21,6 +21,36 @@
 			$('#menu-lateral a[href^="http://'+location.hostname+'/' + location.pathname.split("/")[1] + '"]').addClass('active');
 		}
 
+		/* Script efecto scroll a las anclas */
+		$('a[href^="#"]').on('click',function (e) {
+			e.preventDefault();
+			var target = this.hash,
+			$target = $(target);
+		
+			$('html, body').stop().animate({
+				'scrollTop': $target.offset().top
+			}, 900, 'swing', function () {
+				window.location.hash = target;
+			});
+		});
+
+		$('.menu-anclas li a').on('click', function(){
+			$('.menu-anclas li a').removeClass("activ");
+			$(this).addClass("activ");
+		});
+
+		$('.pin.clic').live('click', function(){
+			$('.pin').addClass('clic').find('.popup').hide();
+			var divpopup = $(this).find('.popup');
+			//if(!divpopup.hasClass('act')){
+				$(this).removeClass('clic').find('.popup').addClass('act').show();
+			//}
+		});
+		$('.cerrar-popup').live('click', function(){
+			$('.pin').addClass('clic').find('.popup').removeClass('act').hide();
+		});
+
+
 		$('#views-exposed-form-colegios-block-pin-mapa #edit-field-colegio-tid').live('change', function(){
 			cambiar_clase($(this));
 			$('#views-exposed-form-colegios-block-pin-mapa #edit-submit-colegios').trigger('click');
@@ -44,42 +74,6 @@
 			cambiar_clase($(this));
 			$(boton_colegio2).trigger('click');
 		});
-
-		/* Script efecto scroll a las anclas */
-		$('a[href^="#"]').on('click',function (e) {
-			e.preventDefault();
-			var target = this.hash,
-			$target = $(target);
-		
-			$('html, body').stop().animate({
-				'scrollTop': $target.offset().top
-			}, 900, 'swing', function () {
-				window.location.hash = target;
-			});
-		});
-
-		$('.menu-anclas li a').on('click', function(){
-			$('.menu-anclas li a').removeClass("activ");
-			$(this).addClass("activ");
-		});
-
-
-		/*$(window).scroll(function(){
-		  scrolls = $(window).scrollTop();
-			var scrollPos = $(document).scrollTop();
-	    $('.menu-anclas li a').each(function (indice, elemento) { console.log(indice);
-	        var currlink = $(this).find('a'); console.log(currlink.attr("href"));
-	        var refelement = $(currlink.attr("href"));
-	        refelement = refelement.offset();
-	        if (refelement.top <= scrollPos) {
-	            $('.menu-anclas ul li a').removeClass("activ");
-	            currlink.addClass("activ");
-	        }
-	        else{
-	            currlink.removeClass("activ");
-	        }
-	    });
-		});*/
 
 
 	});
