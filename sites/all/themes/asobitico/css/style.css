@@ -1036,8 +1036,8 @@ p{
 }
 #quicktabs-mapa .quicktabs-tabs li a{
   display: block;
-  width: 45px;
-  height: 43px;
+  width: 48px;
+  height: 44px;
   border-radius: 10px;
   overflow: hidden;
   text-indent: 50px; 
@@ -1054,19 +1054,40 @@ p{
 }*/
 
 #quicktabs-mapa .quicktabs-tabs li a#quicktabs-tab-mapa-0.tab-azul{
-  background-position: 0px 0px;
+  background-position: -98px 1px;
 }
 #quicktabs-mapa .quicktabs-tabs li a#quicktabs-tab-mapa-1.tab-azul{
-  background-position: -48px 0px;
+  background-position: -145px 0px;
 }
 
 
 #quicktabs-mapa .quicktabs-tabs li a#quicktabs-tab-mapa-0.tab-rojo{
-
+  background-position: 0px 0px;
 }
 #quicktabs-mapa .quicktabs-tabs li a#quicktabs-tab-mapa-1.tab-rojo{
-
+  background-position: -48px 0px;
 }
+
+
+#quicktabs-mapa .quicktabs-tabs li.active a#quicktabs-tab-mapa-0.tab-azul,
+#quicktabs-mapa .quicktabs-tabs li a#quicktabs-tab-mapa-0.tab-azul:hover{
+  background-position: -98px -44px !important;
+}
+#quicktabs-mapa .quicktabs-tabs li.active a#quicktabs-tab-mapa-1.tab-azul,
+#quicktabs-mapa .quicktabs-tabs li a#quicktabs-tab-mapa-1.tab-azul:hover{
+  background-position: -145px -44px !important;
+}
+#quicktabs-mapa .quicktabs-tabs li.active a#quicktabs-tab-mapa-0.tab-rojo,
+#quicktabs-mapa .quicktabs-tabs li a#quicktabs-tab-mapa-0.tab-rojo:hover{
+  background-position: 0px -44px !important;
+}
+#quicktabs-mapa .quicktabs-tabs li.active a#quicktabs-tab-mapa-1.tab-rojo,
+#quicktabs-mapa .quicktabs-tabs li a#quicktabs-tab-mapa-1.tab-rojo:hover{
+  background-position: -48px -44px !important;
+}
+
+
+
 
 
 
@@ -1084,7 +1105,7 @@ p{
 }
 #quicktabs-mapa .views-widget-filter-field_colegio_tid select{
   width: 80%;
-  height: 40px;
+  height: 44px;
   border: 1px solid #808082;
   font-size: 18px;
   font-family: "ProximaNova", sans-serif;
@@ -1122,16 +1143,16 @@ p{
 }
 #quicktabs-tabpage-mapa-0 .view-content .pin{
   position: absolute;
-  width: 19px;
-  height: 23px;
+  width: 20px;
+  height: 26px;
   background-image: url('../images/icons_map.png');
   cursor: pointer;
 }
 #quicktabs-tabpage-mapa-0 .view-content .pin.pin-azul{
-  background-position: -96px -85px;
+  background-position: -98px -89px;
 }
 #quicktabs-tabpage-mapa-0 .view-content .pin.pin-rojo{
-  background-position: -94px -1px;
+  background-position: 0px -88px;
 }
 
 
@@ -1208,6 +1229,7 @@ p{
 #quicktabs-tabpage-mapa-1 .view-content .views-row{
   border-bottom: 3px solid #EFEFF0;
   margin-bottom: 30px;
+  padding-bottom: 10px;
   /*width: 430px;*/
 }
 
