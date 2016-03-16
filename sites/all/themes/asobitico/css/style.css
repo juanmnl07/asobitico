@@ -1046,16 +1046,33 @@ p{
 }
 
 
-#quicktabs-mapa .quicktabs-tabs li a#quicktabs-tab-mapa-0{
-  background-position: 0px 0px;
+/*#quicktabs-mapa .quicktabs-tabs li a#quicktabs-tab-mapa-0{
+  
 }
 #quicktabs-mapa .quicktabs-tabs li a#quicktabs-tab-mapa-1{
+  
+}*/
+
+#quicktabs-mapa .quicktabs-tabs li a#quicktabs-tab-mapa-0.tab-azul{
+  background-position: 0px 0px;
+}
+#quicktabs-mapa .quicktabs-tabs li a#quicktabs-tab-mapa-1.tab-azul{
   background-position: -48px 0px;
 }
 
+
+#quicktabs-mapa .quicktabs-tabs li a#quicktabs-tab-mapa-0.tab-rojo{
+
+}
+#quicktabs-mapa .quicktabs-tabs li a#quicktabs-tab-mapa-1.tab-rojo{
+
+}
+
+
+
 #quicktabs-mapa .view-filters .views-exposed-form .views-exposed-widgets,
 #quicktabs-mapa .view-filters .views-exposed-form .views-exposed-widget{
-  padding: 0px; margin: 0px;
+  padding: 0px; margin: 0px; float: none;
 }
 #quicktabs-mapa .view-filters{
   width: 50%;
@@ -1123,11 +1140,17 @@ p{
   width: 320px;
   bottom: 46px;
   left: -70px;
-  /*display: none;*/
+  display: none;
   padding: 20px 35px;
   border-radius: 15px;
   text-align: center;
+  -webkit-transition: all 600ms ease;
+  transition: all 600ms ease;  
 }
+#quicktabs-tabpage-mapa-0 .view-content .pin:hover .popup{
+  display: block;
+}
+
 #quicktabs-tabpage-mapa-0 .view-content .pin .popup strong{
   font-size: 19px;
   font-family: "Aleo", sans-serif;
@@ -1181,9 +1204,32 @@ p{
   /*border-top-color: #A63131;*/
 }
 
-#quicktabs-tabpage-mapa-0 .view-content .pin:hover .popup{
-  display: block;
+
+#quicktabs-tabpage-mapa-1 .view-content .views-row{
+  border-bottom: 3px solid #EFEFF0;
+  margin-bottom: 30px;
+  /*width: 430px;*/
 }
+
+#quicktabs-tabpage-mapa-1 .view-content .views-row .ds-2col-fluid > .group-left{
+  width: 120px;
+}
+#quicktabs-tabpage-mapa-1 .view-content .views-row .ds-2col-fluid > .group-right{
+  width: 320px;
+}
+
+#quicktabs-tabpage-mapa-1 .view-content .views-row .ds-2col-fluid > .group-right h4{
+  font-size: 19px;
+  color: #0080C6;
+  font-weight: normal;
+  font-family: "Aleo", sans-serif;
+}
+#quicktabs-tabpage-mapa-1 .view-content .views-row .ds-2col-fluid > .group-right .field{
+  font-weight: normal;
+  font-size: 15px;
+  color: #404041;
+}
+
 
 
 /* ## FOOTER ## */
