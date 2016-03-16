@@ -1038,10 +1038,10 @@ p{
 .ne{
   display: inline-block;
 }
-.view-nuestro-equipo .views-row {
-  /*float: left;*/
-}
-
-.view-nuestro-equipo .views-row-even.ne {
+.views-row-even.ne {
   float: right;
 }
+
+/*Added by Juan - map*/
+#views-exposed-form-colegios-block-pin-mapa .description, #views-exposed-form-colegios-block-listado-colegios .description {display: none;}
+#views-exposed-form-colegios-block-pin-mapa .views-submit-button, #views-exposed-form-colegios-block-listado-colegios .views-submit-button {visibility: hidden;}
