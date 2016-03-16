@@ -33,6 +33,8 @@
 		var boton_colegio = view_listado + ' #edit-submit-colegios';
 		var boton_colegio2 = view_listado + ' #edit-submit-colegios--2';
 
+		$('#quicktabs-mapa ul li a').addClass('tab-azul');
+
 		$(selector_colegio).live('change', function(){
 			cambiar_clase($(this));
 			$(boton_colegio).trigger('click');
