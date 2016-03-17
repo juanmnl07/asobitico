@@ -1018,6 +1018,41 @@ p{
 
 /* COMUNIDAD BI */
 
+.sub-menu{
+  padding: 0px !important;
+  border-top: 1px solid #CED0D1;
+}
+.sub-menu .menu{
+  height: 75px;
+  font-size: 0;
+  text-align: center;
+}
+.sub-menu .menu li{
+  display: inline-block;
+  padding: 0px; margin: 0px;
+  border-right: 1px solid #CED0D1;
+}
+.sub-menu .menu li:first-child{
+  border-left: 1px solid #CED0D1;
+}
+.sub-menu .menu li a{
+  display: table-cell;
+  width: auto;
+  max-width: 230px;
+  height: 75px;
+  padding: 0px 20px;
+  vertical-align: middle;
+  line-height: 18px;
+  text-align: center;
+  font-size: 15px;
+  font-weight: normal;
+  color: #404041;
+}
+
+.sub-menu .menu li:hover,
+.sub-menu .menu li.active{
+  background-color: #FFF;
+}
 #quicktabs-mapa .item-list{
   text-align: right;
   width: 50%;
@@ -1045,6 +1080,10 @@ p{
   background-image: url('../images/icons_map.png');
 }
 
+#quicktabs-mapa .quicktabs-tabs li .ajax-progress{
+  position: absolute;
+  top: 0px;
+}
 
 /*#quicktabs-mapa .quicktabs-tabs li a#quicktabs-tab-mapa-0{
   
@@ -1101,11 +1140,11 @@ p{
   right: 0px;
   margin: 0 auto;
   position: absolute;
-  top: -84px;
+  top: -82px;
 }
 #quicktabs-mapa .views-widget-filter-field_colegio_tid select{
   width: 80%;
-  height: 44px;
+  height: 42px;
   border: 1px solid #808082;
   font-size: 18px;
   font-family: "ProximaNova", sans-serif;
@@ -1156,6 +1195,19 @@ p{
 }
 
 
+#quicktabs-tabpage-mapa-0 .view-content .pin .popup .cerrar-popup{
+  display: block;
+  width: 20px; height: 20px;
+  position: absolute;
+  right: 10px; top: 10px;
+  text-align: center;
+  line-height: 20px;
+  color: #FFF;
+  text-decoration: none;
+  cursor: pointer;
+  z-index: 200;
+}
+
 #quicktabs-tabpage-mapa-0 .view-content .pin .popup{
   position: absolute;
   width: 320px;
@@ -1165,12 +1217,14 @@ p{
   padding: 20px 35px;
   border-radius: 15px;
   text-align: center;
+  word-break: break-all;
+  z-index: 99;
   -webkit-transition: all 600ms ease;
   transition: all 600ms ease;  
 }
-#quicktabs-tabpage-mapa-0 .view-content .pin:hover .popup{
+/*#quicktabs-tabpage-mapa-0 .view-content .pin:hover .popup{
   display: block;
-}
+}*/
 
 #quicktabs-tabpage-mapa-0 .view-content .pin .popup strong{
   font-size: 19px;
@@ -1252,7 +1306,24 @@ p{
   color: #404041;
 }
 
+.pager--infinite-scroll{
+  clear: both;
+  overflow: hidden;
+  margin: 50px 0px;
+}
 
+.pager--infinite-scroll a{
+  display: block;
+  border: 3px solid #909295;
+  color: #909295;
+  padding: 0px 25px;
+  text-align: center;
+  line-height: 45px;
+  font-size: 18px;
+  border-radius: 20px;
+  width: 250px;
+  margin: 0 auto;
+}
 
 /* ## FOOTER ## */
 
