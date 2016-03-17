@@ -50,10 +50,10 @@
 			$('.pin').addClass('clic').find('.popup').removeClass('act').hide();
 		});
 
-
-		$('#views-exposed-form-colegios-block-pin-mapa #edit-field-colegio-tid').live('change', function(){
+		var view_mapa = "#views-exposed-form-colegios-block-pin-mapa";
+		$(view_mapa + ' #edit-field-colegio-tid').live('change', function(){
 			cambiar_clase($(this));
-			$('#views-exposed-form-colegios-block-pin-mapa #edit-submit-colegios').trigger('click');
+			$(view_mapa + ' #edit-submit-colegios').trigger('click');
 		});
 
 		var view_listado = "#views-exposed-form-colegios-block-listado-colegios";
@@ -66,19 +66,19 @@
 		$('#quicktabs-mapa ul li a').addClass('tab-azul');
 
 		$(selector_colegio).live('change', function(){
-			cambiar_clase($(this));
+			cambiar_clase($(this), view_mapa);
 			$(boton_colegio).trigger('click');
 		});
 
 		$(selector_colegio2).live('change', function(){
-			cambiar_clase($(this));
+			cambiar_clase($(this), view_listado);
 			$(boton_colegio2).trigger('click');
 		});
 
 
 	});
 
-	function cambiar_clase(object){
+	function cambiar_clase(object, vista){
 		var valor_select_pin = $(object).val();
 		var class_tab = 'tab-azul';
 		var class_to_remove = 'tab-rojo';
@@ -86,6 +86,11 @@
 			class_to_remove = 'tab-azul';
 			class_tab = 'tab-rojo';
 		}
+
+		alert(vista + " #edit-field-colegio-tid option[value='" + valor_select_pin + "']");
+
+		$(vista + " #edit-field-colegio-tid option[value='" + valor_select_pin + "']").attr("selected","selected");
+
 		$('#quicktabs-mapa ul li a').removeClass(class_to_remove);
 		$('#quicktabs-mapa ul li a').addClass(class_tab);
 	}
