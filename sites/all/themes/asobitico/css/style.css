@@ -1350,6 +1350,48 @@ p{
   margin: 0 auto;
 }
 
+/* EVENTOS */
+
+#panels-ipe-paneid-40{
+  margin-top: 80px;
+}
+
+.node-eventos h3{
+  font-size: 24px;
+  font-weight: normal;
+  font-family: "Aleo", sans-serif;
+  text-align: left;
+  line-height: 24px;
+  margin: 0px;
+  margin-bottom: 30px;
+}
+.node-eventos.view-mode-evento_der h3{
+  color: #A63131;
+}
+.node-eventos.view-mode-evento_izq h3{
+  color: #0080C6;
+}
+
+.node-eventos .bx-controls-direction{
+  width: 140px;
+  position: relative;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+.node-eventos .bx-wrapper .bx-controls-direction a{
+  position: static;
+  margin: 0px;
+  display: inline-block;
+}
+.node-eventos .bx-wrapper .bx-controls-direction a.disabled{
+  visibility: hidden !important;
+}
+.node-eventos .bx-controls-direction .bx-prev{
+
+}
+.node-eventos .bx-controls-direction .bx-next{
+  float: right;
+}
 /* ## FOOTER ## */
 
 .pre-footer{
