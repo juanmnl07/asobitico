@@ -95,6 +95,6 @@
     </ul>
   </div>
 <?php } ?>
-
+<script type="text/javascript" src="https://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
 </body>
 </html>
