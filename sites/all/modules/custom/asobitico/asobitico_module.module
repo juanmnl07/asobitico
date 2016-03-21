@@ -4,8 +4,11 @@
  */
 function asobitico_module_block_info() {
   $blocks = array();
-  $blocks['preguntas_frecuentes'] = array(
+  $blocks['preguntas_frecuentes_paises'] = array(
     'info' => t('Frequently asked questions by country'),
+  );
+  $blocks['preguntas_frecuentes_estudiantes'] = array(
+    'info' => t('Frequently asked questions to students'),
   );
   return $blocks;
 }
@@ -17,7 +20,7 @@ function asobitico_module_block_view($delta='') {
   $block = array();
   
   switch($delta) {
-    case 'preguntas_frecuentes' :
+    case 'preguntas_frecuentes_paises' :
       $block['content'] = array(
         '#markup' => asobitico_module_preguntas_frecuentes_por_paises(),
         '#attached' => array(
@@ -31,11 +34,47 @@ function asobitico_module_block_view($delta='') {
         ),
       );
     break;
+    case 'preguntas_frecuentes_estudiantes' :
+      $block['content'] = array(
+        '#markup' => asobitico_module_preguntas_frecuentes(21),
+        );
+    break;
+    case 'preguntas_frecuentes_profesores' :
+      $block['content'] = array(
+        '#markup' => asobitico_module_preguntas_frecuentes(22),
+        );
+    break;
+    case 'preguntas_frecuentes_padres' :
+      $block['content'] = array(
+        '#markup' => asobitico_module_preguntas_frecuentes(23),
+        );
+    break;
+    case 'preguntas_frecuentes_aliados' :
+      $block['content'] = array(
+        '#markup' => asobitico_module_preguntas_frecuentes(24),
+        );
+    break;
   }
   
   return $block;
 }
 
+/** 
+ *
+ * funcion para mostrar las preguntas frecuentes hacia los estudiantes
+ */
+function asobitico_module_preguntas_frecuentes($tid){
+  global $base_url;
+  //********** ACORDION PADRES *******
+  $faq = taxonomy_term_load($tid);
+  $accordion = "<ul class='accordion'>";
+  $result = consultar_preguntas($faq, 'field_tipo_pregunta', 'preguntas_frecuentes_general');
+  while($record = $result->fetchObject()) {
+    $accordion .= '<li><a href="#recent" class="heading">'.$record->field_pregunta_value.'</a><div id="recent">'.$record->field_respuesta_value.'</div></li>';
+  }
+  $accordion .= '</ul>';
+  return $accordion;
+}
 
 function asobitico_module_preguntas_frecuentes_por_paises(){
   
@@ -48,7 +87,7 @@ function asobitico_module_preguntas_frecuentes_por_paises(){
   $bloque_nacional = '<div id="pf-nacional"><h3><strong>'.t('National Universities').'</strong> - '.t('Frequently asked questions').'</h3>
   <div class="costa-rica bpais">'.$imagen."<span>".$costa_rica->name."</span>".'</div></div>';
   $accordion_nacional = "<ul class='accordion'>";
-  $result = consultar_preguntas($costa_rica);
+  $result = consultar_preguntas($costa_rica, 'field_pais', 'preguntas_frecuentes_paises');
   while($record = $result->fetchObject()) {
     $accordion_nacional .= '<li><a href="#recent" class="heading">'.$record->field_pregunta_value.'</a><div id="recent">'.$record->field_respuesta_value.'</div></li>';
   }
@@ -67,7 +106,7 @@ function asobitico_module_preguntas_frecuentes_por_paises(){
   $imagen = "<img src='" . $base_url . '/sites/default/files/banderas/' . $eu->field_imagen[LANGUAGE_NONE][0]['filename'] . "'>";
   $bloque_eu = '<div class="eu bpais">'.$imagen."<span>".$eu->name."</span>".'</div>';
 
-  $result = consultar_preguntas($eu);
+  $result = consultar_preguntas($eu, 'field_pais', 'preguntas_frecuentes_paises');
   while($record = $result->fetchObject()) {
     $accordion_eu .= '<li><a href="#recent" class="heading">'.$record->field_pregunta_value.'</a><div id="recent">'.$record->field_respuesta_value.'</div></li>';
   }
@@ -79,7 +118,7 @@ function asobitico_module_preguntas_frecuentes_por_paises(){
   $imagen = "<img src='" . $base_url . '/sites/default/files/banderas/' . $can->field_imagen[LANGUAGE_NONE][0]['filename'] . "'>";
   $bloque_can = '<div class="can bpais">'.$imagen."<span>".$can->name."</span>".'</div>';
 
-  $result = consultar_preguntas($can);
+  $result = consultar_preguntas($can, 'field_pais', 'preguntas_frecuentes_paises');
   while($record = $result->fetchObject()) {
     $accordion_can .= '<li><a href="#recent" class="heading">'.$record->field_pregunta_value.'</a><div id="recent">'.$record->field_respuesta_value.'</div></li>';
   }
@@ -91,7 +130,7 @@ function asobitico_module_preguntas_frecuentes_por_paises(){
   $imagen = "<img src='" . $base_url . '/sites/default/files/banderas/' . $mex->field_imagen[LANGUAGE_NONE][0]['filename'] . "'>";
   $bloque_mex = '<div class="mex bpais">'.$imagen."<span>".$mex->name."</span>".'</div>';
 
-  $result = consultar_preguntas($mex);
+  $result = consultar_preguntas($mex, 'field_pais', 'preguntas_frecuentes_paises');
   while($record = $result->fetchObject()) {
     $accordion_mex .= '<li><a href="#recent" class="heading">'.$record->field_pregunta_value.'</a><div id="recent">'.$record->field_respuesta_value.'</div></li>';
   }
@@ -103,7 +142,7 @@ function asobitico_module_preguntas_frecuentes_por_paises(){
   $imagen = "<img src='" . $base_url . '/sites/default/files/banderas/' . $esp->field_imagen[LANGUAGE_NONE][0]['filename'] . "'>";
   $bloque_esp = '<div class="esp bpais">'.$imagen."<span>".$esp->name."</span>".'</div>';
 
-  $result = consultar_preguntas($esp);
+  $result = consultar_preguntas($esp, 'field_pais', 'preguntas_frecuentes_paises');
   while($record = $result->fetchObject()) {
     $accordion_esp .= '<li><a href="#recent" class="heading">'.$record->field_pregunta_value.'</a><div id="recent">'.$record->field_respuesta_value.'</div></li>';
   }
@@ -116,17 +155,17 @@ function asobitico_module_preguntas_frecuentes_por_paises(){
   return "<h2 class='azul'>".t('Información sobre universidades y el BI')."</h2>".$bloque_nacional . $bloque_ext;
 }
 
-function consultar_preguntas($pais){
+function consultar_preguntas($field, $field_name, $node_type){
   $query = db_select('node', 'n');
   //$query->fields('n', array('title'));
-  $query->join('field_data_field_pais','p','n.nid = p.entity_id');
+  $query->join('field_data_'.$field_name.'','p','n.nid = p.entity_id');
   $query->join('field_data_field_preguntas','fdfps','n.nid = fdfps.entity_id');
   $query->join('field_data_field_pregunta','fdfp','fdfp.entity_id = fdfps.field_preguntas_value');
   $query->join('field_data_field_respuesta','fdfr','fdfr.entity_id = fdfps.field_preguntas_value');
   $query->fields('fdfp', array('field_pregunta_value'));
   $query->fields('fdfr', array('field_respuesta_value'));
-  $query->condition('n.type','preguntas_frecuentes_paises','=');
-  $query->condition('p.field_pais_tid',$pais->tid,'=');
+  $query->condition('n.type',$node_type,'=');
+  $query->condition('p.'.$field_name.'_tid',$field->tid,'=');
   $result = $query->execute();
   return $result;
 }
