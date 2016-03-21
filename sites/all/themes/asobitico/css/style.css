@@ -1948,8 +1948,22 @@ ul.accordion li > .ui-accordion-content{
 
 /* FAQ */
 
-.page-preguntas-frecuentes-estudiantes h2{
+.panels-flexible-row-dos_filas_con_menu_faqs-main-row.sub-menu .menu li a{
+  padding: 0px 50px;
+}
+
+.page-preguntas-frecuentes-estudiantes h2,
+.page-preguntas-frecuentes-profesores h2,
+.page-preguntas-frecuentes-padres h2,
+.page-preguntas-frecuentes-aliados h2{
   font-size: 24px;
+}
+
+.page-preguntas-frecuentes-estudiantes #panels-ipe-paneid-100,
+.page-preguntas-frecuentes-profesores #panels-ipe-paneid-103,
+.page-preguntas-frecuentes-padres #panels-ipe-paneid-111,
+.page-preguntas-frecuentes-aliados #panels-ipe-paneid-112{
+  margin-bottom: 50px;
 }
 
 /* ## FOOTER ## */
