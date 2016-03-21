@@ -10,6 +10,15 @@ function asobitico_module_block_info() {
   $blocks['preguntas_frecuentes_estudiantes'] = array(
     'info' => t('Frequently asked questions to students'),
   );
+  $blocks['preguntas_frecuentes_profesores'] = array(
+    'info' => t('Frequently asked questions to students'),
+  );
+  $blocks['preguntas_frecuentes_padres'] = array(
+    'info' => t('Frequently asked questions to students'),
+  );
+  $blocks['preguntas_frecuentes_aliados'] = array(
+    'info' => t('Frequently asked questions to students'),
+  );
   return $blocks;
 }
 
