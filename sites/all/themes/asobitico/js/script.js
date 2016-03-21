@@ -1,8 +1,8 @@
 (function( $ ){
 	$(document).ready(function(){
 
-		if($('.accordion-talleres').lenght > 0){
-			$('.accordion-talleres').accordion({
+		if($('.accordion').length > 0){
+			$('.accordion').accordion({
 				event: "click",
 		        active: false,
 		        collapsible: true,
