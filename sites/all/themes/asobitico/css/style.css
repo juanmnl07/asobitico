@@ -1952,6 +1952,10 @@ ul.accordion li > .ui-accordion-content{
   font-size: 24px;
 }
 
+.page-preguntas-frecuentes-estudiantes #panels-ipe-paneid-100{
+  margin-bottom: 50px;
+}
+
 /* ## FOOTER ## */
 
 .pre-footer{
