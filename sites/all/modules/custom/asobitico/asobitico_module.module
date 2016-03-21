@@ -45,7 +45,8 @@ function asobitico_module_preguntas_frecuentes_por_paises(){
   //********** ACORDION NACIONAL *******
   $costa_rica = taxonomy_term_load(13);
   $imagen = "<img src='" . $base_url . '/sites/default/files/banderas/' . $costa_rica->field_imagen[LANGUAGE_NONE][0]['filename'] . "'>";
-  $bloque_nacional = '<div id="pf-nacional"><h3><strong>'.t('National Universities').'</strong> - '.t('Frequently asked questions').'</h3><class="costa-rica">'.$imagen."<span>".$costa_rica->name."</span>".'</div></div>';
+  $bloque_nacional = '<div id="pf-nacional"><h3><strong>'.t('National Universities').'</strong> - '.t('Frequently asked questions').'</h3>
+  <div class="costa-rica bpais">'.$imagen."<span>".$costa_rica->name."</span>".'</div></div>';
   $accordion_nacional = "<ul class='accordion'>";
   $result = consultar_preguntas($costa_rica);
   while($record = $result->fetchObject()) {
@@ -64,7 +65,7 @@ function asobitico_module_preguntas_frecuentes_por_paises(){
 
   $accordion_eu = "<ul class='accordion'>";
   $imagen = "<img src='" . $base_url . '/sites/default/files/banderas/' . $eu->field_imagen[LANGUAGE_NONE][0]['filename'] . "'>";
-  $bloque_eu = '<div class="eu">'.$imagen."<span>".$eu->name."</span>".'</div>';
+  $bloque_eu = '<div class="eu bpais">'.$imagen."<span>".$eu->name."</span>".'</div>';
 
   $result = consultar_preguntas($eu);
   while($record = $result->fetchObject()) {
@@ -76,7 +77,7 @@ function asobitico_module_preguntas_frecuentes_por_paises(){
 
   $accordion_can = "<ul class='accordion'>";
   $imagen = "<img src='" . $base_url . '/sites/default/files/banderas/' . $can->field_imagen[LANGUAGE_NONE][0]['filename'] . "'>";
-  $bloque_can = '<div class="can">'.$imagen."<span>".$can->name."</span>".'</div>';
+  $bloque_can = '<div class="can bpais">'.$imagen."<span>".$can->name."</span>".'</div>';
 
   $result = consultar_preguntas($can);
   while($record = $result->fetchObject()) {
@@ -88,7 +89,7 @@ function asobitico_module_preguntas_frecuentes_por_paises(){
 
   $accordion_mex = "<ul class='accordion'>";
   $imagen = "<img src='" . $base_url . '/sites/default/files/banderas/' . $mex->field_imagen[LANGUAGE_NONE][0]['filename'] . "'>";
-  $bloque_mex = '<div class="mex">'.$imagen."<span>".$mex->name."</span>".'</div>';
+  $bloque_mex = '<div class="mex bpais">'.$imagen."<span>".$mex->name."</span>".'</div>';
 
   $result = consultar_preguntas($mex);
   while($record = $result->fetchObject()) {
@@ -100,7 +101,7 @@ function asobitico_module_preguntas_frecuentes_por_paises(){
 
   $accordion_esp = "<ul class='accordion'>";
   $imagen = "<img src='" . $base_url . '/sites/default/files/banderas/' . $esp->field_imagen[LANGUAGE_NONE][0]['filename'] . "'>";
-  $bloque_esp = '<div class="esp">'.$imagen."<span>".$esp->name."</span>".'</div>';
+  $bloque_esp = '<div class="esp bpais">'.$imagen."<span>".$esp->name."</span>".'</div>';
 
   $result = consultar_preguntas($esp);
   while($record = $result->fetchObject()) {
