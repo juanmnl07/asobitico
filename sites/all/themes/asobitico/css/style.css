@@ -144,7 +144,9 @@ p{
 }
 
 
-
+.ta-left{
+  text-align: left !important;
+}
 .btn.a-right{
   float: right;
 }
@@ -1944,8 +1946,11 @@ ul.accordion li > .ui-accordion-content{
   font-size: 19px;
 }
 
+/* FAQ */
 
-
+.page-preguntas-frecuentes-estudiantes h2{
+  font-size: 24px;
+}
 
 /* ## FOOTER ## */
 
