@@ -1,12 +1,14 @@
 (function( $ ){
 	$(document).ready(function(){
 
-		$('.accordion-talleres').accordion({
-			event: "click",
-	        active: false,
-	        collapsible: true,
-	        autoHeight: false
-		});
+		if($('.accordion-talleres').lenght > 0){
+			$('.accordion-talleres').accordion({
+				event: "click",
+		        active: false,
+		        collapsible: true,
+		        autoHeight: false
+			});
+		}
 
 		var flexs = $('.flexslider');
 		if(flexs.length > 0){
