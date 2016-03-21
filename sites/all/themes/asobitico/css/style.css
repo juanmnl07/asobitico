@@ -1862,6 +1862,91 @@ ul.accordion li > .ui-accordion-content{
   float: right;
 }
 
+
+/*  CALENDARIO */
+
+.view-evento-calendario .views-row{
+  clear: both;
+  overflow: hidden;
+  margin-bottom: 25px;
+  border-bottom: 3px solid #EFEFF0;
+}
+
+.view-evento-calendario .views-row .field-name-field-imagen img{
+  float: left;
+}
+
+.page-calendario .panels-flexible-una_columna .panels-flexible-region-inside{
+  padding-left: 30px;
+}
+.page-calendario .panels-flexible-una_columna .panels-flexible-region-inside-first{
+  padding-right: 0px;
+  padding-left: 0px;
+}
+.page-calendario .clearfix:after{
+  display: none;
+}
+
+.page-calendario .panels-flexible-dos_columnas_25x75_{
+  padding: 30px 0px;
+}
+
+.page-calendario .panels-flexible-region-dos_columnas_25x75_-derecho-inside h2{
+  text-align: left;
+  color: #A63131;
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.page-calendario .field-name-field-fecha-y-lugar{
+  background-image: url('../images/calendario.png');
+  background-position: left top;
+  background-repeat: no-repeat;
+  padding-left: 30px;
+}
+
+.page-calendario .field-name-field-fecha-y-lugar .field-item{
+  margin-bottom: 7px;
+}
+
+.page-calendario .field-name-field-fecha:after{
+  display: inline-block !important;
+  content: " - ";
+  height: 5px;
+  visibility: visible;
+  margin: 0px 7px;
+}
+.page-calendario .field-name-body{
+  background-image: url('../images/evento.png');
+  background-position: left top;
+  background-repeat: no-repeat;
+  padding-left: 30px;
+  margin-top: 15px;
+  
+}
+.page-calendario .node-calendario .field-name-body{
+  border-bottom: 3px solid #EFEFF0;
+}
+
+.page-calendario .group-fecha-lugar{
+  border: none;
+  clear: both;
+  margin: 0px; padding: 0px;
+}
+
+.page-calendario .group-fecha-lugar .fieldset-wrapper > .field{
+  display: inline-block;
+}
+
+
+.node-calendario h2{
+  text-align: left;
+  font-size: 19px;
+}
+
+
+
+
 /* ## FOOTER ## */
 
 .pre-footer{
