@@ -43,11 +43,16 @@ body {
 .pre-footer .inner,
 .above-content .inner,
 .panel.grid,
-.layour .grid {
+.layour .grid,
+.panel.fullwidth {
   max-width: 70em;
   margin: 0 auto;
   overflow: hidden;
   float: none;
+}
+
+.panel.fullwidth {
+  max-width: 80em;
 }
 
 .one-sidebar .main {

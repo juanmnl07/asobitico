@@ -1,7 +1,12 @@
 (function( $ ){
 	$(document).ready(function(){
 
-
+		$('.accordion-talleres').accordion({
+			event: "click",
+	        active: false,
+	        collapsible: true,
+	        autoHeight: false
+		});
 
 		var flexs = $('.flexslider');
 		if(flexs.length > 0){
