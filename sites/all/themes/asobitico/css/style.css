@@ -605,6 +605,15 @@ p{
   float: right;
   cursor: pointer;
 }
+
+.webform-client-form textarea{
+  background-color: #EFEFF0;
+  border: none;
+  padding-left: 10px;
+  padding-top: 10px;
+}
+
+
 #cboxWrapper{
   border-radius: 0;
 }
@@ -1585,7 +1594,24 @@ p{
   border-top-right-radius: 10px;
 }
 
+/* EVENTOS DESARROLLO PRO */
 
+.page-eventos-desarrollo-profesional h3{
+  margin-top: 0px;
+}
+
+.page-eventos-desarrollo-profesional .gu img{
+  margin: 0 auto;
+}
+.page-eventos-desarrollo-profesional .talleres-desarrollo-profesional .b-azul{
+  margin-right: 25px;
+}
+.page-eventos-desarrollo-profesional .conversatorios{
+  margin-top: 50px;
+}
+.page-eventos-desarrollo-profesional .clear{
+  height: 50px;
+}
 /* INFO U */
 .bpais{
   clear: both;
@@ -1653,6 +1679,51 @@ ul.accordion li > .ui-accordion-content{
   color: #404041;
   margin-bottom: 40px;
 }
+
+
+/* INSCRIPCIÓN */
+
+.page-inscripcion .panels-flexible-row-dos_filas_dos_columnas_menu-2{
+  padding-bottom: 0px !important;
+}
+
+.webform-client-form.webform-client-form-125 input[type='submit']{
+  background: transparent;
+  border: 3px solid #0080C6;
+  text-transform: none;
+  color: #0080C6;
+  font-family: "ProximaNova", sans-serif;
+  font-size: 18px;
+}
+.webform-client-form.webform-client-form-125 textarea{
+  height: 125px;
+}
+
+.informacion-contacto{
+  padding-left: 20px;
+}
+.informacion-contacto h2{
+  font-size: 24px;
+  text-align: left;
+  margin-bottom: 0px;
+
+}
+.informacion-contacto h3{
+  font-family: "ProximaNova", sans-serif;
+  font-size: 15px;
+  text-align: left;
+  margin-bottom: 0px;
+}
+.informacion-contacto a{
+  color: #2B388D;
+}
+.informacion-contacto p{
+  line-height: 18px;
+}
+
+
+
+
 
 /* ## FOOTER ## */
 
