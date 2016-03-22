@@ -229,7 +229,7 @@ p{
   margin-top: 18px;
 }
 #block-menu-block-1{
-  float: left;
+  float: right;
   margin: 20px 0px 0px 40px;
 }
 #block-menu-block-1 .menu{
@@ -241,7 +241,7 @@ p{
 #block-menu-block-1 .menu li{
   display: inline-block;
   margin: 0px; padding: 0px;
-  margin-right: 35px;
+  margin-right: 29px; /*35*/
 }
 #block-menu-block-1 .menu li a{
   font-size: 14px;
@@ -256,6 +256,39 @@ p{
 #block-menu-block-1 .menu li a.active{
   font-weight: bold;
 }
+
+#block-menu-block-1 .menu li.menu-mlid-660{
+  margin-right: 5px;
+}
+#block-menu-block-1 .menu li.menu-mlid-684{
+  margin-right: 5px;
+}
+
+#block-menu-block-1 .menu li.last{
+  position: relative;
+  margin-right: 0px;
+  top: -15px;
+}
+#block-menu-block-1 .menu li.last a{
+  display: block;
+  border: 3px solid #A63131;
+  color: #A63131;
+  padding: 0px 20px;
+  text-align: center;
+  line-height: 40px;
+  font-size: 18px;
+  border-radius: 30px;
+  max-width: 100%;
+  height: auto;
+}
+
+#block-menu-block-1 .menu li.last a:hover,
+#block-menu-block-1 .menu li.last a.active{
+  background-color: #A63131;
+  color: #FFF;
+}
+
+
 
 /* ## INICIO ## */
 
