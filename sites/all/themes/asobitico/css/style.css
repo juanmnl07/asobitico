@@ -131,6 +131,12 @@ p{
   border-color: #A63131;
   color: #A63131;
 }
+.btn.b-rojo:hover{
+  background-color: #A63131;
+  color: #FFF;
+}
+
+
 .btn.b-naranja{
   border-color: #CF722A;
   color: #CF722A;
@@ -188,6 +194,11 @@ p{
 .bg-img-rojo{
   background-image: url('../images/bg_rojo.png');
   background-repeat: repeat;
+}
+
+.bg-img-azul *,
+.bg-img-rojo *{
+  color: #FFF;
 }
 
 
@@ -653,6 +664,9 @@ p{
   border: none;
   padding-left: 10px;
   padding-top: 10px;
+  font-family: "ProximaNova", sans-serif;
+  font-weight: normal;
+  font-size: 15px;
 }
 
 
@@ -2004,6 +2018,243 @@ ul.accordion li > .ui-accordion-content{
 .page-preguntas-frecuentes-aliados #panels-ipe-paneid-112{
   margin-bottom: 50px;
 }
+
+
+
+/* APÓYENOS */
+
+.panels-flexible-dos_columnas_encabezado_pie_apoyenos-inside .sub-menu .menu li a,
+.page-informes-transparencia .sub-menu .menu li a,
+.page-donacion-directa .sub-menu .menu li a{
+  padding: 0px 10px;
+  max-width: 140px;
+}
+
+
+.panels-flexible-dos_columnas_encabezado_pie_apoyenos-inside h3{
+  margin-top: 0px;
+  font-size: 24px;
+  font-family: "Aleo", sans-serif;
+  font-weight: normal;
+}
+.panels-flexible-dos_columnas_encabezado_pie_apoyenos-inside .panels-flexible-row-dos_columnas_encabezado_pie_apoyenos-1{
+  padding: 20px 0px !important;
+}
+.h270{
+  min-height: 270px;
+}
+.h270 p,
+.h270 li{
+  line-height: 17px !important;
+}
+
+.h270 li { 
+    padding-left: 1em; 
+    text-indent: -.7em;
+}
+
+.h270 li:before {
+    content: "• ";
+    color: #FFF;
+}
+
+.h270.bg-img-azul,
+.h270.bg-img-rojo{
+  padding-top: 20px;
+}
+.h270.bg-gris{
+  padding-top: 50px;
+}
+
+.panels-flexible-dos_columnas_encabezado_pie_apoyenos-inside .btn{
+  margin: 60px 0px !important; margin-bottom: 10px !important;
+}
+
+
+.page-capacitaciones-para-docentes .panels-flexible-row-dos_columnas_encabezado_pie_apoyenos-1 ul{
+  padding-left: 20px;
+}
+.page-capacitaciones-para-docentes .panels-flexible-row-dos_columnas_encabezado_pie_apoyenos-1 ul li { 
+    padding-left: 1em; 
+    text-indent: -.7em;
+    line-height: 18px;
+}
+
+.page-capacitaciones-para-docentes .panels-flexible-row-dos_columnas_encabezado_pie_apoyenos-1 ul li:before {
+    content: "• ";
+    color: #0080C6;
+}
+
+.costos-capacitaciones{
+  margin-top: 50px;
+}
+.colaboracion-comunidad-bloques{
+  margin-top: 30px;
+}
+
+.costos-capacitaciones .box,
+.colaboracion-comunidad-bloques .box{
+  display: table-cell;
+  width: 100%;
+  height: 165px;
+  margin: 0 auto;
+  border-bottom: 3px solid #0080C6;
+
+  vertical-align: middle;
+  
+  background-color: #EFEFF0;
+  padding: 20px 10px;
+
+  -webkit-border-top-left-radius: 15px;
+  -webkit-border-top-right-radius: 15px;
+  -moz-border-radius-topleft: 15px;
+  -moz-border-radius-topright: 15px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+.costos-capacitaciones .box p,
+.colaboracion-comunidad-bloques .box p{
+  display: table-row;
+  color: #404041;
+  font-family: "ProximaNova", sans-serif;
+  font-size: 14px;
+  line-height: 17px !important;
+  text-align: center;
+
+}
+
+.colaboracion-comunidad-bloques .box ul{
+  margin-top: 30px;
+}
+.colaboracion-comunidad-bloques .box ul li { 
+    padding-left: 1em; 
+    text-indent: -.7em;
+    font-family: "ProximaNova", sans-serif;
+    font-size: 14px;
+    line-height: 17px !important;
+}
+
+.colaboracion-comunidad-bloques .box ul li:before {
+    content: "• ";
+    color: #404041;
+}
+
+.llamado-donacion{
+  padding: 15px;
+  border-radius: 15px;
+  margin: 30px 0px; margin-bottom:  40px;
+}
+
+.cuentas{
+  clear: both;
+  overflow: hidden;
+  margin-bottom: 50px;
+}
+
+.cuentas .gu h3{
+  background-color: #0080C6;
+  margin: 0px;
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+  color: #FFF;
+  font-family: "Aleo", sans-serif;
+  font-weight: normal;
+  font-size: 26px;
+  line-height: 50px;
+
+  -webkit-border-top-left-radius: 10px;
+  -webkit-border-top-right-radius: 10px;
+  -moz-border-radius-topleft: 10px;
+  -moz-border-radius-topright: 10px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.cuentas .gu .cuenta{
+  clear: both;
+  overflow: hidden;
+  width: 90%;
+  margin: 0 auto;
+  background-color: #EFEFF0;
+  border-bottom: 4px solid #0080C6;
+  padding: 15px;
+  position: relative;
+  text-align: center;
+  padding: 50px 10px;
+}
+
+.page-pasantias .panels-flexible-row-dos_columnas_encabezado_pie_apoyenos-1-inside ul li{
+  padding-left: 1em; 
+  text-indent: -.7em; 
+  line-height: 19px;
+}
+.page-pasantias .panels-flexible-row-dos_columnas_encabezado_pie_apoyenos-1-inside ul li:before {
+    content: "• ";
+    color: #0080C6;
+}
+.bloque_extest{
+  clear: both;
+  overflow: hidden;
+  margin-bottom: 50px;
+}
+.h320{
+  height: 350px;
+  padding: 25px 20px;
+}
+.h320 h3{
+  font-size: 18px;
+}
+.h320 p{
+  font-size: 14px !important;
+  line-height: 17px !important;
+}
+
+
+.view-id-transparencia{
+  clear: both;
+  overflow: hidden;
+  width: 600px;
+  margin: 0 auto;
+}
+
+.view-id-transparencia .view-content{
+  margin: 50px 0px;
+}
+
+.view-id-transparencia .views-row{
+  border-bottom: 3px solid #EFEFF0;
+  clear: both;
+  overflow: hidden;
+  padding: 25px 0px;
+}
+.view-id-transparencia .views-row .btn{
+  min-width: 170px;
+}
+
+.title_download{
+  font-weight: bold;
+  margin-bottom: 0px;
+}
+
+.page-contactenos h2{
+  font-size: 24px;
+  margin-bottom: 30px;
+}
+
+.page-contactenos .panels-flexible-region-contacto-mapa{
+  max-width: 100% !important;
+  width: 100% !important;
+  margin-top: 30px;
+}
+
+.page-contactenos  .panels-flexible-row.panels-flexible-row-contacto-1{
+  padding: 0px !important;
+}
+.page-contactenos  .panels-flexible-row.panels-flexible-row-contacto-1 iframe{
+  height: 415px !important;
+}
+
 
 /* ## FOOTER ## */
 
