@@ -44,7 +44,9 @@ body {
 .above-content .inner,
 .panel.grid,
 .layour .grid,
-.panel.fullwidth {
+.panel.fullwidth,
+.page-taxonomy .main-content,
+.page-search .main-content {
   max-width: 70em;
   margin: 0 auto;
   overflow: hidden;
@@ -56,22 +58,22 @@ body {
 }
 
 .panel.fullwidth {
-  max-width: 80em;
+  max-width: 90em;
 }
 
 .one-sidebar .main {
-  width: 60%;
+  width: 73%;
   padding: 0 0.875em;
 }
 .one-sidebar #sidebar-first {
-  width: 40%;
+  width: 25%;
   padding: 0 0.875em;
 }
 .sidebar-first .main {
-  float: left;
+  float: right;
 }
 .sidebar-first #sidebar-first {
-  float: right;
+  float: left;
 }
 
 
