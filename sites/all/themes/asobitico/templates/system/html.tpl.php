@@ -94,6 +94,15 @@
       <li><a href="#ancla-costo-afiliacion">Afiliación</a></li>
     </ul>
   </div>
+<?php } else if(current_path() == 'be-part-of-asobitico'){ ?>
+<div class="menu-anclas" id="menu-anclas-forme-parte-de-asobitico">
+    <ul>
+      <li><a href="#ancla-como-ayudo">How do I help?</a></li>
+      <li><a href="#ancla-beneficios">Benefits</a></li>
+      <li><a href="#ancla-asesoria">Advisory</a></li>
+      <li><a href="#ancla-costo-afiliacion">Affiliation</a></li>
+    </ul>
+  </div>
 <?php } ?>
 <script type="text/javascript" src="https://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
 </body>
