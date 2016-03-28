@@ -2400,3 +2400,14 @@ ul.accordion li > .ui-accordion-content{
 /*Added by Juan - map*/
 #views-exposed-form-colegios-block-pin-mapa .description, #views-exposed-form-colegios-block-listado-colegios .description {display: none;}
 #views-exposed-form-colegios-block-pin-mapa .views-submit-button, #views-exposed-form-colegios-block-listado-colegios .views-submit-button {visibility: hidden;}
+
+
+
+
+
+/* Añadido por Keylor Mora */
+
+.page-user .main-content .main{
+  max-width: 70em;
+  margin: 0 auto;
+}
