@@ -1965,47 +1965,56 @@ ul.accordion li > .ui-accordion-content{
   float: left;
 }
 
-.page-calendario .panels-flexible-una_columna .panels-flexible-region-inside{
+.page-calendario .panels-flexible-una_columna .panels-flexible-region-inside,
+.page-calendar .panels-flexible-una_columna .panels-flexible-region-inside{
   padding-left: 30px;
 }
-.page-calendario .panels-flexible-una_columna .panels-flexible-region-inside-first{
+.page-calendario .panels-flexible-una_columna .panels-flexible-region-inside-first,
+.page-calendar .panels-flexible-una_columna .panels-flexible-region-inside-first{
   padding-right: 0px;
   padding-left: 0px;
 }
-.page-calendario .clearfix:after{
+.page-calendario .clearfix:after,
+.page-calendar .clearfix:after{
   display: none;
 }
 
-.page-calendario .panels-flexible-dos_columnas_25x75_{
+.page-calendario .panels-flexible-dos_columnas_25x75_,
+.page-calendar .panels-flexible-dos_columnas_25x75_{
   padding: 30px 0px;
 }
 
-.page-calendario .panels-flexible-region-dos_columnas_25x75_-derecho-inside h2{
+.page-calendario .panels-flexible-region-dos_columnas_25x75_-derecho-inside h2,
+.page-calendar .panels-flexible-region-dos_columnas_25x75_-derecho-inside h2{
   text-align: left;
   color: #A63131;
   font-size: 24px;
   margin-bottom: 15px;
 }
 
-.page-calendario .field-name-field-fecha-y-lugar{
+.page-calendario .field-name-field-fecha-y-lugar,
+.page-calendar .field-name-field-fecha-y-lugar{
   background-image: url('../images/calendario.png');
   background-position: left top;
   background-repeat: no-repeat;
   padding-left: 30px;
 }
 
-.page-calendario .field-name-field-fecha-y-lugar .field-item{
+.page-calendario .field-name-field-fecha-y-lugar .field-item,
+.page-calendar .field-name-field-fecha-y-lugar .field-item{
   margin-bottom: 7px;
 }
 
-.page-calendario .field-name-field-fecha:after{
+.page-calendario .field-name-field-fecha:after,
+.page-calendar .field-name-field-fecha:after{
   display: inline-block !important;
   content: " - ";
   height: 5px;
   visibility: visible;
   margin: 0px 7px;
 }
-.page-calendario .field-name-body{
+.page-calendario .field-name-body,
+.page-calendar .field-name-body{
   background-image: url('../images/evento.png');
   background-position: left top;
   background-repeat: no-repeat;
@@ -2013,17 +2022,20 @@ ul.accordion li > .ui-accordion-content{
   margin-top: 15px;
   
 }
-.page-calendario .node-calendario .field-name-body{
+.page-calendario .node-calendario .field-name-body,
+.page-calendar .node-calendario .field-name-body{
   border-bottom: 3px solid #EFEFF0;
 }
 
-.page-calendario .group-fecha-lugar{
+.page-calendario .group-fecha-lugar,
+.page-calendar .group-fecha-lugar{
   border: none;
   clear: both;
   margin: 0px; padding: 0px;
 }
 
-.page-calendario .group-fecha-lugar .fieldset-wrapper > .field{
+.page-calendario .group-fecha-lugar .fieldset-wrapper > .field,
+.page-calendar .group-fecha-lugar .fieldset-wrapper > .field{
   display: inline-block;
 }
 
@@ -2465,30 +2477,35 @@ ul.accordion li > .ui-accordion-content{
   color: #0080C6;
 }
 
-#block-webform-client-block-1{
+#block-webform-client-block-1,
+#block-webform-client-block-239{
   width: 280px;
   border-top: 1px solid #FFF;
   float: right;
   margin-right: 0px;
 }
 
-#block-webform-client-block-1 .webform-component-email{
+#block-webform-client-block-1 .webform-component-email,
+#block-webform-client-block-239 .webform-component-email{
   margin: 0px; margin-top: 35px;
 }
 
-#block-webform-client-block-1 label{
+#block-webform-client-block-1 label,
+#block-webform-client-block-239 label{
   font-size: 15px;
   font-weight: bold;
   color: #FFF;
   margin-bottom: 20px;
 }
-#block-webform-client-block-1 #edit-submitted-correo{
+#block-webform-client-block-1 #edit-submitted-correo,
+#block-webform-client-block-239 #edit-submitted-correo{
   width: 100%;
   border: none;
   background-color: #58595B;
   height: 40px;
 }
-#block-webform-client-block-1 .form-submit{
+#block-webform-client-block-1 .form-submit,
+#block-webform-client-block-239 .form-submit{
   float: right;
   border: none;
   background-color: #0080C6;
