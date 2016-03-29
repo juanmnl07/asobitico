@@ -2243,6 +2243,51 @@ ul.accordion li > .ui-accordion-content{
   margin-bottom: 50px;
 }
 
+.page-contactenos .logo.a-center{
+  padding-top: 60px;
+}
+.page-contactenos .webform-client-form input[type='submit']{
+  line-height: 44px;
+}
+#info-contacto{
+  width: 90%;
+  float: right;
+  clear: both;
+  overflow: hidden;
+  border-bottom: 1px solid #0080C6;
+  padding-bottom: 20px;
+  margin-bottom: 30px;
+}
+#info-contacto > div,
+#info-contacto > div a{
+  clear: both;
+  margin-bottom: 10px;
+  font-size: 15px;
+  color: #404041;
+}
+
+#info-contacto > div.ubicacion{
+  background-image: url('../images/i_mapa_contacto.png');
+  background-position: left top;
+  background-repeat: no-repeat;
+  padding-left: 30px;
+}
+#info-contacto > div.telefono{
+  background-image: url('../images/i_tel_contacto.png');
+  background-position: left top;
+  background-repeat: no-repeat;
+  padding-left: 30px;
+  line-height: 18px;
+  margin-bottom: 15px;
+}
+#info-contacto > div.email{
+  background-image: url('../images/i_mail_contacto.png');
+  background-position: left top;
+  background-repeat: no-repeat;
+  padding-left: 30px;
+  line-height: 18px;
+}
+
 .page-contactenos .panels-flexible-region-contacto-mapa{
   max-width: 100% !important;
   width: 100% !important;
@@ -2314,10 +2359,12 @@ ul.accordion li > .ui-accordion-content{
 #redes-sociales-prefooter{
   padding-top: 20px;
 }
-#redes-sociales-prefooter ul{
+#redes-sociales-prefooter ul,
+#redes-sociales ul{
   float: right;
 }
-#redes-sociales-prefooter ul li{
+#redes-sociales-prefooter ul li,
+#redes-sociales ul li{
   display: inline-block;
   margin-left: 15px;
 }
