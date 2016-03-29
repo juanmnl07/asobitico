@@ -1,0 +1,106 @@
+.panels-flexible-dos_columnas_encabezado_pie_apoyenos .panels-flexible-region {
+  padding: 0;
+}
+
+.panels-flexible-dos_columnas_encabezado_pie_apoyenos .panels-flexible-region-inside {
+  padding-right: 0.5em;
+  padding-left: 0.5em;
+}
+
+.panels-flexible-dos_columnas_encabezado_pie_apoyenos .panels-flexible-region-inside-first {
+  padding-left: 0;
+}
+
+.panels-flexible-dos_columnas_encabezado_pie_apoyenos .panels-flexible-region-inside-last {
+  padding-right: 0;
+}
+
+.panels-flexible-dos_columnas_encabezado_pie_apoyenos .panels-flexible-column {
+  padding: 0;
+}
+
+.panels-flexible-dos_columnas_encabezado_pie_apoyenos .panels-flexible-column-inside {
+  padding-right: 0.5em;
+  padding-left: 0.5em;
+}
+
+.panels-flexible-dos_columnas_encabezado_pie_apoyenos .panels-flexible-column-inside-first {
+  padding-left: 0;
+}
+
+.panels-flexible-dos_columnas_encabezado_pie_apoyenos .panels-flexible-column-inside-last {
+  padding-right: 0;
+}
+
+.panels-flexible-dos_columnas_encabezado_pie_apoyenos .panels-flexible-row {
+  padding: 0 0 0.5em 0;
+  margin: 0;
+}
+
+.panels-flexible-dos_columnas_encabezado_pie_apoyenos .panels-flexible-row-last {
+  padding-bottom: 0;
+}
+
+.panels-flexible-column-dos_columnas_encabezado_pie_apoyenos-main {
+  float: left;
+  width: 99.0000%;
+}
+
+.panels-flexible-dos_columnas_encabezado_pie_apoyenos-inside {
+  padding-right: 0px;
+}
+
+.panels-flexible-dos_columnas_encabezado_pie_apoyenos {
+  width: auto;
+}
+
+.panels-flexible-region-dos_columnas_encabezado_pie_apoyenos-menu {
+  float: left;
+  width: 99.0000%;
+}
+
+.panels-flexible-row-dos_columnas_encabezado_pie_apoyenos-3-inside {
+  padding-right: 0px;
+}
+
+.panels-flexible-region-dos_columnas_encabezado_pie_apoyenos-center {
+  float: left;
+  width: 99.0000%;
+}
+
+.panels-flexible-row-dos_columnas_encabezado_pie_apoyenos-main-row-inside {
+  padding-right: 0px;
+}
+
+.panels-flexible-region-dos_columnas_encabezado_pie_apoyenos-segundo {
+  float: left;
+  width: 49.5000%;
+}
+
+.panels-flexible-region-dos_columnas_encabezado_pie_apoyenos-der {
+  float: left;
+  width: 49.5000%;
+}
+
+.panels-flexible-row-dos_columnas_encabezado_pie_apoyenos-1-inside {
+  padding-right: 0px;
+}
+
+.panels-flexible-region-dos_columnas_encabezado_pie_apoyenos-tercero {
+  float: left;
+  width: 99.0000%;
+}
+
+.panels-flexible-row-dos_columnas_encabezado_pie_apoyenos-2-inside {
+  padding-right: 0px;
+}
+
+.panels-flexible-region-dos_columnas_encabezado_pie_apoyenos-socio_estrategico {
+  float: left;
+  width: 99.0000%;
+}
+
+.panels-flexible-row-dos_columnas_encabezado_pie_apoyenos-4-inside {
+  padding-right: 0px;
+}
+

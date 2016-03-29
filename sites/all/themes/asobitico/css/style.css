@@ -801,6 +801,7 @@ p{
 }
 #menu-lateral ul li{
   margin-bottom: 7px;
+  list-style: none;
 }
 #menu-lateral ul li a{
   display: block;
