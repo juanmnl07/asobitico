@@ -2102,12 +2102,25 @@ ul.accordion li > .ui-accordion-content{
 
 /* APÓYENOS */
 
+
+.pane-block-29 .llamado-accion p,
+.pane-block-30 .llamado-accion p{
+  color: #404041;
+  font-size: 18px;
+  line-height: 24px;
+}
+.pane-block-29 .llamado-accion a,
+.pane-block-30 .llamado-accion a{
+  margin-top: 20px !important;
+}
+
+
 .panels-flexible-dos_columnas_encabezado_pie_apoyenos .panels-flexible-row.panels-flexible-row-last,
 .panels-flexible-dos_filas_con_menu_apoyenos .panels-flexible-row.panels-flexible-row-last,
 .panels-flexible-contacto .panels-flexible-row.panels-flexible-row-last{
-  padding: 0 !important;
+ /* padding: 0 !important;*/
   /*padding-bottom: 0px !important;*/
-  padding-top: 50px !important;
+  /*padding-top: 50px !important;*/
 }
 .panels-flexible-dos_columnas_encabezado_pie_apoyenos-inside .sub-menu .menu li a,
 .page-informes-transparencia .sub-menu .menu li a,
