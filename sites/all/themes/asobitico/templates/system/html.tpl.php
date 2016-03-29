@@ -82,7 +82,7 @@
     <li><a href="https://www.facebook.com/asobitico" target="_blank"><img src="<?php echo $base_url?>/sites/all/themes/asobitico/images/fb2.png" /> </a></li>
     <li><a href="https://twitter.com/asobitico" target="_blank"><img src="<?php echo $base_url?>/sites/all/themes/asobitico/images/tw2.png" /> </a></li>
   </ul>
-  <p class="texto-vertical">Siga a ASOBITICO</p>
+  <p class="texto-vertical"><?php echo t('Follow ASOBITICO')?></p>
 </div>
 
 <?php if(current_path() == 'forme-parte-de-asobitico'){ ?>
