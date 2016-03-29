@@ -1091,16 +1091,16 @@ p{
 }
 
 
-#panels-ipe-regionid-tercero h2{
+.panel-asesoria h2{
   margin-bottom: 60px;
 }
-#panels-ipe-regionid-tercero .btn{
+.panel-asesoria .btn{
   margin: 40px 0px;
 }
-#panels-ipe-regionid-tercero p{
+.panel-asesoria p{
   line-height: 25px;
 }
-#panels-ipe-regionid-tercero p a{
+.panel-asesoria p a{
   color: #404041;
 }
 .llamado-accion .info_llamado_p{
@@ -2112,6 +2112,8 @@ ul.accordion li > .ui-accordion-content{
 .pane-block-29 .llamado-accion a,
 .pane-block-30 .llamado-accion a{
   margin-top: 20px !important;
+  padding: 0px 10px;
+  font-size: 17px;
 }
 
 
@@ -2552,7 +2554,7 @@ ul.accordion li > .ui-accordion-content{
   margin-bottom: 20px;
 }
 #block-webform-client-block-1 #edit-submitted-correo,
-#block-webform-client-block-239 #edit-submitted-correo{
+#block-webform-client-block-239 #edit-submitted-email{
   width: 100%;
   border: none;
   background-color: #58595B;
@@ -2914,13 +2916,13 @@ fieldset.group-imagen-fecha .field-name-post-date{
   -ms-transform:translate(0,-3px);
 }
 
-#ancla-asesoria + div p,
+/*#ancla-asesoria + div p,
 #ancla-asesoria + div + div p{
   line-height: 25px;
 }
 #ancla-asesoria + div + div a{
   color: #404041;
-}
+}*/
 
 #ancla-costo-afiliacion .btn{
   margin-top: 60px;
