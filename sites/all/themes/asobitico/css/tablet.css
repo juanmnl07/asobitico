@@ -1,33 +1,5 @@
 @media (max-width: 991px) {
 
-	.front .flexslider .flex-caption .refran-nelson{
-		font-size:24px;
-		line-height: 28px;
-		margin-bottom: 20px;
-	}
-
-	.front .flexslider .flex-caption{
-		width: 350px;
-    	padding: 10px 35px;
-	}
-	
-	.front .flexslider .flex-caption p{
-		display: none;
-	}
-
-	.enlaces-caption{
-		margin-top: 0;
-	}
-
-	.front .flexslider .flex-caption .refran-nelson:before, .front .flexslider .flex-caption .refran-nelson:after{
-		height: 35px;
-	}
-
-	.btn.colorbox-load{
-		margin-bottom: 5px;
-		margin-right:0;
-	}
-
 	.caja-icono{
 		width: 100%;
 	}
@@ -45,7 +17,10 @@
 	}
 
 	.gu-1-5{
-		width: 20%;
+		width: 33%; /*20%*/
+	}
+	.alcance.gu-1-5{
+		min-height: 450px;
 	}
 
 	.bx-wrapper .bx-viewport{

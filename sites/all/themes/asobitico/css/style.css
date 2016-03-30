@@ -289,7 +289,7 @@ p{
   line-height: 18px;
   vertical-align: top;
 }
-#block-menu-block-1 .menu li a.active{
+#block-menu-block-1 .menu li a.active-trail{
   font-weight: bold;
 }
 
@@ -572,6 +572,7 @@ p{
   height: 97px;
   background-color: #FFF;
   line-height: normal;
+  margin-right: 18px !important;
   /*padding: 18px 0px;*/
 
 }

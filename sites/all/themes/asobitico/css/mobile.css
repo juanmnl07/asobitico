@@ -1,4 +1,13 @@
 @media (max-width: 767px) {
+
+	.front .flexslider .flex-caption{
+		/*display: none;*/
+		position: static;
+		margin: 0 auto;
+		width: 100%;
+	}
+
+
 	.front .flexslider .flex-caption .refran-nelson{
 		font-size: 20px;
 		line-height: 25px;
@@ -35,10 +44,47 @@
 		text-align: right;
 		background-position: 50% top;
 	}
+
+
+	.main-content iframe{
+		height: auto !important;
+	}
+
+
+
 }
 
 
 @media (max-width: 479px) {
+
+	.alcance.gu-1-5{
+		min-height: auto;
+	}
+
+	#block-webform-client-block-1, #block-webform-client-block-239{
+		width: 100%;
+	}
+	.footer .block{
+		width: 100%;
+		clear: both;
+	}
+	#redes-sociales-prefooter ul, #redes-sociales ul{
+		float: left;
+	}
+	.i_tel,
+	.i_mail{
+		text-align: left;
+		background-position: 0% top;
+	}
+
+	.view-blog .views-row{
+		margin-bottom: 15px;
+	}
+
+	.alcance a{
+		text-align: center;
+	}
+
 	.utility-bar{
 		float: none;
 		width: 272px;
@@ -50,10 +96,6 @@
 		text-align: center;
 	}
 
-	.front .flexslider .flex-caption{
-		display: none;
-	}
-
 	.main-content{
 		padding: 0 2%;
 	}
@@ -61,6 +103,30 @@
 	h2{
 		font-size: 28px;
 	}
+
+
+	.gu-2,
+	.gu-3,
+	.gu-4,
+	.gu-5,
+	.gu-6,
+	.gu-1-1,
+	.gu-1-2,
+	.gu-1-3,
+	.gu-2-3,
+	.gu-1-4,
+	.gu-3-4,
+	.gu-1-5,
+	.gu-2-5,
+	.gu-3-5,
+	.gu-4-5,
+	.ne-1-3,
+	.ne-2-3
+	{ width: 100%; }
+	/*.gu {
+	  margin: 0 5%;
+	}*/
+  .ne {width: 100%;}
 
 	.gu-1-4{
 		width: 100%;
