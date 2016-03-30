@@ -1,4 +1,97 @@
 @media (max-width: 991px) {
 
+	.front .flexslider .flex-caption .refran-nelson{
+		font-size:24px;
+		line-height: 28px;
+		margin-bottom: 20px;
+	}
+
+	.front .flexslider .flex-caption{
+		width: 350px;
+    	padding: 10px 35px;
+	}
 	
+	.front .flexslider .flex-caption p{
+		display: none;
+	}
+
+	.enlaces-caption{
+		margin-top: 0;
+	}
+
+	.front .flexslider .flex-caption .refran-nelson:before, .front .flexslider .flex-caption .refran-nelson:after{
+		height: 35px;
+	}
+
+	.btn.colorbox-load{
+		margin-bottom: 5px;
+		margin-right:0;
+	}
+
+	.caja-icono{
+		width: 100%;
+	}
+
+	.last {
+    	padding: 0 0.875em;
+	}
+
+	.caja-icono strong{
+		font-size: 16px;
+	}
+
+	.caja-icono p{
+		font-size: 12px;
+	}
+
+	.gu-1-5{
+		width: 20%;
+	}
+
+	.bx-wrapper .bx-viewport{
+		width: 90% !important;
+	}
+
+	.bx-wrapper .bx-controls-direction .bx-next{
+		right: 5px;
+	}
+
+	.bx-wrapper .bx-controls-direction .bx-prev{
+		left: -2px;
+	}
+
+	.view-blog .views-row > div{
+		width: 100%;
+	}
+
+	#redes-sociales-lateral{
+		display: none;
+	}
+
+	.pre-footer{
+		padding: 0 15px;
+	}
+
+	.footer{
+		padding: 0 15px;
+	}
+
+	.footer .inner{
+		padding-bottom: 50px;
+	}
+
+	.footer .block{
+		margin-right: 0;
+		padding: 0 20px;
+		width: 50%;
+	}
+
+	#block-webform-client-block-1, #block-webform-client-block-239{
+		width: 50%;
+		margin-top: 20px;
+	}
+
+	.header{
+		padding: 0 15px;
+	}
 }

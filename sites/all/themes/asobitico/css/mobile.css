@@ -1,8 +1,69 @@
 @media (max-width: 767px) {
+	.front .flexslider .flex-caption .refran-nelson{
+		font-size: 20px;
+		line-height: 25px;
+	}
 
+	.front .flexslider .flex-caption .refran-nelson span{
+		margin-top: 10px;
+	}
+
+	.front .flexslider .flex-caption .refran-nelson:before, .front .flexslider .flex-caption .refran-nelson:after{
+		height: 30px;
+	}
+
+	.gu-1-4{
+		width: 50%;
+		margin-bottom: 20px;
+	}
+
+	.caja-icono strong{
+		font-size: 20px;
+	}
+
+	.caja-icono p{
+		font-size: 16px;
+		line-height: 21px;
+	}
+
+	.primer-fila-interna, .segunda-fila-interna{
+		margin-bottom: 0px;
+	}
+
+	.i_tel,
+	.i_mail{
+		text-align: right;
+		background-position: 50% top;
+	}
 }
 
 
 @media (max-width: 479px) {
+	.utility-bar{
+		float: none;
+		width: 272px;
+		margin: 0 auto;
+	}
 
+	#logo{
+		width: 100%;
+		text-align: center;
+	}
+
+	.front .flexslider .flex-caption{
+		display: none;
+	}
+
+	.main-content{
+		padding: 0 2%;
+	}
+
+	h2{
+		font-size: 28px;
+	}
+
+	.gu-1-4{
+		width: 100%;
+		margin: 0 auto 20px;
+	}
 }
