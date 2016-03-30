@@ -2713,7 +2713,7 @@ fieldset.group-imagen-fecha{
   border: 0;
 }
 
-fieldset.group-imagen-fecha .field-name-post-date{
+fieldset.group-imagen-fecha .field-name-fecha-blog{
   position: absolute;
   top:0;
   left: 0;
@@ -2725,9 +2725,12 @@ fieldset.group-imagen-fecha .field-name-post-date{
   color:#fff;
   font-family: "Aleo", sans-serif;
   font-weight: normal;
-  padding: 12px 6px 10px
+  padding: 7px 3px 10px
 
 }
+
+fieldset.group-imagen-fecha .field-name-fecha-blog span{font-size: 15px;}
+
 .view-blog .views-row > div.view-mode-blog_listaso h2,
 .view-display-id-page_categorias_blog .views-row > div.view-mode-blog_listaso h2,
 .search-results h3 {
