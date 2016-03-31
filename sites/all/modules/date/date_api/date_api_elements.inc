@@ -679,7 +679,7 @@ function date_parts_element($element, $date, $format) {
       $sub_element['ampm']['#options'] = array('' => '-' . $label) + $sub_element['ampm']['#options'];
     }
   }
-
+  drupal_alter('date_parts_element', $sub_element, $date, $format);
   return $sub_element;
 }
 

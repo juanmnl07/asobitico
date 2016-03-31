@@ -212,10 +212,17 @@ function asobitico_module_views_exposed_form_validate(&$form, &$form_state) {
 }
 
 function asobitico_module_date_parts_element_alter(&$element) {
-  dpm($element);
-  foreach($element['year']['#options'] as $key=>$value) {
-    if($value == '-Year') {
-      $element['year']['#options'][$key] = 'Movie Release Year';
+  if(isset($element['year'])){
+    foreach($element['year']['#options'] as $key=>$value) {
+      if($value == '-Year') {
+        $element['year']['#options'][$key] = t('All years');
+      }
+    }
+  } elseif(isset($element['month'])){
+    foreach($element['month']['#options'] as $key=>$value) {
+      if($value == '-Month') {
+        $element['month']['#options'][$key] = t('All months');
+      }
     }
   }
 }
