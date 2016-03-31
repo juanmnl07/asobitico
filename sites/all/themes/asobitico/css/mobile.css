@@ -343,4 +343,10 @@
 		width: 100%;
 		margin: 0 auto 20px;
 	}
+
+	
+	#info-contacto{
+		float: none;
+		margin:0 auto 30px;
+	}
 }
