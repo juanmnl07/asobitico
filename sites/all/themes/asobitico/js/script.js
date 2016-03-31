@@ -94,9 +94,9 @@
 			class_tab = 'tab-rojo';
 		}
 
-		alert(vista + " #edit-field-colegio-tid option[value='" + valor_select_pin + "']");
+		/*alert(vista + " #edit-field-colegio-tid option[value='" + valor_select_pin + "']");
 
-		$(vista + " #edit-field-colegio-tid option[value='" + valor_select_pin + "']").attr("selected","selected");
+		$(vista + " #edit-field-colegio-tid option[value='" + valor_select_pin + "']").attr("selected","selected");*/
 
 		$('#quicktabs-mapa ul li a').removeClass(class_to_remove);
 		$('#quicktabs-mapa ul li a').addClass(class_tab);
