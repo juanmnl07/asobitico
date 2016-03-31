@@ -2980,3 +2980,4 @@ fieldset.group-imagen-fecha .field-name-fecha-blog span{font-size: 15px;}
 }
 
 #news-feed-contacto {margin-bottom: 50px; float: left; width: 100%;}
+.back {background-image: url('../images/back1.png'); background-repeat: no-repeat; background-size: 20px; padding: 5px 5px 5px 25px;}

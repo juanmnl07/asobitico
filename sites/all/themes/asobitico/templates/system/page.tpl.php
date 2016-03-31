@@ -98,7 +98,28 @@
         </ul>
       <?php endif; ?>
 
+      <?php 
+        global $language;
+        global $base_url;
+        $ruta = current_path();
+        $alias = drupal_lookup_path('alias', $ruta, $language->language);
+        $route = explode('/', $alias);
+        $base = $route[0];
+        if(($base == 'nuestro-equipo')||($base == 'our-team')||($base == 'calendar')||($base == 'calendario')){
+          if($language->language == 'en')
+            $base = 'en/'.$base;
+          echo '<a class="back" href ="'.$base_url.'/'.$base.'">'. t('Back') .'</a>';
+        }
+      ?>
+
       <?php print render($page['content']); ?>
+
+      <?php if(($base == 'nuestro-equipo')||($base == 'our-team')||($base == 'calendar')||($base == 'calendario')){
+          if($language->language == 'en')
+              $base = 'en/'.$base;
+          echo '<a class="back" href ="'.$base_url.'/'.$base.'">'. t('Back') .'</a>';
+        }
+      ?>
 
     </div>
 
