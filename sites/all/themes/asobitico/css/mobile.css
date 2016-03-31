@@ -1,5 +1,13 @@
 @media (max-width: 767px) {
 
+	.view-display-id-block_calendario_anual .views-row{
+		position: static;
+		padding: 10px 0px;
+	}
+	.view-display-id-block_calendario_anual .views-row .btn.a-right{
+		float: none;
+	}
+
 	.page-logros .pane-3 .gu-1-2, .page-achievements .pane-3 .gu-1-2{
 		padding-left: 20px;
     padding-top: 0px;
@@ -117,6 +125,26 @@
 
 
 @media (max-width: 479px) {
+
+
+	.page-calendario .panels-flexible-region-dos_columnas_25x75_-derecho-inside h2,
+	.page-calendar .panels-flexible-region-dos_columnas_25x75_-derecho-inside h2{
+		margin-top: 30px;
+	}
+
+	.page-calendario .panels-flexible-una_columna .panels-flexible-region-inside,
+	.page-calendar .panels-flexible-una_columna .panels-flexible-region-inside{
+		padding-left: 0px;
+	}
+
+	.view-evento-calendario .views-exposed-widgets div{
+		width: 100%;
+	}
+	.view-evento-calendario .view-filters select{
+		display: block;
+		width: 100%;
+		margin-bottom: 10px;
+	}
 
 	.categorias-talleres .box_taller{
 		margin-bottom: 20px;
