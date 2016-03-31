@@ -1,13 +1,73 @@
 @media (max-width: 767px) {
 
+	.page-logros .pane-3 .gu-1-2, .page-achievements .pane-3 .gu-1-2{
+		padding-left: 20px;
+    padding-top: 0px;
+    width: 100%;
+	}
+	.page-logros .pane-5 .gu-1-2, .page-achievements .pane-5 .gu-1-2,
+	.page-logros .pane-9 .gu-1-2, .page-achievements .pane-9 .gu-1-2{
+    padding-right: 20px;
+    padding-top: 0px;
+    width: 100%;
+	}
+	.page-logros .gu-1-2, .page-achievements .gu-1-2{
+		width: 100%;
+		height: auto;
+		/*min-height: 400px;*/
+	}
+
+	.categorias-talleres .gu-1-3{
+		width: 50%;
+	}
+	.categorias-talleres .box_taller .a-center a.btn{
+		position: static;
+		width: 100%;
+		min-width: 100%;
+	}
+
+	.pane-block-12 span, .pane-block-23 span{
+		display: block;
+		float: none;
+		text-align: center;
+		margin: 0px;
+	}
+	.pane-block-12 .gu_r, .pane-block-23 .gu_r{
+		text-align: left;
+	}
+
+	#quicktabs-tabpage-mapa-1 .view-content .views-row{
+		display: block;
+		width: 350px;
+		margin: 0 auto;
+		clear: both;
+		float: none;
+		overflow: hidden;
+		margin-bottom: 25px;
+	}
+	.menu-anclas{
+		width: 115px;
+		top: initial;
+    bottom: 10px;
+	}
+	.menu-anclas ul li a{
+		height: 35px;
+		font-size: 13px;
+		line-height: 37px;
+	}
+	#ancla-costo-afiliacion .btn{
+		line-height: 24px;
+	}
+	.page-forme-parte-de-asobitico .panel-flexible h2{
+		line-height: 35px;
+	}
+
 	.front .flexslider .flex-caption{
 		/*display: none;*/
 		position: static;
 		margin: 0 auto;
 		width: 100%;
 	}
-
-
 	.front .flexslider .flex-caption .refran-nelson{
 		font-size: 20px;
 		line-height: 25px;
@@ -48,6 +108,7 @@
 
 	.main-content iframe{
 		height: auto !important;
+		min-height: 300px;
 	}
 
 
@@ -56,6 +117,110 @@
 
 
 @media (max-width: 479px) {
+
+	.categorias-talleres .box_taller{
+		margin-bottom: 20px;
+		min-height: 475px;
+	}
+
+	.importancia-taller .btn{
+		line-height: 22px;
+	}
+
+	.pane-block-12 .gu_r, .pane-block-23 .gu_r{
+		text-align: center;
+	}
+
+	.view-convenios .views-row .convenio .logo-convenio{
+		max-height: inherit;
+		text-align: center;
+	}
+	.view-convenios .views-row .convenio .body{
+		padding: 20px;
+	}
+	.convenio .btn{
+		line-height: 20px;
+	}
+	.convenio .gu-1-5{
+		width: 100%;
+	}
+	.convenio .gu-4-5{
+		width: 100%;
+	}
+
+	#quicktabs-tabpage-mapa-1 .view-content .views-row{
+		width: 100%;
+	}
+	#quicktabs-tabpage-mapa-1 .view-content .views-row .ds-2col-fluid > .group-left{
+		width: 34%;
+	}
+
+	#quicktabs-tabpage-mapa-1 .view-content .views-row .ds-2col-fluid > .group-left .field-name-field-imagen{
+		width: 100%;
+	}
+	#quicktabs-tabpage-mapa-1 .view-content .views-row .ds-2col-fluid > .group-left .field-name-field-imagen img{
+		width: 100%;
+	}
+
+
+
+	#quicktabs-tabpage-mapa-1 .view-content .views-row .ds-2col-fluid > .group-right{
+		width: 66%;
+		padding-left: 10px;
+	}
+
+	.llamado-accion p{
+		font-size: 16px;
+    line-height: 23px;
+    text-align: center;
+	}
+	.panels-flexible-dos_filas .panels-flexible-region.gu-3-4{
+		padding: 0px;
+	}
+	.panels-flexible-dos_filas .panels-flexible-region-inside{
+		padding: 0px;
+	}
+	.box_por_que.bpq1{
+		margin-bottom: 10px;
+	}
+	.box_por_que.bpq1:before{
+    top: initial;
+    bottom: -30px;
+    right: initial;
+    left: 40%;
+	}
+
+	.banner .group-enlace-imagen a #play{
+		width: 70px;
+		height: 70px;
+		background-size: 70px;
+		margin-bottom: 7px;
+	}
+	.banner .group-enlace-imagen a .play-titulo{
+		font-size: 16px;
+	}
+	.botones-historia{
+		margin: 0px;
+		float: none;
+	}
+	.botones-historia a{
+		margin-bottom: 10px;
+	}
+	.btn{
+		width: 100%;
+		float: none !important;
+		margin: 0px;
+		margin-left: 0px !important;
+		clear: both;
+		margin-bottom: 10px;
+	}
+	.btn.colorbox-load{
+		margin-right: 0px;
+	}
+	#block-easy-breadcrumb-easy-breadcrumb,
+	.st_sharethis_large{
+		display: none;
+	}
 
 	.alcance.gu-1-5{
 		min-height: auto;
@@ -99,7 +264,9 @@
 	.main-content{
 		padding: 0 2%;
 	}
-
+	h1{
+		font-size: 30px !important;
+	}
 	h2{
 		font-size: 28px;
 	}
@@ -122,7 +289,7 @@
 	.gu-4-5,
 	.ne-1-3,
 	.ne-2-3
-	{ width: 100%; }
+	{ width: 100% !important; }
 	/*.gu {
 	  margin: 0 5%;
 	}*/

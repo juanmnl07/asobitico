@@ -1,5 +1,131 @@
 @media (max-width: 991px) {
 
+	.page-eventos-desarrollo-profesional .talleres-desarrollo-profesional .b-azul,
+	.page-professional-development-events .talleres-desarrollo-profesional .b-azul{
+		margin-right: 0px;
+		margin-top: 10px;
+	}
+
+	.categorias-talleres .gu h3{
+		width: 100%;
+	}
+	.categorias-talleres .box_taller{
+		width: 100%;
+	}
+
+	.talleres .btn{
+		margin-right: 0px;
+		margin-bottom: 10px;
+	}
+
+	.convenio .gu-1-5{
+		width: 40%;
+	}
+	.convenio .gu-4-5{
+		width: 60%;
+	}
+
+	#quicktabs-container-mapa .quicktabs-tabpage .view-colegios .view-content{
+		width: 100%;
+	}
+	#quicktabs-tabpage-mapa-1 .view-content .views-row{
+		width: 350px;
+	}
+	#quicktabs-tabpage-mapa-1 .view-content .views-row .ds-2col-fluid > .group-left{
+		width: 130px;
+	}
+	#quicktabs-tabpage-mapa-1 .view-content .views-row .ds-2col-fluid > .group-right{
+		width: 220px;
+	}
+
+	.sub-menu .menu{
+		height: auto;
+	}
+	.sub-menu .menu li{
+		display: block;
+		border: 1px solid #CED0D1; border-top: none;
+	}
+	.sub-menu .menu li a{
+		display: block;
+		width: 100%;
+		text-align: center;
+		max-width: 100%;
+		height: auto;
+		padding: 15px 10px;
+	}
+	
+	.panels-flexible-dos_filas .panels-flexible-region{
+		padding: 0px;
+		width: 100%;
+	}
+	#menu-lateral ul li a{
+		font-size: 14px;
+	}
+
+	.not-front .banner .group-enlace-imagen{
+		top: 0px;
+		margin-bottom: 0px;
+	}
+	.banner .group-enlace-imagen a{
+		top: 10%;
+	}
+	.banner .group-enlace-imagen img{
+		width: 100% !important;
+		height: auto !important;
+	}
+	.banner .group-enlace-imagen a #play{
+		width: 100px;
+		height: 100px;
+		background-size: 100px;
+	}
+	.above-content{
+		padding-left: 15px;
+	}
+	#block-menu-block-1{
+		float: none;
+		margin: 0px 20px;
+		clear: both;
+		overflow: hidden;
+	}
+
+	.tinynav-wrapper {
+	   margin:40px auto 20px auto;
+	   border:1px solid #d9d9d9;
+	   height:30px;
+	   overflow: hidden;
+	   width: 100%;
+	   position:relative;
+	}
+	.tinynav-wrapper select {
+	   background: transparent;
+	   border: none;
+	   font-size: 14px;
+	   height: 30px;
+	   padding: 5px;
+	   width: 100%;
+		 -moz-appearance: none;
+		 -webkit-appearance: none;
+		 appearance: none;
+	}
+	.tinynav-wrapper select:focus{ outline: none;}
+
+	.tinynav-wrapper::after{
+		content:"\025be";
+		display:table-cell;
+		padding-top: 3px;
+		text-align:center;
+		width:30px;
+		height:30px;
+		background-color:#d9d9d9;
+		position:absolute;
+		top:0;
+		right:0px;	
+		pointer-events: none;
+	}
+
+
+
+
 	.caja-icono{
 		width: 100%;
 	}
@@ -16,7 +142,7 @@
 		font-size: 12px;
 	}
 
-	.gu-1-5{
+	.alcance.gu-1-5{
 		width: 33%; /*20%*/
 	}
 	.alcance.gu-1-5{

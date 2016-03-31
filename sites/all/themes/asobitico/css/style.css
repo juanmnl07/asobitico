@@ -733,7 +733,7 @@ p{
 }
 .above-content .inner{
   clear: both;
-  height: 118px;
+  min-height: 118px;
   padding-top: 20px;
 }
 #block-easy-breadcrumb-easy-breadcrumb{
@@ -1995,6 +1995,19 @@ ul.accordion li > .ui-accordion-content{
   border-bottom: 3px solid #EFEFF0;
 }
 
+
+
+.view-display-id-block_calendario_anual{
+  position: relative;
+
+}
+.view-display-id-block_calendario_anual .views-row{
+  border: none;
+  position: absolute;
+
+  right: 0px;
+}
+
 .view-evento-calendario .views-row .field-name-field-imagen img{
   float: left;
 }
@@ -2547,8 +2560,8 @@ ul.accordion li > .ui-accordion-content{
   margin: 0px; margin-top: 35px;
 }
 
-#block-webform-client-block-1 label,
-#block-webform-client-block-239 label{
+#block-webform-client-block-1 h4, /*label*/
+#block-webform-client-block-239 h4{
   font-size: 15px;
   font-weight: bold;
   color: #FFF;
