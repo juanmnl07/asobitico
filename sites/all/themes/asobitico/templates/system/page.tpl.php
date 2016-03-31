@@ -105,18 +105,34 @@
         $alias = drupal_lookup_path('alias', $ruta, $language->language);
         $route = explode('/', $alias);
         $base = $route[0];
-        if(($base == 'nuestro-equipo')||($base == 'our-team')||($base == 'calendar')||($base == 'calendario')){
-          if($language->language == 'en')
+        if(($base == 'nuestro-equipo')||($base == 'our-team')||($base == 'calendar')||($base == 'calendario')||($base == 'webform')){
+          if($language->language == 'en'){
             $base = 'en/'.$base;
+            if($base=='webform'){
+              $base = 'en';
+            }
+          }else{
+            if($base=='webform'){
+              $base = '/';
+            }
+          }
           echo '<a class="back" href ="'.$base_url.'/'.$base.'">'. t('Back') .'</a>';
         }
       ?>
 
       <?php print render($page['content']); ?>
 
-      <?php if(($base == 'nuestro-equipo')||($base == 'our-team')||($base == 'calendar')||($base == 'calendario')){
-          if($language->language == 'en')
-              $base = 'en/'.$base;
+      <?php if(($base == 'nuestro-equipo')||($base == 'our-team')||($base == 'calendar')||($base == 'calendario')||($base == 'webform')){
+          if($language->language == 'en'){
+            $base = 'en/'.$base;
+            if($base=='webform'){
+              $base = 'en';
+            }
+          }else{
+            if($base=='webform'){
+              $base = '/';
+            }
+          }
           echo '<a class="back" href ="'.$base_url.'/'.$base.'">'. t('Back') .'</a>';
         }
       ?>
