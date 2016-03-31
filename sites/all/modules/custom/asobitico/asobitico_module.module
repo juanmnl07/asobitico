@@ -67,7 +67,6 @@ function asobitico_module_block_view($delta='') {
   
   return $block;
 }
-
 /** 
  *
  * funcion para mostrar las preguntas frecuentes hacia los estudiantes
@@ -180,4 +179,43 @@ function consultar_preguntas($field, $field_name, $node_type, $language){
   $query->condition('p.'.$field_name.'_tid',$field->tid,'=');
   $result = $query->execute();
   return $result;
+}
+
+/**
+ * Impliments hook_form_views_exposed_form_alter
+ *
+ * Used to change exposed date filter to month only, as this is not available in the views UI
+ */
+function asobitico_module_form_views_exposed_form_alter(&$form, $form_state) {
+  if( $form['#id'] == 'views-exposed-form-evento-calendario-block-calendario') {
+    // Switch date formatter to month only
+    //dpm($form);
+    $form['field_fecha_value']['value']['#date_format'] = 'm';
+    // Add extra validator to handle filter submit
+    $form['#validate'][] = 'asobitico_module_views_exposed_form_validate';
+  }
+}
+/**
+ * Custom validator for exposed date filter
+ */
+function asobitico_module_views_exposed_form_validate(&$form, &$form_state) {
+  $handlers = &$form_state['view']->filter;
+  foreach ($handlers as $key => $handler) {
+    if (!empty($handler->options['exposed'])
+     && isset($form[$key]['value']['#type'])
+     && $form[$key]['value']['#type'] == 'date_select'
+     && $form[$key]['value']['#date_format'] == 'm'){
+      $handler->options['granularity'] = 'month';
+      $handler->format = 'm';
+    }
+  }
+}
+
+function asobitico_module_date_parts_element_alter(&$element) {
+  dpm($element);
+  foreach($element['year']['#options'] as $key=>$value) {
+    if($value == '-Year') {
+      $element['year']['#options'][$key] = 'Movie Release Year';
+    }
+  }
 }
