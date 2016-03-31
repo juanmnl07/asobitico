@@ -3,6 +3,9 @@
 	.view-id-transparencia{
 		width: 100%;
 	}
+	.view-id-transparencia .views-row{
+		padding: 25px 20px;
+	}
 
 	.costos-capacitaciones .gu-1-5,
 	.colaboracion-comunidad-bloques .gu-1-5,
@@ -147,6 +150,12 @@
 
 @media (max-width: 479px) {
 
+	.bx-wrapper .bx-controls-direction .bx-next{
+		right: -15px;
+	}
+	.bx-wrapper .bx-controls-direction .bx-prev{
+		left: -25px;
+	}
 	#bxslider_views_slideshow_main_nodequeue_1-block .views-slideshow-bxslider{
 		width: 180px;
 		margin: 0 auto;
