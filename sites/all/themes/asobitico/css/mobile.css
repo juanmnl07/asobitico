@@ -1,5 +1,18 @@
 @media (max-width: 767px) {
 
+	.costos-capacitaciones .gu-1-5{
+		width: 50%;
+		margin-bottom: 20px;
+	}
+
+	.llamado-accion .gu-1-4:last-child{
+		width: 100%;
+	}
+	.llamado-accion .gu-1-4:last-child .btn{
+		float: none;
+		margin: 0 auto;
+	}
+
 	.view-display-id-block_calendario_anual .views-row{
 		position: static;
 		padding: 10px 0px;
@@ -126,7 +139,9 @@
 
 @media (max-width: 479px) {
 
-
+	.llamado-accion .gu-1-4{
+		text-align: center;
+	}
 	.page-calendario .panels-flexible-region-dos_columnas_25x75_-derecho-inside h2,
 	.page-calendar .panels-flexible-region-dos_columnas_25x75_-derecho-inside h2{
 		margin-top: 30px;
@@ -297,6 +312,7 @@
 	}
 	h2{
 		font-size: 28px;
+		line-height: 28px;
 	}
 
 

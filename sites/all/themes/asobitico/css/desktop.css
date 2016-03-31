@@ -1,5 +1,13 @@
 @media (max-width: 1100px) {
 
+	.panels-flexible-dos_columnas_encabezado_pie_apoyenos-inside .panels-flexible-row-dos_columnas_encabezado_pie_apoyenos-1 {
+	    padding: 20px 15px !important;
+	}
+	.panels-flexible-dos_columnas_encabezado_pie_apoyenos-inside .sub-menu .menu li a,
+	.page-informes-transparencia .sub-menu .menu li a, .page-donacion-directa .sub-menu .menu li a{
+		font-size: 13px;
+		max-width: 125px;
+	}
 
 	.panels-flexible-dos_filas_dos_columnas_menu .panels-flexible-row.panel{
 		padding: 50px 10px !important;
