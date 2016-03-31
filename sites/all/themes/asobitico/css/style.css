@@ -1267,10 +1267,14 @@ p{
 
 
 #quicktabs-mapa .view-filters .views-exposed-form .views-exposed-widgets,
-#quicktabs-mapa .view-filters .views-exposed-form .views-exposed-widget{
+#quicktabs-mapa .view-filters .views-exposed-form .views-exposed-widget,
+
+.view-display-id-block_listado_colegios .views-exposed-form .views-exposed-widgets,
+.view-display-id-block_listado_colegios .views-exposed-form .views-exposed-widget{
   padding: 0px; margin: 0px; float: none;
 }
-#quicktabs-mapa .view-filters{
+#quicktabs-mapa .view-filters,
+.view-display-id-block_listado_colegios  .view-filters{
   width: 50%;
   left: 0px;
   right: 0px;
@@ -1278,7 +1282,8 @@ p{
   position: absolute;
   top: -82px;
 }
-#quicktabs-mapa .views-widget-filter-field_colegio_tid select{
+#quicktabs-mapa .views-widget-filter-field_colegio_tid select,
+.view-display-id-block_listado_colegios .views-widget-filter-field_colegio_tid select{
   width: 80%;
   height: 42px;
   border: 1px solid #808082;
@@ -1419,7 +1424,7 @@ p{
 }
 
 
-#quicktabs-tabpage-mapa-1 .view-content .views-row{
+.view-display-id-block_listado_colegios .view-content .views-row{
   border-bottom: 3px solid #EFEFF0;
   margin-bottom: 30px;
   padding-bottom: 10px;
@@ -1427,11 +1432,11 @@ p{
   /*width: 430px;*/
 }
 
-#quicktabs-tabpage-mapa-1 .view-content .views-row .ds-2col-fluid > .group-left{
+.view-display-id-block_listado_colegios .view-content .views-row .ds-2col-fluid > .group-left{
   width: 125px;
 }
 
-#quicktabs-tabpage-mapa-1 .view-content .views-row .ds-2col-fluid > .group-left .field-name-field-imagen{
+.view-display-id-block_listado_colegios .view-content .views-row .ds-2col-fluid > .group-left .field-name-field-imagen{
   padding: 10px;
   background-color: #EFEFF0;
   border-radius: 15px;
@@ -1441,23 +1446,23 @@ p{
   display: table-cell;
   vertical-align: middle;
 }
-#quicktabs-tabpage-mapa-1 .view-content .views-row .ds-2col-fluid > .group-left .field-name-field-imagen img{
+.view-display-id-block_listado_colegios .view-content .views-row .ds-2col-fluid > .group-left .field-name-field-imagen img{
   max-width: none;
   float: none;
 }
 
 
-#quicktabs-tabpage-mapa-1 .view-content .views-row .ds-2col-fluid > .group-right{
+.view-display-id-block_listado_colegios .view-content .views-row .ds-2col-fluid > .group-right{
   width: 320px;
 }
 
-#quicktabs-tabpage-mapa-1 .view-content .views-row .ds-2col-fluid > .group-right h4{
+.view-display-id-block_listado_colegios .view-content .views-row .ds-2col-fluid > .group-right h4{
   font-size: 19px;
   color: #0080C6;
   font-weight: normal;
   font-family: "Aleo", sans-serif;
 }
-#quicktabs-tabpage-mapa-1 .view-content .views-row .ds-2col-fluid > .group-right .field{
+.view-display-id-block_listado_colegios .view-content .views-row .ds-2col-fluid > .group-right .field{
   font-weight: normal;
   font-size: 15px;
   color: #404041;
