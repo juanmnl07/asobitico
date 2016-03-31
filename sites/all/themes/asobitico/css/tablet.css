@@ -1,5 +1,16 @@
 @media (max-width: 991px) {
 
+	.panels-flexible-row-dos_filas_con_menu_faqs-main-row.sub-menu .menu li a{
+		padding: 15px 10px;
+	}
+	.panels-flexible-dos_columnas_encabezado_pie_apoyenos-inside .sub-menu .menu li a,
+	.page-informes-transparencia .sub-menu .menu li a,
+	.page-donacion-directa .sub-menu .menu li a{
+	  padding: 15px 10px;
+	  max-width: 100%;
+	}
+
+
 	.page-eventos-desarrollo-profesional .talleres-desarrollo-profesional .b-azul,
 	.page-professional-development-events .talleres-desarrollo-profesional .b-azul{
 		margin-right: 0px;
@@ -195,4 +206,10 @@
 	.header{
 		padding: 0 15px;
 	}
+
+	.panels-flexible-row-contacto-main-row{
+		padding: 0 3% !important;
+	}
+
+	
 }
