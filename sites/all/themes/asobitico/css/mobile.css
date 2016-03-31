@@ -143,8 +143,56 @@
 		min-height: 300px;
 	}
 
+	.page-news-feed .panels-flexible-dos_filas_news_feed_menu_lateral .panels-flexible-region{
+		float: none;
+		margin: 0 auto;
+	}
+
+	.page-news-feed .panels-flexible-dos_filas_news_feed_menu_lateral .panels-flexible-region.panels-flexible-region-first{
+		margin-bottom: 30px;
+	}
+
+	.page-news-feed .panels-flexible-dos_filas_news_feed_menu_lateral .panels-flexible-region.panels-flexible-region-last{
+		width: 100% !important;
+	}
 
 
+	.one-sidebar #sidebar-first{
+		float: none;
+		margin: 0 auto;
+		width: 50%;
+		margin-bottom: 30px;
+	}
+
+	.one-sidebar #sidebar-first h2{
+		margin-top: 0;
+	}
+
+	.one-sidebar .main{
+		clear: both;
+		width: 100%;
+		float: none;
+	}
+
+	#search-form label{
+
+	    display: block;
+	    float: none;
+	    margin: 20px auto;
+	    text-align: center;
+	}
+
+	#search-form #edit-basic input[type="text"]{
+		display: block;
+	    float: none;
+	    margin: 0 auto 20px;
+	}
+
+	#search-form #edit-basic input[type="submit"]{
+		display: block;
+		margin: 0 auto 20px;
+		float: none;
+	}
 }
 
 
@@ -378,4 +426,45 @@
 		float: none;
 		margin:0 auto 30px;
 	}
+
+	.page-news-feed .panels-flexible-row-dos_filas_news_feed_menu_lateral-main-row{
+		padding: 50px 0 0 !important;
+	}
+
+	.view-blog .views-row > div.view-mode-blog_listaso .group-left, .view-display-id-page_categorias_blog .views-row > div.view-mode-blog_listaso .group-left{
+		width: 100%;
+		margin-bottom: 20px;
+	}
+
+	.view-blog .views-row > div.view-mode-blog_listaso .group-right, .view-display-id-page_categorias_blog .views-row > div.view-mode-blog_listaso .group-right{
+		width: 100%;
+		padding-left: 0;
+	}
+
+	.panels-flexible-dos_filas_news_feed_menu_lateral .panels-flexible-region-inside-last{
+		padding-left: 0 !important;
+	}
+
+	.panels-flexible-dos_filas_news_feed_menu_lateral .panels-flexible-region-inside-first{
+		padding-right: 0 !important;
+	}
+
+
+	.panels-flexible-dos_filas_news_feed_detalle .panels-flexible-region-inside-last{
+		padding-left: 0 !important;
+	}
+
+	.panels-flexible-dos_filas_news_feed_detalle .panels-flexible-region-inside-first{
+		padding-right: 0 !important;
+	}
+
+	.one-sidebar #sidebar-first{
+		float: none;
+		margin: 0 auto;
+		width: 100%;
+		margin-bottom: 30px;
+	}
+
+
+	
 }

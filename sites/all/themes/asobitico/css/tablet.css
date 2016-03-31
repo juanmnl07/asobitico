@@ -211,5 +211,28 @@
 		padding: 0 3% !important;
 	}
 
-	
+	.page-news-feed .panels-flexible-row-dos_filas_news_feed_menu_lateral-main-row{
+		padding: 50px 3% 0 !important;
+	}
+
+	.page-news-feed .panels-flexible-row-dos_filas_news_feed_menu_lateral-main-row h3,
+	.node-type-blog .panels-flexible-row-dos_filas_news_feed_detalle-main-row  h3{
+		margin-top: 0;
+	}
+
+	.node-type-blog .panels-flexible-row.panels-flexible-row-dos_filas_news_feed_detalle-main-row  {
+	    padding: 50px 2% 0px !important;
+	}
+
+	.page-search .main{
+		padding: 0 3%;
+	}
+
+	#search-form #edit-basic input[type="text"]{
+		width: 285px;
+	}
+
+	.page-contactenos h2{
+		margin-top: 20px;
+	}
 }
