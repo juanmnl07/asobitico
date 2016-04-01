@@ -1,5 +1,11 @@
 @media (max-width: 767px) {
-
+	.node-calendario{
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	.h320{
+		height: auto;
+	}
 	.view-id-transparencia{
 		width: 100%;
 	}
@@ -92,10 +98,13 @@
 		line-height: 35px;
 	}
 
-	.front .flexslider .flex-caption{
-		/*display: none;*/
+	.front .flexslider .container-flex-caption{
 		position: static;
 		margin: 0 auto;
+	}
+	.front .flexslider .flex-caption{
+		/*display: none;*/
+
 		width: 100%;
 	}
 	.front .flexslider .flex-caption .refran-nelson{
@@ -198,6 +207,12 @@
 
 @media (max-width: 479px) {
 
+	.costos-capacitaciones .box, .colaboracion-comunidad-bloques .box{
+		display: block;
+		height: auto;
+	    clear: both;
+	    overflow: hidden;
+	}
 	#bxslider_views_slideshow_main_nodequeue_1-block_queue_equipo_trabajo #views-slideshow-bxslider-1{
 		width: 80%;
 		margin: 0 auto;
