@@ -66,7 +66,7 @@
 		text-align: left;
 	}
 
-	#quicktabs-tabpage-mapa-1 .view-content .views-row{
+	.view-display-id-block_listado_colegios .view-content .views-row{
 		display: block;
 		width: 350px;
 		margin: 0 auto;
@@ -198,6 +198,17 @@
 
 @media (max-width: 479px) {
 
+	#bxslider_views_slideshow_main_nodequeue_1-block_queue_equipo_trabajo #views-slideshow-bxslider-1{
+		width: 80%;
+		margin: 0 auto;
+	}
+	#bxslider_views_slideshow_main_nodequeue_1-block_queue_equipo_trabajo .bx-wrapper .bx-viewport{
+		width: 65% !important;
+	}
+
+	.view-nuestro-equipo .views-row{
+		text-align: center;
+	}
 	.bx-wrapper .bx-controls-direction .bx-next{
 		right: -15px;
 	}
@@ -219,13 +230,11 @@
 	.llamado-accion .gu-1-4{
 		text-align: center;
 	}
-	.page-calendario .panels-flexible-region-dos_columnas_25x75_-derecho-inside h2,
-	.page-calendar .panels-flexible-region-dos_columnas_25x75_-derecho-inside h2{
+	.listado-calendario .panels-flexible-region-dos_columnas_25x75_-derecho-inside h2{
 		margin-top: 30px;
 	}
 
-	.page-calendario .panels-flexible-una_columna .panels-flexible-region-inside,
-	.page-calendar .panels-flexible-una_columna .panels-flexible-region-inside{
+	.listado-calendario .panels-flexible-una_columna .panels-flexible-region-inside{
 		padding-left: 0px;
 	}
 
@@ -268,23 +277,23 @@
 		width: 100%;
 	}
 
-	#quicktabs-tabpage-mapa-1 .view-content .views-row{
+	.view-display-id-block_listado_colegios .view-content .views-row{
 		width: 100%;
 	}
-	#quicktabs-tabpage-mapa-1 .view-content .views-row .ds-2col-fluid > .group-left{
+	.view-display-id-block_listado_colegios .view-content .views-row .ds-2col-fluid > .group-left{
 		width: 34%;
 	}
 
-	#quicktabs-tabpage-mapa-1 .view-content .views-row .ds-2col-fluid > .group-left .field-name-field-imagen{
+	.view-display-id-block_listado_colegios .view-content .views-row .ds-2col-fluid > .group-left .field-name-field-imagen{
 		width: 100%;
 	}
-	#quicktabs-tabpage-mapa-1 .view-content .views-row .ds-2col-fluid > .group-left .field-name-field-imagen img{
+	.view-display-id-block_listado_colegios .view-content .views-row .ds-2col-fluid > .group-left .field-name-field-imagen img{
 		width: 100%;
 	}
 
 
 
-	#quicktabs-tabpage-mapa-1 .view-content .views-row .ds-2col-fluid > .group-right{
+	.view-display-id-block_listado_colegios .view-content .views-row .ds-2col-fluid > .group-right{
 		width: 66%;
 		padding-left: 10px;
 	}

@@ -1,5 +1,20 @@
 @media (max-width: 991px) {
 
+
+	#listado-colegios .view-filters{
+		position: static;
+		width: 80%;
+		margin: 0 auto;
+	}
+	#listado-colegios .view-filters select{
+		width: 100%;
+	}
+	#listado-colegios{
+	  display: block;
+	}
+	#mapa{
+		display: none;
+	}
 	.panels-flexible-row-dos_filas_con_menu_faqs-main-row.sub-menu .menu li a{
 		padding: 15px 10px;
 	}
@@ -39,13 +54,13 @@
 	#quicktabs-container-mapa .quicktabs-tabpage .view-colegios .view-content{
 		width: 100%;
 	}
-	#quicktabs-tabpage-mapa-1 .view-content .views-row{
+	.view-display-id-block_listado_colegios .view-content .views-row{
 		width: 350px;
 	}
-	#quicktabs-tabpage-mapa-1 .view-content .views-row .ds-2col-fluid > .group-left{
+	.view-display-id-block_listado_colegios .view-content .views-row .ds-2col-fluid > .group-left{
 		width: 130px;
 	}
-	#quicktabs-tabpage-mapa-1 .view-content .views-row .ds-2col-fluid > .group-right{
+	.view-display-id-block_listado_colegios .view-content .views-row .ds-2col-fluid > .group-right{
 		width: 220px;
 	}
 
