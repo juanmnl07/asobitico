@@ -36,7 +36,7 @@ $slides = '';
 			}*/
 
 			if (isset($field_item['field_caption']['#items'][0]['value'])){
-				$field_caption = '<div class="flex-caption">'.$field_item['field_caption']['#items'][0]['value'].'</div>';
+				$field_caption = '<div class="container-flex-caption"><div class="flex-caption">'.$field_item['field_caption']['#items'][0]['value'].'</div></div>';
 			}
 
 			$slides .= '<li><img src="'.$url.'" alt="" title=""/>'. $field_caption .'</li>';
