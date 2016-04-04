@@ -1,4 +1,12 @@
 @media (max-width: 767px) {
+
+	.bg-gris{
+		margin-left: -8px !important;
+		margin-right: -8px !important;
+		padding-left: 10px !important;
+		padding-right: 10px !important;
+		margin: 0 auto !important;
+	}
 	.node-calendario{
 		padding-left: 15px;
 		padding-right: 15px;
@@ -36,18 +44,22 @@
 		float: none;
 	}
 
-	.page-logros .pane-3 .gu-1-2, .page-achievements .pane-3 .gu-1-2{
-		padding-left: 20px;
+	.page-logros .pane-3 .gu-1-2,
+	.page-achievements .pane-3 .gu-1-2{
+	padding-left: 20px;
     padding-top: 0px;
     width: 100%;
 	}
-	.page-logros .pane-5 .gu-1-2, .page-achievements .pane-5 .gu-1-2,
-	.page-logros .pane-9 .gu-1-2, .page-achievements .pane-9 .gu-1-2{
+	.page-logros .pane-5 .gu-1-2,
+	.page-achievements .pane-5 .gu-1-2,
+	.page-logros .pane-9 .gu-1-2,
+	.page-achievements .pane-9 .gu-1-2{
     padding-right: 20px;
     padding-top: 0px;
     width: 100%;
 	}
-	.page-logros .gu-1-2, .page-achievements .gu-1-2{
+	.page-logros .gu-1-2,
+	.page-achievements .gu-1-2{
 		width: 100%;
 		height: auto;
 		/*min-height: 400px;*/
@@ -72,7 +84,7 @@
 		text-align: left;
 	}
 
-	.view-display-id-block_listado_colegios .view-content .views-row{
+	.block-listado-colegios .view-content .views-row{
 		display: block;
 		width: 350px;
 		margin: 0 auto;
@@ -94,7 +106,8 @@
 	#ancla-costo-afiliacion .btn{
 		line-height: 24px;
 	}
-	.page-forme-parte-de-asobitico .panel-flexible h2{
+	.page-forme-parte-de-asobitico .panel-flexible h2,
+	.page-be-part-of-asobitico .panel-flexible h2{
 		line-height: 35px;
 	}
 
@@ -152,16 +165,19 @@
 		min-height: 300px;
 	}
 
-	.page-news-feed .panels-flexible-dos_filas_news_feed_menu_lateral .panels-flexible-region{
+	.page-news-feed .panels-flexible-dos_filas_news_feed_menu_lateral .panels-flexible-region,
+	.page-news-feed-en .panels-flexible-dos_filas_news_feed_menu_lateral .panels-flexible-region{
 		float: none;
 		margin: 0 auto;
 	}
 
-	.page-news-feed .panels-flexible-dos_filas_news_feed_menu_lateral .panels-flexible-region.panels-flexible-region-first{
+	.page-news-feed .panels-flexible-dos_filas_news_feed_menu_lateral .panels-flexible-region.panels-flexible-region-first,
+	.page-news-feed-en .panels-flexible-dos_filas_news_feed_menu_lateral .panels-flexible-region.panels-flexible-region-first{
 		margin-bottom: 30px;
 	}
 
-	.page-news-feed .panels-flexible-dos_filas_news_feed_menu_lateral .panels-flexible-region.panels-flexible-region-last{
+	.page-news-feed .panels-flexible-dos_filas_news_feed_menu_lateral .panels-flexible-region.panels-flexible-region-last,
+	.page-news-feed-en .panels-flexible-dos_filas_news_feed_menu_lateral .panels-flexible-region.panels-flexible-region-last{
 		width: 100% !important;
 	}
 
@@ -292,23 +308,23 @@
 		width: 100%;
 	}
 
-	.view-display-id-block_listado_colegios .view-content .views-row{
+	.block-listado-colegios .view-content .views-row{
 		width: 100%;
 	}
-	.view-display-id-block_listado_colegios .view-content .views-row .ds-2col-fluid > .group-left{
+	.block-listado-colegios .view-content .views-row .ds-2col-fluid > .group-left{
 		width: 34%;
 	}
 
-	.view-display-id-block_listado_colegios .view-content .views-row .ds-2col-fluid > .group-left .field-name-field-imagen{
+	.block-listado-colegios .view-content .views-row .ds-2col-fluid > .group-left .field-name-field-imagen{
 		width: 100%;
 	}
-	.view-display-id-block_listado_colegios .view-content .views-row .ds-2col-fluid > .group-left .field-name-field-imagen img{
+	.block-listado-colegios .view-content .views-row .ds-2col-fluid > .group-left .field-name-field-imagen img{
 		width: 100%;
 	}
 
 
 
-	.view-display-id-block_listado_colegios .view-content .views-row .ds-2col-fluid > .group-right{
+	.block-listado-colegios .view-content .views-row .ds-2col-fluid > .group-right{
 		width: 66%;
 		padding-left: 10px;
 	}
@@ -451,7 +467,8 @@
 		margin:0 auto 30px;
 	}
 
-	.page-news-feed .panels-flexible-row-dos_filas_news_feed_menu_lateral-main-row{
+	.page-news-feed .panels-flexible-row-dos_filas_news_feed_menu_lateral-main-row,
+	.page-news-feed-en .panels-flexible-row-dos_filas_news_feed_menu_lateral-main-row{
 		padding: 50px 0 0 !important;
 	}
 
