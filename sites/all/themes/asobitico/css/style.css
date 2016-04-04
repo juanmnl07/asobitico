@@ -2667,6 +2667,26 @@ ul.accordion li > .ui-accordion-content{
   height: 40px;
   color: #FFF;
 }
+
+#block-webform-client-block-1 .webform-confirmation p,
+#block-webform-client-block-239 .webform-confirmation p{
+  color: #FFF;
+  padding-top: 25px;
+  font-size: 17px;
+  line-height: 19px;
+  text-align: center;
+}
+#block-webform-client-block-1 .links,
+#block-webform-client-block-239 .links{
+  text-align: center;
+}
+#block-webform-client-block-1 .links a,
+#block-webform-client-block-239 .links a{
+  color: #0080C6;
+  font-size: 15px;
+}
+
+
 #block-webform-client-block-1 .form-submit,
 #block-webform-client-block-239 .form-submit{
   float: right;
@@ -3071,4 +3091,18 @@ fieldset.group-imagen-fecha .field-name-fecha-blog span{font-size: 15px;}
   width: 75px;
   margin: 0 auto;
   margin-bottom: 20px; margin-top: 20px;
+}
+
+#webform-ajax-wrapper-22 .webform-confirmation{
+  clear: both;
+  overflow: hidden;
+  border: 1px solid #be7;
+  background-color: #C4FFA6;
+  padding: 10px;
+  text-align: center;
+  font-size: 16px;
+}
+
+#webform-ajax-wrapper-22 .webform-confirmation p{
+  font-size: 17px;
 }
