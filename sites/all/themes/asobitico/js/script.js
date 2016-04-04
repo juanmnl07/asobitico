@@ -57,7 +57,14 @@
 			$('.pin').addClass('clic').find('.popup').removeClass('act').hide();
 		});
 
+		var id_listado = "#block-views-colegios-block-listado-colegios";
+
 		//var view_mapa = "#views-exposed-form-colegios-block-pin-mapa";
+		$(id_listado + ' #edit-field-colegio-tid').live('change', function(){
+			cambiar_clase($(this));
+			//$(view_mapa + ' #edit-submit-colegios').trigger('click');
+		});
+
 		$('#edit-field-colegio-tid').live('change', function(){
 			cambiar_clase($(this));
 			//$(view_mapa + ' #edit-submit-colegios').trigger('click');
@@ -69,6 +76,7 @@
 		});
 
 		$('#quicktabs-mapa ul li a').addClass('tab-azul');
+		$('#quicktabs-mapa').attr('data-view-comunidad', 4);
 
 		/*var view_listado = "#views-exposed-form-colegios-block-listado-colegios";
 		var selector_colegio = view_listado + ' #edit-field-colegio-tid';
@@ -89,21 +97,11 @@
 	});
 
 	$( document ).ajaxComplete(function() {
-	  var view_mapa = "#views-exposed-form-colegios-block-pin-mapa";
-	  var valor = $('#quicktabs-mapa').attr('data-view-comunidad');
-	  
-	  $('#edit-field-colegio-tid--2 option').each(function(){
-	  	$(this).removeAttr('selected');
-	  });
-		$('#edit-field-colegio-tid--2 option[value="'+ valor +'"]').attr('selected','selected');
-		$('#edit-field-colegio-tid--2').trigger('change');
+	  	verificar_estado_mapa();
+	});
 
-	   $('#edit-field-colegio-tid option').each(function(){
-	  	$(this).removeAttr('selected');
-	  });
-		$('#edit-field-colegio-tid option[value="'+ valor +'"]').attr('selected','selected');
-		$('#edit-field-colegio-tid').trigger('change');
-
+	$('#quicktabs-mapa ul li a').on('click', function(){
+	  	verificar_estado_mapa();
 	});
 
 	function cambiar_clase(object){
@@ -119,6 +117,43 @@
 
 		$('#quicktabs-mapa ul li a').removeClass(class_to_remove);
 		$('#quicktabs-mapa ul li a').addClass(class_tab);
+	}
+
+	function verificar_estado_mapa(){
+		  var valor = $('#quicktabs-mapa').attr('data-view-comunidad');
+		  var id_listado = "#block-views-colegios-block-listado-colegios";
+
+		  $(".view-id-colegios.view-display-id-block_listado_colegios h3").removeClass("hidden");
+		  if(valor == 4){
+		  	$(".titulo-colegios-proceso-acreditacion").addClass('hidden');
+		  } else {
+		  	$(".titulo-colegios-asociados").addClass('hidden');
+		  }
+
+		  if ($(id_listado + ' #edit-field-colegio-tid').val() != valor){
+			  $(id_listado + ' #edit-field-colegio-tid option').each(function(){
+			  	$(this).removeAttr('selected');
+			  });
+				$(id_listado + ' #edit-field-colegio-tid option[value="'+ valor +'"]').attr('selected','selected');
+				$(id_listado + ' #edit-field-colegio-tid').trigger('change');
+		  }
+
+		  if ($('#edit-field-colegio-tid--2').val() != valor){
+			  $('#edit-field-colegio-tid--2 option').each(function(){
+			  	$(this).removeAttr('selected');
+			  });
+				$('#edit-field-colegio-tid--2 option[value="'+ valor +'"]').attr('selected','selected');
+				$('#edit-field-colegio-tid--2').trigger('change');
+		  }
+
+		if ($('#edit-field-colegio-tid').val() != valor){
+		   $('#edit-field-colegio-tid option').each(function(){
+		  	$(this).removeAttr('selected');
+		  });
+			$('#edit-field-colegio-tid option[value="'+ valor +'"]').attr('selected','selected');
+			$('#edit-field-colegio-tid').trigger('change');
+
+		}
 	}
 
 })(jQuery);

@@ -3093,6 +3093,7 @@ fieldset.group-imagen-fecha .field-name-fecha-blog span{font-size: 15px;}
   margin-bottom: 20px; margin-top: 20px;
 }
 
+
 #webform-ajax-wrapper-22 .webform-confirmation{
   clear: both;
   overflow: hidden;
@@ -3106,3 +3107,6 @@ fieldset.group-imagen-fecha .field-name-fecha-blog span{font-size: 15px;}
 #webform-ajax-wrapper-22 .webform-confirmation p{
   font-size: 17px;
 }
+
+.hidden {display: none;}
+
