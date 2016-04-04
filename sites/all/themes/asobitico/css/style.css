@@ -334,14 +334,23 @@ p{
 .front .flexslider{
   border: 0px;
   margin: 0px;
-  /*max-width: 1280px;*/
+  max-width: 1440px; /*1280*/
   margin: 0 auto;
 }
-.front .flexslider .flex-caption{
+.front .flexslider .container-flex-caption{
+  max-width: 70em;
+  margin: 0 auto;
+
   position: absolute;
   top: 0px;
-  left: 7%;
-
+  left: 0px; right: 0px;
+  height: 100%;
+}
+.front .flexslider .flex-caption{
+  
+  /*top: 0px;
+  left: 7%;*/
+  position: relative;
   height: 100%;
   width: 565px;
   padding: 30px 50px;
@@ -1155,6 +1164,11 @@ p{
 
 /* COMUNIDAD BI */
 
+
+#listado-colegios{
+  display: none;
+}
+
 .sub-menu{
   padding: 0px !important;
 }
@@ -1489,11 +1503,12 @@ p{
 
 /* EVENTOS */
 
-#panels-ipe-paneid-40{
+.eventos-intercolegiales .bloque-1 .pane-node{
   margin-top: 80px;
+  clear: both;
 }
 
-.node-eventos h3{
+.eventos-intercolegiales h3{
   font-size: 24px;
   font-weight: normal;
   font-family: "Aleo", sans-serif;
@@ -1502,31 +1517,27 @@ p{
   margin: 0px;
   margin-bottom: 30px;
 }
-.node-eventos.view-mode-evento_der h3{
-  color: #A63131;
-}
-.node-eventos.view-mode-evento_izq h3{
-  color: #0080C6;
-}
 
-.node-eventos .bx-controls-direction{
+
+.eventos-intercolegiales .bx-controls-direction{
   width: 140px;
   position: relative;
   margin: 0 auto;
   margin-top: 10px;
 }
-.node-eventos .bx-wrapper .bx-controls-direction a{
+.eventos-intercolegiales .bx-wrapper .bx-controls-direction a{
   position: static;
   margin: 0px;
   display: inline-block;
 }
-.node-eventos .bx-wrapper .bx-controls-direction a.disabled{
+.eventos-intercolegiales .bx-controls-direction a.disabled{
   visibility: hidden !important;
 }
-.node-eventos .bx-controls-direction .bx-prev{
+}
+.eventos-intercolegiales .bx-controls-direction .bx-prev{
 
 }
-.node-eventos .bx-controls-direction .bx-next{
+.eventos-intercolegiales .bx-controls-direction .bx-next{
   float: right;
 }
 
@@ -1994,8 +2005,7 @@ ul.accordion li > .ui-accordion-content{
 /*  CALENDARIO */
 
 
-.page-calendario .panel-separator,
-.page-calendar .panel-separator{
+.listado-calendario .panel-separator{
   display: none;
 }
 
@@ -2033,6 +2043,7 @@ ul.accordion li > .ui-accordion-content{
 
 .view-display-id-block_calendario_anual{
   position: relative;
+  z-index: 99;
 }
 .view-display-id-block_calendario_anual .views-row{
   border: none;
@@ -2046,56 +2057,56 @@ ul.accordion li > .ui-accordion-content{
   float: left;
 }
 
-.page-calendario .panels-flexible-una_columna .panels-flexible-region-inside,
-.page-calendar .panels-flexible-una_columna .panels-flexible-region-inside{
+.node-calendario .panels-flexible-una_columna .panels-flexible-region-inside,
+.listado-calendario .panels-flexible-una_columna .panels-flexible-region-inside{
   padding-left: 30px;
 }
-.page-calendario .panels-flexible-una_columna .panels-flexible-region-inside-first,
-.page-calendar .panels-flexible-una_columna .panels-flexible-region-inside-first{
+.node-calendario .panels-flexible-una_columna .panels-flexible-region-inside-first,
+.listado-calendario .panels-flexible-una_columna .panels-flexible-region-inside-first{
   padding-right: 0px;
   padding-left: 0px;
 }
-.page-calendario .clearfix:after,
-.page-calendar .clearfix:after{
+.node-calendario .clearfix:after,
+.listado-calendario .clearfix:after{
   display: none;
 }
 
-.page-calendario .panels-flexible-dos_columnas_25x75_,
-.page-calendar .panels-flexible-dos_columnas_25x75_{
+.node-calendario .panels-flexible-dos_columnas_25x75_,
+.listado-calendario .panels-flexible-dos_columnas_25x75_{
   padding: 30px 0px;
 }
 
-.page-calendario .panels-flexible-region-dos_columnas_25x75_-derecho-inside h2,
-.page-calendar .panels-flexible-region-dos_columnas_25x75_-derecho-inside h2{
+.node-calendario .panels-flexible-region-dos_columnas_25x75_-derecho-inside h2,
+.listado-calendario .panels-flexible-region-dos_columnas_25x75_-derecho-inside h2{
   text-align: left;
   color: #A63131;
   font-size: 24px;
   margin-bottom: 15px;
 }
 
-.page-calendario .field-name-field-fecha-y-lugar,
-.page-calendar .field-name-field-fecha-y-lugar{
+.node-calendario .field-name-field-fecha-y-lugar,
+.listado-calendario .field-name-field-fecha-y-lugar{
   background-image: url('../images/calendario.png');
   background-position: left top;
   background-repeat: no-repeat;
   padding-left: 30px;
 }
 
-.page-calendario .field-name-field-fecha-y-lugar .field-item,
-.page-calendar .field-name-field-fecha-y-lugar .field-item{
+.node-calendario .field-name-field-fecha-y-lugar .field-item,
+.listado-calendario .field-name-field-fecha-y-lugar .field-item{
   margin-bottom: 7px;
 }
 
-.page-calendario .field-name-field-fecha:after,
-.page-calendar .field-name-field-fecha:after{
+.node-calendario .field-name-field-fecha:after,
+.listado-calendario .field-name-field-fecha:after{
   display: inline-block !important;
   content: " - ";
   height: 5px;
   visibility: visible;
   margin: 0px 7px;
 }
-.page-calendario .field-name-body,
-.page-calendar .field-name-body{
+.node-calendario .field-name-body,
+.listado-calendario .field-name-body{
   background-image: url('../images/evento.png');
   background-position: left top;
   background-repeat: no-repeat;
@@ -2103,25 +2114,28 @@ ul.accordion li > .ui-accordion-content{
   margin-top: 15px;
   
 }
-.page-calendario .node-calendario .field-name-body,
-.page-calendar .node-calendario .field-name-body{
+.node-calendario .field-name-body{
   border-bottom: 3px solid #EFEFF0;
 }
+.node-calendario .field-name-body-completo{
+  margin-top: 20px;
+}
 
-.page-calendario .group-fecha-lugar,
-.page-calendar .group-fecha-lugar{
+.node-calendario .group-fecha-lugar,
+.listado-calendario .group-fecha-lugar{
   border: none;
   clear: both;
   margin: 0px; padding: 0px;
 }
 
-.page-calendario .group-fecha-lugar .fieldset-wrapper > .field,
-.page-calendar .group-fecha-lugar .fieldset-wrapper > .field{
+.node-calendario .group-fecha-lugar .fieldset-wrapper > .field,
+.listado-calendario .group-fecha-lugar .fieldset-wrapper > .field{
   display: inline-block;
 }
 
 
-.node-calendario h2{
+.node-calendario h2,
+.listado-calendario h2{
   text-align: left;
   font-size: 19px;
 }
@@ -2985,9 +2999,31 @@ fieldset.group-imagen-fecha .field-name-fecha-blog span{font-size: 15px;}
 }
 
 #news-feed-contacto {margin-bottom: 50px; float: left; width: 100%;}
-.back {background-image: url('../images/back1.png'); background-repeat: no-repeat; background-size: 20px; padding: 5px 5px 5px 25px;}
+
 
 
 #search-form{
   margin-top: 20px;
+}
+
+
+
+.back{
+  display: block;
+
+  background-image: url('../images/back1.png');
+  background-repeat: no-repeat;
+  background-position: 0% 50%;
+  background-size: 20px;
+  padding-left: 30px;
+  /*padding: 5px 5px 5px 25px;*/
+
+
+  font-family: "ProximaNova", sans-serif;
+  font-size: 20px;
+  color: #000;
+  clear: both;
+  width: 75px;
+  margin: 0 auto;
+  margin-bottom: 20px; margin-top: 20px;
 }

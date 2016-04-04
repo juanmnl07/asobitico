@@ -8,21 +8,24 @@
         header: false,
         active: 'active-trail'
       }
-      // Add the class to the selectors so we can access it later
-      $(settings.tinynav.selector).addClass('tinyjs');
+      if($('.tinynav-wrapper').length == 0){
+        // Add the class to the selectors so we can access it later
+        $(settings.tinynav.selector).addClass('tinyjs');
 
-      // Build the Settings array
-      var tinyNavSettings = {
-        header: settings.tinynav.header
-      };
-      if (settings.tinynav.active) {
-        tinyNavSettings.active = settings.tinynav.active;
+        // Build the Settings array
+        var tinyNavSettings = {
+          header: settings.tinynav.header
+        };
+        if (settings.tinynav.active) {
+          tinyNavSettings.active = settings.tinynav.active;
+        }
+
+        // Tinynav (<-- new verb) them all
+        $('.tinyjs').tinyNav(tinyNavSettings);
+        // Add a wrapper to the select element
+      
+        $('select.tinynav').wrap('<div class="tinynav-wrapper"/>');
       }
-
-      // Tinynav (<-- new verb) them all
-      $('.tinyjs').tinyNav(tinyNavSettings);
-      // Add a wrapper to the select element
-      $('select.tinynav').wrap('<div class="tinynav-wrapper"/>');
     },
     weight: 99
   };

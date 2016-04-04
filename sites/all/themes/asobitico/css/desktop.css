@@ -15,9 +15,13 @@
 	.panels-flexible-dos_filas_dos_columnas_menu .panels-flexible-row.sub-menu {
 	    padding: 0px !important;
 	}
+	#quicktabs-mapa .views-widget-filter-field_colegio_tid select,
+	.view-display-id-block_listado_colegios .views-widget-filter-field_colegio_tid select{
+		width: 75%;
+	}
 	#quicktabs-container-mapa .quicktabs-tabpage .view-colegios .view-content{
-		width: 900px;
-		margin: 0 auto;
+		/*width: 900px;*/
+		/*margin: 0 auto;*/
 	}
 
 	#quicktabs-tabpage-mapa-1 .view-content .views-row .ds-2col-fluid > .group-left{
@@ -27,7 +31,9 @@
 		width: 66%;
 	}
 
-
+	.front .flexslider .container-flex-caption{
+		max-width: 815px;
+	}
 	.front .flexslider .flex-caption .refran-nelson{
 		font-size:24px;
 		line-height: 28px;
