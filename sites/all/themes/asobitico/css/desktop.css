@@ -4,7 +4,10 @@
 	    padding: 20px 15px !important;
 	}
 	.panels-flexible-dos_columnas_encabezado_pie_apoyenos-inside .sub-menu .menu li a,
-	.page-informes-transparencia .sub-menu .menu li a, .page-donacion-directa .sub-menu .menu li a{
+	.page-informes-transparencia .sub-menu .menu li a,
+	.page-transparency-reports .sub-menu .menu li a,
+	.page-donacion-directa .sub-menu .menu li a,
+	.page-direct-donation .sub-menu .menu li a{
 		font-size: 13px;
 		max-width: 125px;
 	}

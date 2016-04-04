@@ -1078,7 +1078,8 @@ p{
 
 /*  FORME PARTE  */
 
-.page-forme-parte-de-asobitico .panel-flexible h2{
+.page-forme-parte-de-asobitico .panel-flexible h2,
+.page-be-part-of-asobitico .panel-flexible h2{
   line-height: 47px;
   margin-bottom: 40px;
 }
@@ -1283,12 +1284,12 @@ p{
 #quicktabs-mapa .view-filters .views-exposed-form .views-exposed-widgets,
 #quicktabs-mapa .view-filters .views-exposed-form .views-exposed-widget,
 
-.view-display-id-block_listado_colegios .views-exposed-form .views-exposed-widgets,
-.view-display-id-block_listado_colegios .views-exposed-form .views-exposed-widget{
+.block-listado-colegios .views-exposed-form .views-exposed-widgets,
+.block-listado-colegios .views-exposed-form .views-exposed-widget{
   padding: 0px; margin: 0px; float: none;
 }
 #quicktabs-mapa .view-filters,
-.view-display-id-block_listado_colegios  .view-filters{
+.block-listado-colegios  .view-filters{
   width: 50%;
   left: 0px;
   right: 0px;
@@ -1297,7 +1298,7 @@ p{
   top: -82px;
 }
 #quicktabs-mapa .views-widget-filter-field_colegio_tid select,
-.view-display-id-block_listado_colegios .views-widget-filter-field_colegio_tid select{
+.block-listado-colegios .views-widget-filter-field_colegio_tid select{
   width: 80%;
   height: 42px;
   border: 1px solid #808082;
@@ -1438,7 +1439,7 @@ p{
 }
 
 
-.view-display-id-block_listado_colegios .view-content .views-row{
+.block-listado-colegios .view-content .views-row{
   border-bottom: 3px solid #EFEFF0;
   margin-bottom: 30px;
   padding-bottom: 10px;
@@ -1446,11 +1447,11 @@ p{
   /*width: 430px;*/
 }
 
-.view-display-id-block_listado_colegios .view-content .views-row .ds-2col-fluid > .group-left{
+.block-listado-colegios .view-content .views-row .ds-2col-fluid > .group-left{
   width: 125px;
 }
 
-.view-display-id-block_listado_colegios .view-content .views-row .ds-2col-fluid > .group-left .field-name-field-imagen{
+.block-listado-colegios .view-content .views-row .ds-2col-fluid > .group-left .field-name-field-imagen{
   padding: 10px;
   background-color: #EFEFF0;
   border-radius: 15px;
@@ -1460,23 +1461,23 @@ p{
   display: table-cell;
   vertical-align: middle;
 }
-.view-display-id-block_listado_colegios .view-content .views-row .ds-2col-fluid > .group-left .field-name-field-imagen img{
+.block-listado-colegios .view-content .views-row .ds-2col-fluid > .group-left .field-name-field-imagen img{
   max-width: none;
   float: none;
 }
 
 
-.view-display-id-block_listado_colegios .view-content .views-row .ds-2col-fluid > .group-right{
+.block-listado-colegios .view-content .views-row .ds-2col-fluid > .group-right{
   width: 320px;
 }
 
-.view-display-id-block_listado_colegios .view-content .views-row .ds-2col-fluid > .group-right h4{
+.block-listado-colegios .view-content .views-row .ds-2col-fluid > .group-right h4{
   font-size: 19px;
   color: #0080C6;
   font-weight: normal;
   font-family: "Aleo", sans-serif;
 }
-.view-display-id-block_listado_colegios .view-content .views-row .ds-2col-fluid > .group-right .field{
+.block-listado-colegios .view-content .views-row .ds-2col-fluid > .group-right .field{
   font-weight: normal;
   font-size: 15px;
   color: #404041;
@@ -1597,19 +1598,24 @@ p{
 /* EGRESADOS */
 
 
-.page-egresados #panels-ipe-paneid-56 h2{
+.page-egresados .pane-1 h2,
+.page-graduated .pane-1 h2{
   margin-bottom: 50px;
 }
-.page-egresados #panels-ipe-paneid-57 h2 + p{
+.page-egresados .pane-2 h2 + p,
+.page-graduated .pane-2 h2 + p{
   margin-bottom: 70px;
 }
-.page-egresados h3{
+.page-egresados h3,
+.page-graduated h3{
   margin-top: 0px;
 }
-.page-egresados .clear{
+.page-egresados .clear,
+.page-graduated .clear{
   height: 50px;
 }
-.page-egresados .panels-flexible-row-cuatro_filas_con_menu_2-2.bg-gris{
+.page-egresados .panels-flexible-row-cuatro_filas_con_menu_2-2.bg-gris,
+.page-gradueated .panels-flexible-row-cuatro_filas_con_menu_2-2.bg-gris{
   padding-bottom: 100px !important;
 }
 
@@ -2030,13 +2036,21 @@ ul.accordion li > .ui-accordion-content{
 .view-evento-calendario .view-filters select{
   height: 33px;
   padding: 5px;
+
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  background-image: url('../images/select.png');
+  background-repeat: no-repeat;
+  background-position: 95% 50%;
+  padding-right: 30px;
 }
 
 .view-evento-calendario .views-exposed-form .views-exposed-widget{
   padding: 0px;
 }
 
-#edit-field-tipo-evento-tid-wrapper .description{
+#edit-field-tipo-evento-tid-1-wrapper .description{
   display: none;
 }
 
@@ -2106,7 +2120,7 @@ ul.accordion li > .ui-accordion-content{
   margin: 0px 7px;
 }
 .node-calendario .field-name-body,
-.listado-calendario .field-name-body{
+.listado-calendario .view-evento-calendario .field-name-body{
   background-image: url('../images/evento.png');
   background-position: left top;
   background-repeat: no-repeat;
@@ -2147,18 +2161,35 @@ ul.accordion li > .ui-accordion-content{
 }
 
 .page-preguntas-frecuentes-estudiantes h2,
+.page-frequently-asked-questions-students h2,
+
+
 .page-preguntas-frecuentes-profesores h2,
+.page-frequently-asked-questions-professor h2,
+
 .page-preguntas-frecuentes-padres h2,
-.page-preguntas-frecuentes-aliados h2{
+.page-frequently-asked-questions-parents h2,
+
+.page-preguntas-frecuentes-aliados h2,
+.page-frequently-asked-questions-ally h2{
   font-size: 24px;
 }
 
-.page-preguntas-frecuentes-estudiantes #panels-ipe-paneid-100,
-.page-preguntas-frecuentes-profesores #panels-ipe-paneid-103,
-.page-preguntas-frecuentes-padres #panels-ipe-paneid-111,
-.page-preguntas-frecuentes-aliados #panels-ipe-paneid-112{
+.page-preguntas-frecuentes-estudiantes .pane-1,
+.page-frequently-asked-questions-students .pane-1,
+
+
+.page-preguntas-frecuentes-profesores .pane-1,
+.page-frequently-asked-questions-professor .pane-1,
+
+.page-preguntas-frecuentes-padres .pane-1,
+.page-frequently-asked-questions-parents .pane-1,
+
+.page-preguntas-frecuentes-aliados .pane-1,
+.page-frequently-asked-questions-ally .pane-1{
   margin-bottom: 50px;
 }
+
 
 
 
@@ -2188,7 +2219,11 @@ ul.accordion li > .ui-accordion-content{
 }
 .panels-flexible-dos_columnas_encabezado_pie_apoyenos-inside .sub-menu .menu li a,
 .page-informes-transparencia .sub-menu .menu li a,
-.page-donacion-directa .sub-menu .menu li a{
+.page-donacion-directa .sub-menu .menu li a,
+
+
+.page-direct-donation .sub-menu .menu li a,
+.page-transparency-reports .sub-menu .menu li a{
   padding: 0px 10px;
   max-width: 140px;
 }
@@ -2234,16 +2269,19 @@ ul.accordion li > .ui-accordion-content{
 }
 
 
-.page-capacitaciones-para-docentes .panels-flexible-row-dos_columnas_encabezado_pie_apoyenos-1 ul{
+.page-capacitaciones-para-docentes .panels-flexible-row-dos_columnas_encabezado_pie_apoyenos-1 ul,
+.page-training-for-teachers .panels-flexible-row-dos_columnas_encabezado_pie_apoyenos-1 ul{
   padding-left: 20px;
 }
-.page-capacitaciones-para-docentes .panels-flexible-row-dos_columnas_encabezado_pie_apoyenos-1 ul li { 
+.page-capacitaciones-para-docentes .panels-flexible-row-dos_columnas_encabezado_pie_apoyenos-1 ul li,
+.page-training-for-teachers .panels-flexible-row-dos_columnas_encabezado_pie_apoyenos-1 ul li{ 
     padding-left: 1em; 
     text-indent: -.7em;
     line-height: 18px;
 }
 
-.page-capacitaciones-para-docentes .panels-flexible-row-dos_columnas_encabezado_pie_apoyenos-1 ul li:before {
+.page-capacitaciones-para-docentes .panels-flexible-row-dos_columnas_encabezado_pie_apoyenos-1 ul li:before,
+.page-training-for-teachers .panels-flexible-row-dos_columnas_encabezado_pie_apoyenos-1 ul li:before{
     content: "• ";
     color: #0080C6;
 }
@@ -2400,15 +2438,18 @@ ul.accordion li > .ui-accordion-content{
   margin-bottom: 0px;
 }
 
-.page-contactenos h2{
+.page-contactenos h2,
+.page-contact-us h2{
   font-size: 24px;
   margin-bottom: 50px;
 }
 
-.page-contactenos .logo.a-center{
+.page-contactenos .logo.a-center,
+.page-contact-us .logo.a-center{
   padding-top: 60px;
 }
-.page-contactenos .webform-client-form input[type='submit']{
+.page-contactenos .webform-client-form input[type='submit'],
+.page-contact-us .webform-client-form input[type='submit']{
   line-height: 44px;
 }
 #info-contacto{
@@ -2450,16 +2491,19 @@ ul.accordion li > .ui-accordion-content{
   line-height: 18px;
 }
 
-.page-contactenos .panels-flexible-region-contacto-mapa{
+.page-contactenos .panels-flexible-region-contacto-mapa,
+.page-contact-us .panels-flexible-region-contacto-mapa{
   max-width: 100% !important;
   width: 100% !important;
   margin-top: 30px;
 }
 
-.page-contactenos  .panels-flexible-row.panels-flexible-row-contacto-1{
+.page-contactenos  .panels-flexible-row.panels-flexible-row-contacto-1,
+.page-contact-us  .panels-flexible-row.panels-flexible-row-contacto-1{
   padding: 0px !important;
 }
-.page-contactenos  .panels-flexible-row.panels-flexible-row-contacto-1 iframe{
+.page-contactenos  .panels-flexible-row.panels-flexible-row-contacto-1 iframe,
+.page-contact-us  .panels-flexible-row.panels-flexible-row-contacto-1 iframe{
   height: 415px !important;
 }
 
@@ -2615,12 +2659,13 @@ ul.accordion li > .ui-accordion-content{
   color: #FFF;
   margin-bottom: 20px;
 }
-#block-webform-client-block-1 #edit-submitted-correo,
-#block-webform-client-block-239 #edit-submitted-email{
+#block-webform-client-block-1 .form-email,
+#block-webform-client-block-239 .form-email{
   width: 100%;
   border: none;
   background-color: #58595B;
   height: 40px;
+  color: #FFF;
 }
 #block-webform-client-block-1 .form-submit,
 #block-webform-client-block-239 .form-submit{
@@ -2647,7 +2692,7 @@ ul.accordion li > .ui-accordion-content{
 }
 
 /*Added by Juan - map*/
-#views-exposed-form-colegios-block-pin-mapa .description, #views-exposed-form-colegios-block-listado-colegios .description {display: none;}
+#views-exposed-form-colegios-block-pin-mapa .description, .block-listado-colegios .view-filters .description {display: none;}
 #views-exposed-form-colegios-block-pin-mapa .views-submit-button, #views-exposed-form-colegios-block-listado-colegios .views-submit-button {visibility: hidden;}
 
 
