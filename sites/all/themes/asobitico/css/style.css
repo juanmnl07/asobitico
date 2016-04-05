@@ -242,7 +242,7 @@ p{
   background-position: center;
   margin-left: 10px;
   border: none;
-  padding: 5px 10px;
+  padding: 5px 4px 5px 12px;
   outline: none;
 }
 
@@ -2041,9 +2041,23 @@ ul.accordion li > .ui-accordion-content{
   -webkit-appearance: none;
   appearance: none;
   background-image: url('../images/select.png');
+  background-image: none\9; 
   background-repeat: no-repeat;
-  background-position: 95% 50%;
+  background-position: 96% 50%;
   padding-right: 30px;
+  padding-right: 0px\9;
+}
+
+.ie10 .view-evento-calendario .view-filters select { 
+    background: none; 
+    padding-right: 0px;
+  } /* IE10 */
+
+@media all and (-ms-high-contrast:none) {  
+  *::-ms-backdrop, .view-evento-calendario .view-filters select { 
+      background: none; 
+      padding-right: 0px;
+    } /* IE11 */ 
 }
 
 .view-evento-calendario .views-exposed-form .views-exposed-widget{
@@ -3074,3 +3088,4 @@ fieldset.group-imagen-fecha .field-name-fecha-blog span{font-size: 15px;}
 }
 
 .hidden {display: none;}
+.view-display-id-block_listado_colegios .view-header h3 {margin-top: 42px;}

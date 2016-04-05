@@ -100,8 +100,14 @@
 	  	verificar_estado_mapa();
 	});
 
-	$('#quicktabs-mapa ul li a').on('click', function(){
-	  	verificar_estado_mapa();
+	$('#quicktabs-mapa ul li a').click(function(){
+		var height_qicktab = '40px';
+		if($(this).attr("id") == 'quicktabs-tab-mapa-1'){
+			height_qicktab = '50px';
+		}
+		console.log(height_qicktab);
+		$('#quicktabs-mapa .item-list').css("height",height_qicktab);
+	  	//verificar_estado_mapa();
 	});
 
 	function cambiar_clase(object){

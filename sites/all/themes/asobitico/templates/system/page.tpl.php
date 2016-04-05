@@ -107,6 +107,8 @@
         $alias = drupal_lookup_path('alias', $ruta, $language->language);
         $route = explode('/', $alias);
         $base = $route[0];
+        $back_route = '';
+
         if(($base == 'nuestro-equipo')||($base == 'our-team')||($base == 'calendar')||($base == 'calendario')||($base == 'webform')){
           if($language->language == 'en'){
             $base = 'en/'.$base;
@@ -118,25 +120,13 @@
               $base = '/';
             }
           }
-          echo '<a class="back" href ="'.$base_url.'/'.$base.'">'. t('Back') .'</a>';
+          $back_route = '<a class="back" href ="'.$base_url.'/'.$base.'">'. t('Back') .'</a>';
         }
-      ?>
 
-      <?php print render($page['content']); ?>
+        echo $back_route;
+        print render($page['content']);
+        echo $back_route;
 
-      <?php if(($base == 'nuestro-equipo')||($base == 'our-team')||($base == 'calendar')||($base == 'calendario')||($base == 'webform')){
-          if($language->language == 'en'){
-            $base = 'en/'.$base;
-            if($base=='webform'){
-              $base = 'en';
-            }
-          }else{
-            if($base=='webform'){
-              $base = '/';
-            }
-          }
-          echo '<a class="back" href ="'.$base_url.'/'.$base.'">'. t('Back') .'</a>';
-        }
       ?>
 
     </div>
