@@ -76,6 +76,7 @@ body {
   float: left;
 }
 
+iframe {border: none;}
 
 
 /*
@@ -85,7 +86,7 @@ body {
 */
 
 
-/*.front */h2{
+/*.front */h2, h2.rojo.titulo-news-feed{
   font-family: "Aleo", sans-serif;
   text-align: center;
   font-size: 33px;

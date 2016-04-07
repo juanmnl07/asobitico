@@ -20,8 +20,8 @@ function asobitico_preprocess_html(&$variables) {
   $meta_x_ua_compatible = array(
     '#tag' => 'meta',
     '#attributes' => array(
-      'http-equiv' => 'x-ua-compatible',
-      'content' => 'ie=edge, chrome=1',
+      'http-equiv' => 'X-UA-Compatible',
+      'content' => 'IE=edge',
     ),
   );
   drupal_add_html_head($meta_x_ua_compatible, 'meta_x_ua_compatible');
@@ -53,14 +53,14 @@ function asobitico_preprocess_html(&$variables) {
   );
   drupal_add_html_head($meta_viewport, 'meta_viewport');
 
-  $meta_cleartype = array(
+  /*$meta_cleartype = array(
     '#tag' => 'meta',
     '#attributes' => array(
       'http-equiv' => 'cleartype',
       'content' => 'on',
     ),
   );
-  drupal_add_html_head($meta_cleartype, 'meta_cleartype');
+  drupal_add_html_head($meta_cleartype, 'meta_cleartype');*/
 
    // Use html5shiv.
   if (theme_get_setting('html5shim')) {

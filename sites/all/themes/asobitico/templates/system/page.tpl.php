@@ -9,7 +9,7 @@
  *
  */
 ?>
-<header class="header" role="banner">
+<header class="header">
   <div class="grid">
   <?php if ($page['utility_bar']): ?>
     <div class="utility-bar">
@@ -158,7 +158,7 @@
   </section>
 <?php endif; // end Pre Footer ?>
 
-<footer class="footer" role="contentinfo">
+<footer class="footer">
   <div class="inner">
     <?php print render($page['footer']); ?>
   </div>
