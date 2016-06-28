@@ -123,6 +123,40 @@ function asobitico_preprocess_node(&$vars) {
   $vars['classes_array'][] = 'node-' . $vars['zebra'];
 }
 
+function asobitico_preprocess_field(&$vars){
+  //dpm($vars);
+  global $language;
+
+  if($language->language == 'en'){
+    if($vars['label'] == "Colegio BI desde")
+      $vars['label'] = "IB World School since";
+
+    if($vars['label'] == "Director")
+      $vars['label'] = "School Principal";
+
+    if($vars['label'] == 'Fecha y lugar')
+      $vars['label'] = "Date and venue";
+
+    if($vars['label'] == 'Categoría')
+      $vars['label'] = "Category";
+
+    /*if($vars['label'] == 'Fecha y lugar'){
+      $value = strtotime($vars['element']['#items'][0]['value']);
+      $value2 = strtotime($vars['element']['#items'][0]['value2']);
+      //format date based on current language
+      $separator = 'a';
+      $dateFormated = format_date($value, 'custom', 'd \d\e F');
+      $date2Formated = format_date($value2, 'custom', 'd \d\e F');
+      if($language->language=='en'){
+        $separator = 'to';
+        $dateFormated = format_date($value, 'custom', 'd M');
+        $date2Formated = format_date($value2, 'custom', 'd M');
+      }
+      $vars['element'][0]['#markup'] = '<div class="date-display-range"><span class="date-display-start" property="dc:date" datatype="xsd:dateTime" content="'.$dateFormated.'">'.$dateFormated.'</span> '.$separator.' <span class="date-display-end" property="dc:date" datatype="xsd:dateTime" content="'.$date2Formated.'">'.$date2Formated.'</span></div>';
+    }*/
+  }
+}
+
 function asobitico_preprocess_block(&$vars, $hook) {
   // Add a striping class.
   //dpm($vars);

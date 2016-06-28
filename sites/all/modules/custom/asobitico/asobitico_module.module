@@ -93,6 +93,9 @@ function asobitico_module_preguntas_frecuentes_por_paises(){
   //13 es el identificador para Costa Rica, NOTA: no cambiar este id en administracion
   //********** ACORDION NACIONAL *******
   $costa_rica = taxonomy_term_load(13);
+  if($language->language=='en')
+    $costa_rica = taxonomy_term_load(35);
+
   $imagen = "<img alt='" . $costa_rica->field_imagen[LANGUAGE_NONE][0]['alt'] . "' src='" . $base_url . '/sites/default/files/banderas/' . $costa_rica->field_imagen[LANGUAGE_NONE][0]['filename'] . "'>";
   $bloque_nacional = '<div id="pf-nacional"><h3><strong>'.t('National Universities').'</strong> - '.t('Frequently asked questions').'</h3>
   <div class="costa-rica bpais">'.$imagen."<span>".$costa_rica->name."</span>".'</div></div>';
@@ -109,6 +112,13 @@ function asobitico_module_preguntas_frecuentes_por_paises(){
   $can = taxonomy_term_load(15); //Canada
   $mex = taxonomy_term_load(16); //Mexico
   $esp = taxonomy_term_load(17); //España
+  if($language->language=='en')
+  {
+    $eu = taxonomy_term_load(37); //EEUU
+    $can = taxonomy_term_load(34); //Canada
+    $mex = taxonomy_term_load(38); //Mexico
+    $esp = taxonomy_term_load(36); //España
+  }
 
   $bloque_ext = '<div id="pf-extrajeros"><h3><strong>'.t('Foreign Universities').'</strong> - '.t('Frequently asked questions').'</h3></div>';
 
@@ -162,7 +172,7 @@ function asobitico_module_preguntas_frecuentes_por_paises(){
 
   $bloque_ext .= $bloque_eu . $bloque_can . $bloque_mex .$bloque_esp;
 
-  return "<h2 class='azul'>".t('Información sobre universidades y el BI')."</h2>".$bloque_nacional . $bloque_ext;
+  return "<h2 class='azul'>".t('Information about universities and the IB Program')."</h2>".$bloque_nacional . $bloque_ext;
 }
 
 function consultar_preguntas($field, $field_name, $node_type, $language){

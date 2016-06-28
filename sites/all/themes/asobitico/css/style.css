@@ -280,6 +280,11 @@ p{
   margin: 0px; padding: 0px;
   margin-right: 29px; /*35*/
 }
+
+.i18n-en #block-menu-block-1 .menu li{
+  margin-right: 24px; /*29*/ 
+}
+
 #block-menu-block-1 .menu li a{
   font-size: 14px;
   color: #0080C6;
@@ -840,6 +845,7 @@ p{
   font-family: "Aleo", sans-serif;
   color: #0080C6;
   text-align: left;
+  margin-left: 14px;
 }
 .panels-flexible-dos_filas .pane-content h3{
   font-size: 22px;
@@ -1370,11 +1376,11 @@ p{
 
 #quicktabs-tabpage-mapa-0 .view-content .pin .popup{
   position: absolute;
-  width: 320px;
+  width: 380px; /*320*/
   bottom: 46px;
-  left: -70px;
+  left: -85px; /*-70*/
   display: none;
-  padding: 20px 35px;
+  padding: 20px 32px;
   border-radius: 15px;
   text-align: center;
   word-break: break-all;
@@ -1387,7 +1393,7 @@ p{
 }*/
 
 #quicktabs-tabpage-mapa-0 .view-content .pin .popup strong{
-  font-size: 19px;
+  font-size: 17px; /*19*/
   font-family: "Aleo", sans-serif;
   font-weight: normal;
   display: block;
@@ -1990,6 +1996,11 @@ ul.accordion li > .ui-accordion-content{
 #bxslider_views_slideshow_main_testimonios-block_testimonios ul li .group-nombre-lugar-estudios .field{
   display: inline-block;
 }
+
+#bxslider_views_slideshow_main_testimonios-block_testimonios ul li .group-nombre-lugar-estudios .field.field-name-field-lugar-estudios {
+  margin-left: 5px;
+}
+
 #bxslider_views_slideshow_main_testimonios-block_testimonios .bx-controls-direction{
   width: 100px;
   bottom: 15px;
@@ -2237,8 +2248,8 @@ ul.accordion li > .ui-accordion-content{
 .page-donacion-directa .sub-menu .menu li a,
 
 
-.page-direct-donation .sub-menu .menu li a,
-.page-transparency-reports .sub-menu .menu li a{
+.page-direct-donations .sub-menu .menu li a,
+.page-transparency .sub-menu .menu li a{
   padding: 0px 10px;
   max-width: 140px;
 }
@@ -2285,18 +2296,27 @@ ul.accordion li > .ui-accordion-content{
 
 
 .page-capacitaciones-para-docentes .panels-flexible-row-dos_columnas_encabezado_pie_apoyenos-1 ul,
-.page-training-for-teachers .panels-flexible-row-dos_columnas_encabezado_pie_apoyenos-1 ul{
+.page-training-for-educators .panels-flexible-row-dos_columnas_encabezado_pie_apoyenos-1 ul,
+.box_por_que.bpq2 ul{
   padding-left: 20px;
 }
 .page-capacitaciones-para-docentes .panels-flexible-row-dos_columnas_encabezado_pie_apoyenos-1 ul li,
-.page-training-for-teachers .panels-flexible-row-dos_columnas_encabezado_pie_apoyenos-1 ul li{ 
+.page-training-for-educators .panels-flexible-row-dos_columnas_encabezado_pie_apoyenos-1 ul li,
+.box_por_que.bpq2 ul li,
+#queremos .der ul li{ 
     padding-left: 1em; 
     text-indent: -.7em;
     line-height: 18px;
 }
 
+#queremos .der p.forma-jovenes {
+  margin-bottom: 0px;
+}
+
 .page-capacitaciones-para-docentes .panels-flexible-row-dos_columnas_encabezado_pie_apoyenos-1 ul li:before,
-.page-training-for-teachers .panels-flexible-row-dos_columnas_encabezado_pie_apoyenos-1 ul li:before{
+.page-training-for-educators .panels-flexible-row-dos_columnas_encabezado_pie_apoyenos-1 ul li:before,
+.box_por_que.bpq2 ul li:before,
+#queremos .der ul li:before{
     content: "• ";
     color: #0080C6;
 }
@@ -2400,12 +2420,14 @@ ul.accordion li > .ui-accordion-content{
   padding: 50px 10px;
 }
 
-.page-pasantias .panels-flexible-row-dos_columnas_encabezado_pie_apoyenos-1-inside ul li{
+.page-pasantias .panels-flexible-row-dos_columnas_encabezado_pie_apoyenos-1-inside ul li,
+.page-employability-program .panels-flexible-row-dos_columnas_encabezado_pie_apoyenos-1-inside ul li{
   padding-left: 1em; 
   text-indent: -.7em; 
   line-height: 19px;
 }
-.page-pasantias .panels-flexible-row-dos_columnas_encabezado_pie_apoyenos-1-inside ul li:before {
+.page-pasantias .panels-flexible-row-dos_columnas_encabezado_pie_apoyenos-1-inside ul li:before,
+.page-employability-program .panels-flexible-row-dos_columnas_encabezado_pie_apoyenos-1-inside ul li:before {
     content: "• ";
     color: #0080C6;
 }
@@ -2763,7 +2785,8 @@ ul.accordion li > .ui-accordion-content{
 }
 
 .menu-block-3 ul li:hover,
-.menu-block-3 ul li.active{
+.menu-block-3 ul li.active,
+.menu-block-3 ul li.active-trail{
   border-right:3px solid #A63131;
   color: #A63131;
 
@@ -2778,7 +2801,8 @@ ul.accordion li > .ui-accordion-content{
 }
 
 .menu-block-3 ul li:hover a,
-.menu-block-3 ul li.active a{
+.menu-block-3 ul li.active a,
+.menu-block-3 ul li.active-trail a{
   color: #A63131;
 }
 
@@ -3127,3 +3151,30 @@ fieldset.group-imagen-fecha .field-name-fecha-blog span{font-size: 15px;}
 
 .hidden {display: none;}
 .view-display-id-block_listado_colegios .view-header h3 {margin-top: 42px;}
+.panels-flexible-region-dos_filas_news_feed_menu_lateral-menu-inside h3 {margin-top: 0px;}
+.page-logros .pane-3 .gu-1-2,
+.page-achievements .pane-3 .gu-1-2 { padding-right: 50px; }
+.page-logros .pane-5 .gu-1-2,
+.page-achievements .pane-5 .gu-1-2,
+.page-logros .pane-9 .gu-1-2,
+.page-achievements .pane-9 .gu-1-2 { padding-left: 50px; }
+.page-historia .pane-custom.pane-1,
+.page-history .pane-custom.pane-1h2 + p + p{text-align: left;}
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px; height: 0; overflow: hidden;
+}
+ 
+.video-container iframe,
+.video-container object,
+.video-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.group-fecha-lugar .date-display-range {margin-right: 5px;}
